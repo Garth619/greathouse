@@ -1,0 +1,2 @@
+[20-Jan-2016 19:26:12 UTC] PHP Parse error:  syntax error, unexpected ''furniture/(.+?/.+?)/page/([0-' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/greathouse/public_html/wp-content/plugins/greathouse/greathouse.php on line 14
+[20-Jan-2016 19:26:15 UTC] PHP Parse error:  syntax error, unexpected ''furniture/(.+?/.+?)/page/([0-' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/greathouse/public_html/wp-content/plugins/greathouse/greathouse.php on line 14
