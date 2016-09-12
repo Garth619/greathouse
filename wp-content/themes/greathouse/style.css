@@ -2,5 +2,41 @@
 Theme Name: Greathouse
 Author: iLawyermarketing - Garrett Cullen
 */
+/* Fonts.com and Google Fonts */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
 
+a {
+  outline: none;
+}
 
+a img {
+  border: none;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+header, section, nav, footer {
+  display: block;
+}
+
+/* Variables */
+/* Colors */
+/* Fonts */
