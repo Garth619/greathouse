@@ -29,26 +29,43 @@
 		$form
 
 		// On clicking the reset variation button
-		.on( 'click', '.reset_variations', function() {
+		.on( 'click', '.reset_variations', function( event ) {
+			event.preventDefault();
 			$form.find( '.variations select' ).val( '' ).change();
 			$form.trigger( 'reset_data' );
-			return false;
 		} )
 
 		// When the variation is hidden
-		.on( 'hide_variation', function() {
-			$form.find( '.single_add_to_cart_button' ).attr( 'disabled', 'disabled' ).attr( 'title', wc_add_to_cart_variation_params.i18n_make_a_selection_text );
-			return false;
+		.on( 'hide_variation', function( event ) {
+			event.preventDefault();
+			$form.find( '.single_add_to_cart_button' ).removeClass( 'wc-variation-is-unavailable' ).addClass( 'disabled wc-variation-selection-needed' );
+			$form.find( '.woocommerce-variation-add-to-cart' ).removeClass( 'woocommerce-variation-add-to-cart-enabled' ).addClass( 'woocommerce-variation-add-to-cart-disabled' );
 		} )
 
 		// When the variation is revealed
 		.on( 'show_variation', function( event, variation, purchasable ) {
+			event.preventDefault();
 			if ( purchasable ) {
-				$form.find( '.single_add_to_cart_button' ).removeAttr( 'disabled' ).removeAttr( 'title' );
+				$form.find( '.single_add_to_cart_button' ).removeClass( 'disabled wc-variation-selection-needed wc-variation-is-unavailable' );
+				$form.find( '.woocommerce-variation-add-to-cart' ).removeClass( 'woocommerce-variation-add-to-cart-disabled' ).addClass( 'woocommerce-variation-add-to-cart-enabled' );
 			} else {
-				$form.find( '.single_add_to_cart_button' ).attr( 'disabled', 'disabled' ).attr( 'title', wc_add_to_cart_variation_params.i18n_unavailable_text );
+				$form.find( '.single_add_to_cart_button' ).removeClass( 'wc-variation-selection-needed' ).addClass( 'disabled wc-variation-is-unavailable' );
+				$form.find( '.woocommerce-variation-add-to-cart' ).removeClass( 'woocommerce-variation-add-to-cart-enabled' ).addClass( 'woocommerce-variation-add-to-cart-disabled' );
 			}
-			return false;
+		} )
+
+		.on( 'click', '.single_add_to_cart_button', function( event ) {
+			var $this = $( this );
+
+			if ( $this.is('.disabled') ) {
+				event.preventDefault();
+
+				if ( $this.is('.wc-variation-is-unavailable') ) {
+					window.alert( wc_add_to_cart_variation_params.i18n_unavailable_text );
+				} else if ( $this.is('.wc-variation-selection-needed') ) {
+					window.alert( wc_add_to_cart_variation_params.i18n_make_a_selection_text );
+				}
+			}
 		} )
 
 		// Reload product variations data
@@ -59,7 +76,7 @@
 
 		// Reset product data
 		.on( 'reset_data', function() {
-			$('.sku').wc_reset_content();
+			$product.find( '.product_meta' ).find( '.sku' ).wc_reset_content();
 			$('.product_weight').wc_reset_content();
 			$('.product_dimensions').wc_reset_content();
 			$form.trigger( 'reset_image' );
@@ -87,19 +104,29 @@
 
 				$form.find( '.variations select' ).each( function() {
 					var attribute_name = $( this ).data( 'attribute_name' ) || $( this ).attr( 'name' );
+					var value          = $( this ).val() || '';
 
-					if ( $( this ).val().length === 0 ) {
+					if ( value.length === 0 ) {
 						all_attributes_chosen = false;
 					} else {
 						some_attributes_chosen = true;
 					}
 
-					data[ attribute_name ] = $( this ).val();
+					data[ attribute_name ] = value;
 				});
 
 				if ( all_attributes_chosen ) {
 					// Get a matchihng variation via ajax
-					data.product_id = $product_id;
+					data.product_id  = $product_id;
+					data.custom_data = $form.data( 'custom_data' );
+
+					$form.block( {
+						message: null,
+						overlayCSS: {
+							background: '#fff',
+							opacity: 0.6
+						}
+					} );
 
 					$xhr = $.ajax( {
 						url: wc_cart_fragments_params.wc_ajax_url.toString().replace( '%%endpoint%%', 'get_variation' ),
@@ -113,6 +140,9 @@
 								$form.find( '.single_variation' ).after( '<p class="wc-no-matching-variations woocommerce-info">' + wc_add_to_cart_variation_params.i18n_no_matching_variations_text + '</p>' );
 								$form.find( '.wc-no-matching-variations' ).slideDown( 200 );
 							}
+						},
+						complete: function() {
+							$form.unblock();
 						}
 					} );
 				} else {
@@ -181,13 +211,23 @@
 			$form.wc_variations_image_update( variation );
 
 			// Output correct templates
+			var $template_html = '';
+
 			if ( ! variation.variation_is_visible ) {
-				$single_variation.html( unavailable_template );
+				$template_html = unavailable_template();
+				// w3 total cache inline minification adds CDATA tags around our HTML (sigh)
+				$template_html = $template_html.replace( '/*<![CDATA[*/', '' );
+				$template_html = $template_html.replace( '/*]]>*/', '' );
+				$single_variation.html( $template_html );
 				$form.find( 'input[name="variation_id"], input.variation_id' ).val( '' ).change();
 			} else {
-				$single_variation.html( template( {
+				$template_html = template( {
 					variation:    variation
-				} ) );
+				} );
+				// w3 total cache inline minification adds CDATA tags around our HTML (sigh)
+				$template_html = $template_html.replace( '/*<![CDATA[*/', '' );
+				$template_html = $template_html.replace( '/*]]>*/', '' );
+				$single_variation.html( $template_html );
 				$form.find( 'input[name="variation_id"], input.variation_id' ).val( variation.variation_id ).change();
 			}
 
@@ -227,8 +267,9 @@
 
 			$form.find( '.variations select' ).each( function() {
 				var attribute_name = $( this ).data( 'attribute_name' ) || $( this ).attr( 'name' );
+				var value          = $( this ).val() || '';
 
-				if ( $( this ).val().length === 0 ) {
+				if ( value.length === 0 ) {
 					all_attributes_chosen = false;
 				} else {
 					some_attributes_chosen = true;
@@ -239,7 +280,7 @@
 					current_settings[ attribute_name ] = '';
 				} else {
 					// Add to settings array
-					current_settings[ attribute_name ] = $( this ).val();
+					current_settings[ attribute_name ] = value;
 				}
 			});
 
@@ -451,7 +492,7 @@
 		if ( variation && variation.image_src && variation.image_src.length > 1 ) {
 			$product_img.wc_set_variation_attr( 'src', variation.image_src );
 			$product_img.wc_set_variation_attr( 'title', variation.image_title );
-			$product_img.wc_set_variation_attr( 'alt', variation.image_title );
+			$product_img.wc_set_variation_attr( 'alt', variation.image_alt );
 			$product_img.wc_set_variation_attr( 'srcset', variation.image_srcset );
 			$product_img.wc_set_variation_attr( 'sizes', variation.image_sizes );
 			$product_link.wc_set_variation_attr( 'href', variation.image_link );
