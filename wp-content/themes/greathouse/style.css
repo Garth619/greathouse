@@ -186,3 +186,31 @@ header .inner_header .header_logo_nav_wrapper .mobile_menu_wrapper .menu_bar {
   display: block;
   margin: 7px 0 33px 0;
 }
+
+/* Product Overlays */
+.single_product_square {
+  width: 100%;
+  text-align: center;
+}
+.single_product_square .product_overlay {
+  background: rgba(0, 0, 0, 0.8);
+  height: 280px;
+}
+.single_product_square .product_overlay .product_inner_wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.single_product_square .product_overlay .product_inner_wrapper span.large_header {
+  color: #7dccd8;
+  font-family: "oswaldregular", arial;
+  text-transform: uppercase;
+  font-size: 41px;
+  display: block;
+  margin-bottom: 10px;
+}
+.single_product_square .product_overlay .product_inner_wrapper span.sub_header {
+  color: #fff;
+  font-family: "Voltage W00 Regular", arial;
+  font-size: 26px;
+}

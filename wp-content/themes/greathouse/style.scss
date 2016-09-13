@@ -247,3 +247,34 @@ header {
 }
 
 
+/* Product Overlays */
+
+
+.single_product_square {
+	width:100%;
+	text-align: center;
+	.product_overlay {
+		background:rgba(0, 0, 0, 0.8);
+		height:280px;
+		.product_inner_wrapper {
+			  position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+			span.large_header {
+				color:$bluelight;
+				font-family: $oswaldreg;
+				text-transform: uppercase;
+				font-size:41px;
+				display: block;
+				margin-bottom: 10px;
+			}
+			span.sub_header {
+				color:#fff;
+				font-family: $voltagereg;
+				font-size:26px;
+			}
+		}
+	}
+}
+
+

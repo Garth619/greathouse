@@ -25,6 +25,28 @@ get_header(); ?>
 	
 </div><!-- main -->
 
+<div class="product_categories_wrapper">
+	
+	
+	<div class="single_product_square">
+		
+		<div class="product_overlay">
+			
+			<div class="product_inner_wrapper">
+				
+				<span class="large_header">Patio</span><!-- large_header -->
+				<span class="sub_header">shop now</span><!-- sub_header -->
+				
+			</div><!-- product_inner_wrapper -->
+			
+		</div><!-- product_overlay -->
+		
+		
+	</div><!-- single_product_square -->
+	
+	
+</div><!-- product_categories_wrapper -->
+
 
 
 <?php get_footer(); ?>
