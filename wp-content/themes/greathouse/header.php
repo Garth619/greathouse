@@ -82,4 +82,6 @@
 				</div><!-- inner_header -->
 				
 			</header>
-
+			
+			<section class="main">
+ 

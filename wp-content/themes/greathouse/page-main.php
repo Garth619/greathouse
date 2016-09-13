@@ -7,9 +7,9 @@
 get_header(); ?>
 
 
-<div class="main">
+
 	
-	<div class="main_banner_wrapper">
+	<section class="main_banner_wrapper">
 		
 		<div class="vertical_align">
 		
@@ -20,12 +20,12 @@ get_header(); ?>
 		
 		</div><!-- vertical_align -->
 		
-	</div><!-- main_banner_wrapper -->
+	</section><!-- main_banner_wrapper -->
 	
 	
-</div><!-- main -->
 
-<div class="product_categories_wrapper">
+
+<section class="product_categories_wrapper">
 	
 	
 	<div class="single_product_square">
@@ -188,7 +188,13 @@ get_header(); ?>
 	</div><!-- single_product_square -->
 	
 	
-</div><!-- product_categories_wrapper -->
+</section><!-- product_categories_wrapper -->
+
+<section class="new_arrivals_wrapper">
+	
+	<span class="large_header">new Arrivals</span><!-- large_header -->
+	
+</section><!-- new_arrivals_wrapper -->
 
 
 

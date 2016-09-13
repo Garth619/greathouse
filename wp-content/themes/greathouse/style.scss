@@ -160,7 +160,7 @@ body {
 header {
 	.inner_header {
 		.header_special_deal {
-			background: $bluelight;
+			background: $bluedark;
 			color:#fff;
 			text-transform: uppercase;
 			font-size: 14px;
@@ -212,7 +212,7 @@ header {
 				.menu_bar {
 					width:27px;
 					height:4px;
-					background: $bluelight;
+					background: $bluedark;
 					margin-bottom:4px;
 				}
 			}
@@ -265,7 +265,7 @@ header {
 				top: 50%;
 				transform: translateY(-50%);
 			span.large_header {
-				color:$bluelight;
+				color:$bluedark;
 				font-family: $oswaldreg;
 				text-transform: uppercase;
 				font-size:41px;
@@ -285,6 +285,20 @@ header {
 		position: absolute;
 		top:0;
 		left:0;
+	}
+}
+
+/* New Arrivals */
+
+.new_arrivals_wrapper {
+	text-align: center;
+	padding:56px 20px;
+	span.large_header {
+		font-family: $voltagereg;
+		color:$bluedark;
+		font-size:40px;
+		text-transform: lowercase;
+		
 	}
 }
 

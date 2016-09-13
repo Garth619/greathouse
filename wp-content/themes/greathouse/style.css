@@ -104,7 +104,7 @@ body {
 
 /* Header */
 header .inner_header .header_special_deal {
-  background: #7dccd8;
+  background: #79b7c0;
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
@@ -158,7 +158,7 @@ header .inner_header .header_logo_nav_wrapper .mobile_menu_wrapper {
 header .inner_header .header_logo_nav_wrapper .mobile_menu_wrapper .menu_bar {
   width: 27px;
   height: 4px;
-  background: #7dccd8;
+  background: #79b7c0;
   margin-bottom: 4px;
 }
 
@@ -206,7 +206,7 @@ header .inner_header .header_logo_nav_wrapper .mobile_menu_wrapper .menu_bar {
   transform: translateY(-50%);
 }
 .single_product_square .product_overlay .product_inner_wrapper span.large_header {
-  color: #7dccd8;
+  color: #79b7c0;
   font-family: "oswaldregular", arial;
   text-transform: uppercase;
   font-size: 41px;
@@ -224,4 +224,16 @@ header .inner_header .header_logo_nav_wrapper .mobile_menu_wrapper .menu_bar {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+/* New Arrivals */
+.new_arrivals_wrapper {
+  text-align: center;
+  padding: 56px 20px;
+}
+.new_arrivals_wrapper span.large_header {
+  font-family: "Voltage W00 Regular", arial;
+  color: #79b7c0;
+  font-size: 40px;
+  text-transform: lowercase;
 }
