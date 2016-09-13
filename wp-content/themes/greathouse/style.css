@@ -91,12 +91,23 @@ body {
   line-height: 1;
 }
 
+.white_button {
+  background: #fff;
+  color: #000;
+  display: inline-block;
+  font-family: "oswaldregular", arial;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 15px 30px;
+}
+
 /* Header */
 header .inner_header .header_special_deal {
   background: #7dccd8;
   color: #fff;
   text-transform: uppercase;
-  font-size: 17px;
+  font-size: 14px;
   font-family: "Didot W01 Bold";
   text-align: center;
   padding: 10px 0;
@@ -105,26 +116,26 @@ header .inner_header .header_special_deal {
 header .inner_header .header_special_deal .emphasis {
   color: #000;
   font-family: "oswaldregular", arial;
-  font-size: 15.69px;
+  font-size: 13px;
   letter-spacing: 1.2px;
 }
 header .inner_header .header_options {
   background: #f3f3f3;
-  padding: 15px;
+  padding: 10px;
   overflow: hidden;
 }
 header .inner_header .header_options img.search_img {
-  width: 19px;
+  width: 12px;
   float: left;
 }
 header .inner_header .header_options .cart_signin_wrapper {
   float: right;
   color: #7c786f;
   font-family: "oswaldregular", arial;
-  font-size: 14px;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  margin-top: 5px;
+  margin-top: 2px;
 }
 header .inner_header .header_options .cart_signin_wrapper span:first-of-type {
   margin-right: 16px;
@@ -133,19 +144,45 @@ header .inner_header .header_logo_nav_wrapper {
   background: #000;
 }
 header .inner_header .header_logo_nav_wrapper img.logo {
-  width: 215px;
-  padding: 22px 0px 16px 30px;
+  width: 225px;
+  padding: 15px 0 11px 25px;
 }
 header .inner_header .header_logo_nav_wrapper .mobile_menu_wrapper {
   float: right;
   width: 60px;
-  height: 60px;
+  height: 50px;
   background: #fff;
-  padding: 21px 0 0 15px;
+  padding: 17px 0 0 17px;
+  cursor: pointer;
 }
 header .inner_header .header_logo_nav_wrapper .mobile_menu_wrapper .menu_bar {
   width: 27px;
   height: 4px;
   background: #7dccd8;
   margin-bottom: 4px;
+}
+
+/* Main Banner */
+.main_banner_wrapper {
+  background: url(images/hero.jpg) top center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 360px;
+  text-align: center;
+  color: #fff;
+  font-family: "Didot- LP W01 Regular", arial;
+}
+.main_banner_wrapper .vertical_align {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main_banner_wrapper .vertical_align span.large_header {
+  font-size: 40px;
+  display: inline-block;
+}
+.main_banner_wrapper .vertical_align span.sub_header {
+  font-size: 22px;
+  display: block;
+  margin: 7px 0 33px 0;
 }

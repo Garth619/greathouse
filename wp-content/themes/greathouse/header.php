@@ -6,6 +6,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.
@@ -45,7 +46,7 @@
 					
 					<div class="header_special_deal">
 					
-						<span>Buy More, Save MorE<br/><span class="emphasis">GET UP TO 25% off with code <span style="color:#fff">megasale</span></span></span>
+<!-- 						<span>Buy More, Save MorE<br/> --><span class="emphasis">GET UP TO 25% off with code <span style="color:#fff">megasale</span></span><!-- </span> -->
 					
 					</div><!-- header_special_deal -->
 					
