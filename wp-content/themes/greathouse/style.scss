@@ -4,8 +4,71 @@ Author: iLawyermarketing - Garrett Cullen
 */
 
 
-/* Fonts.com and Google Fonts */
+/* Fontsdotcom and Google Fonts */
 
+
+/* Fontsdotcom */
+
+@font-face{
+        font-family:"Didot- LP W01 Regular";
+        src:url("fonts/fontsdotcom/Fonts/0405e28c-a009-41f2-b7ad-438a244f3d2d.eot?#iefix");
+        src:url("fonts/fontsdotcom/Fonts/0405e28c-a009-41f2-b7ad-438a244f3d2d.eot?#iefix") format("eot"),url("fonts/fontsdotcom/Fonts/7cb0e76c-c4ed-4905-8d6f-51d2d6f240c8.woff2") format("woff2"),url("fonts/fontsdotcom/Fonts/9d681deb-77a0-4210-a8ac-c94fb57c074d.woff") format("woff"),url("fonts/fontsdotcom/Fonts/30f41d8f-f96c-4d79-9361-f95f085ce75f.ttf") format("truetype"),url("fonts/fontsdotcom/Fonts/b7976644-7ee2-4ea6-b715-9e732ef2ac0e.svg#b7976644-7ee2-4ea6-b715-9e732ef2ac0e") format("svg");
+    }
+		 @font-face{
+        font-family:"Didot W01 Bold";
+        src:url("fonts/fontsdotcom/Fonts/6adf1098-6e5c-458f-a68a-2de77db01a73.eot?#iefix");
+        src:url("fonts/fontsdotcom/Fonts/6adf1098-6e5c-458f-a68a-2de77db01a73.eot?#iefix") format("eot"),url("fonts/fontsdotcom/Fonts/5cc88c79-07f5-4dc3-808c-0a24f606acff.woff2") format("woff2"),url("fonts/fontsdotcom/Fonts/8c847ae1-0c02-4e9a-9203-c294e4a23fe1.woff") format("woff"),url("fonts/fontsdotcom/Fonts/bae6ce0f-deaf-4f99-bdf6-de7f2cf54d04.ttf") format("truetype"),url("fonts/fontsdotcom/Fonts/d62df477-3d45-4345-95a9-eac5dcd4b116.svg#d62df477-3d45-4345-95a9-eac5dcd4b116") format("svg");
+    }
+    @font-face{
+        font-family:"Voltage W00 Light";
+        src:url("fonts/fontsdotcom/Fonts/75fdf15d-71cf-4f78-a641-acaa5905bf07.eot?#iefix");
+        src:url("fonts/fontsdotcom/Fonts/75fdf15d-71cf-4f78-a641-acaa5905bf07.eot?#iefix") format("eot"),url("fonts/fontsdotcom/Fonts/c7580a09-eaab-421b-b2d6-8403bd8f1917.woff2") format("woff2"),url("fonts/fontsdotcom/Fonts/f4451386-1c9a-4e7b-9f04-79fd90a0b4aa.woff") format("woff"),url("fonts/fontsdotcom/Fonts/b04fc401-e29d-4a19-84fa-f9f312019407.ttf") format("truetype"),url("fonts/fontsdotcom/Fonts/cf47b9a6-2b94-437a-93c4-1395946896af.svg#cf47b9a6-2b94-437a-93c4-1395946896af") format("svg");
+    }
+    @font-face{
+        font-family:"Voltage W00 Regular";
+        src:url("fonts/fontsdotcom/Fonts/30d07e38-a7d2-45f0-aeb8-1ed37a524602.eot?#iefix");
+        src:url("fonts/fontsdotcom/Fonts/30d07e38-a7d2-45f0-aeb8-1ed37a524602.eot?#iefix") format("eot"),url("fonts/fontsdotcom/Fonts/535df0ba-abd3-4e0f-8be9-1ba9139bb8ce.woff2") format("woff2"),url("fonts/fontsdotcom/Fonts/95055a54-53d9-4801-9430-7c389f4cec7a.woff") format("woff"),url("fonts/fontsdotcom/Fonts/8a08c710-3ca8-4f8a-8bc6-e1ac653b99d6.ttf") format("truetype"),url("fonts/fontsdotcom/Fonts/dd9c73cc-74df-4859-b211-d0fa56941d99.svg#dd9c73cc-74df-4859-b211-d0fa56941d99") format("svg");
+    }
+    @font-face{
+        font-family:"Voltage W00 Bold";
+        src:url("fonts/fontsdotcom/Fonts/cb01ce3f-f394-44b8-8a3d-2b69cecd81b4.eot?#iefix");
+        src:url("fonts/fontsdotcom/Fonts/cb01ce3f-f394-44b8-8a3d-2b69cecd81b4.eot?#iefix") format("eot"),url("fonts/fontsdotcom/Fonts/ed2de369-883d-4075-aef3-de3a176b54dc.woff2") format("woff2"),url("fonts/fontsdotcom/Fonts/69ec070c-d546-4614-a794-62e1cd78868b.woff") format("woff"),url("fonts/fontsdotcom/Fonts/2ab0a1fd-8040-4463-b1bf-861f2a75f443.ttf") format("truetype"),url("fonts/fontsdotcom/Fonts/1c66876c-c606-4111-8cbf-ec32478457a5.svg#1c66876c-c606-4111-8cbf-ec32478457a5") format("svg");
+    }
+    
+		
+    
+    
+/* Google Fonts */
+
+
+
+@font-face {
+    font-family: 'oswaldbold';
+    src: url('fonts/googlefont/oswald-bold-webfont.woff2') format('woff2'),
+         url('fonts/googlefont/oswald-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+@font-face {
+    font-family: 'oswaldlight';
+    src: url('fonts/googlefont/oswald-light-webfont.woff2') format('woff2'),
+         url('fonts/googlefont/oswald-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'oswaldregular';
+    src: url('fonts/googlefont/oswald-regular-webfont.woff2') format('woff2'),
+         url('fonts/googlefont/oswald-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 
 /* Reset */
@@ -18,10 +81,16 @@ a {outline: none;}
 a img {border:none}
 
 
-*, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 
-html {-webkit-text-size-adjust: 100%;} // Disables scaling on landscape mobile
+html {
+	-webkit-text-size-adjust: 100%;
+} // Disables scaling on landscape mobile
 
 
 body {
@@ -45,7 +114,98 @@ $black: #000;
 $blackmed: #2f2f2f;
 $grey: #777777;
 $greylight:#f3f3f3;
+$greyfont:#7c786f;
+$bluedark: #79b7c0;
+$bluelight: #7dccd8;
+$bluegrey: #cbdfe2;
+
 
 /* Fonts */
+
+
+$didot: "Didot- LP W01 Regular", arial;
+$didotbold:"Didot W01 Bold";
+$voltagelight:"Voltage W00 Light", arial;
+$voltagereg:"Voltage W00 Regular", arial;
+$voltagebold:"Voltage W00 Bold", arial;
+$oswaldlight:'oswaldlight', arial;
+$oswaldreg: 'oswaldregular', arial;
+$oswaldbold: 'oswaldbold', arial;
+
+
+/* Global */
+
+
+body {
+	font-family: $didot;
+	line-height: 1;
+}
+
+
+
+/* Header */
+
+
+header {
+	.inner_header {
+		.header_special_deal {
+			background: $bluelight;
+			color:#fff;
+			text-transform: uppercase;
+			font-size: 17px;
+			font-family: $didotbold;
+			text-align: center;
+			padding:10px 0;
+			line-height: 1.5;
+			.emphasis {
+				color:#000;
+				font-family: $oswaldreg;
+				font-size:15.69px;
+				letter-spacing: 1.2px;
+			}
+		}
+		.header_options {
+			background:$greylight;
+			padding:15px;
+			overflow: hidden;
+			img.search_img {
+				width:19px;
+				float:left;
+			}
+			.cart_signin_wrapper {
+				float:right;
+				color:$greyfont;
+				font-family: $oswaldreg;
+				font-size:14px;
+				text-transform: uppercase;
+				letter-spacing: 1.2px;
+				margin-top:5px;
+				span:first-of-type {
+					margin-right:16px;
+				}
+			}
+		}
+		.header_logo_nav_wrapper {
+			background:#000;
+			img.logo {
+				width:215px;
+				padding:22px 0px 16px 30px;
+			}
+			.mobile_menu_wrapper {
+				float:right;
+				width:60px;
+				height: 60px;
+				background:#fff;
+				padding:21px 0 0 15px;
+				.menu_bar {
+					width:27px;
+					height:4px;
+					background: $bluelight;
+					margin-bottom:4px;
+				}
+			}
+		}
+	}
+}
 
 

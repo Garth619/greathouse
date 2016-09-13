@@ -43,7 +43,40 @@
 				
 				<div class="inner_header">
 					
+					<div class="header_special_deal">
 					
+						<span>Buy More, Save MorE<br/><span class="emphasis">GET UP TO 25% off with code <span style="color:#fff">megasale</span></span></span>
+					
+					</div><!-- header_special_deal -->
+					
+					<div class="header_options">
+						
+						<img class="search_img" src="<?php bloginfo('template_directory');?>/images/search.png"/>
+						
+						<div class="cart_signin_wrapper">
+							
+							<span>Cart</span>
+							<span>Sign In</span>
+							
+						</div><!-- cart_signin_wrapper -->
+						
+					</div><!-- header_options -->
+					
+					<div class="header_logo_nav_wrapper">
+						
+						<a href="">
+							<img class="logo" src="<?php bloginfo('template_directory');?>/images/logo.png"/>
+						</a>
+				
+						<div class="mobile_menu_wrapper">
+							
+							<div class="menu_bar"></div><!-- menu_bar -->
+							<div class="menu_bar"></div><!-- menu_bar -->
+							<div class="menu_bar"></div><!-- menu_bar -->
+							
+						</div><!-- mobile_menu_wrapper -->
+						
+					</div><!-- header_logo_nav_wrapper -->
 					
 				</div><!-- inner_header -->
 				

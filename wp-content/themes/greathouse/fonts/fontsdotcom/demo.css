@@ -1,6 +1,11 @@
 
 @import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=2bdd9526-83df-4304-8893-26e6ea04384b");
     @font-face{
+        font-family:"Didot W01 Bold";
+        src:url("Fonts/6adf1098-6e5c-458f-a68a-2de77db01a73.eot?#iefix");
+        src:url("Fonts/6adf1098-6e5c-458f-a68a-2de77db01a73.eot?#iefix") format("eot"),url("Fonts/5cc88c79-07f5-4dc3-808c-0a24f606acff.woff2") format("woff2"),url("Fonts/8c847ae1-0c02-4e9a-9203-c294e4a23fe1.woff") format("woff"),url("Fonts/bae6ce0f-deaf-4f99-bdf6-de7f2cf54d04.ttf") format("truetype"),url("Fonts/d62df477-3d45-4345-95a9-eac5dcd4b116.svg#d62df477-3d45-4345-95a9-eac5dcd4b116") format("svg");
+    }
+    @font-face{
         font-family:"Didot- LP W01 Regular";
         src:url("Fonts/0405e28c-a009-41f2-b7ad-438a244f3d2d.eot?#iefix");
         src:url("Fonts/0405e28c-a009-41f2-b7ad-438a244f3d2d.eot?#iefix") format("eot"),url("Fonts/7cb0e76c-c4ed-4905-8d6f-51d2d6f240c8.woff2") format("woff2"),url("Fonts/9d681deb-77a0-4210-a8ac-c94fb57c074d.woff") format("woff"),url("Fonts/30f41d8f-f96c-4d79-9361-f95f085ce75f.ttf") format("truetype"),url("Fonts/b7976644-7ee2-4ea6-b715-9e732ef2ac0e.svg#b7976644-7ee2-4ea6-b715-9e732ef2ac0e") format("svg");
