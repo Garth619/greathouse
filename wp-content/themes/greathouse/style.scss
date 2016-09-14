@@ -150,6 +150,21 @@ body {
 	text-decoration: none;
 	font-size:14px;
 	padding:15px 30px;
+	letter-spacing: 1.1px;
+}
+
+
+.transparent_button {
+	border: 1px solid $black;
+	color:#000;
+	display: inline-block;
+	font-family: $oswaldreg;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size:14px;
+	padding:11px 20px 9px;
+	letter-spacing: 1.1px;
+	
 }
 
 
@@ -299,6 +314,148 @@ header {
 		font-size:40px;
 		text-transform: lowercase;
 		
+	}
+}
+
+/* Custom Design Services */
+
+.custom_design_services {
+	text-align: center;
+	background:url(images/personalize_bg.jpg) top center;
+	background-size:cover;
+	width:100%;
+	padding:97px 0;
+	span.sub_header {
+		color:#fff;
+		font-family: $oswaldreg;
+		text-transform: uppercase;
+		font-size:18px;
+		letter-spacing: 1.1px;
+	}
+	.blue_block {
+		width:75px;
+		height:5px;
+		background:$bluelight;
+		display: block;
+		margin:30px auto 0;
+	}
+	span.large_header {
+		font-family: $voltagelight;
+		color:$bluelight;
+		font-size:58px;
+		margin:40px 0;
+		display: inline-block;
+		line-height:0.9;
+		
+	}
+}
+
+/* A Life Well Lived */
+
+.life_well_lived {
+	padding:56px 35px;
+	span.large_header {
+		font-family: $oswaldreg;
+		font-size: 42.5px;
+		text-transform: uppercase;
+		line-height:1.2;
+		margin-bottom:100px;
+		display: inline-block;
+	}
+	p {
+		font-family: $didot;
+		font-size:19px;
+		line-height:1.4;
+		margin-bottom:40px;
+		&:last-of-type {
+			margin-bottom:0;
+		}
+	}
+	span.quote {
+		font-family: $voltagereg;
+		font-size:40px;
+		color: $bluedark;
+		display:block;
+		margin: 60px auto 0;
+		text-align: left;
+		width: 256px;
+	}
+}
+
+
+/* Keyholder */
+
+
+.keyholder {
+	background:url(images/key-mobile.jpg) top center no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding:80px 0;
+	height:244px;
+	.inner_keyholder {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		span.sub_header {
+			font-family: $voltagelight;
+			font-size:21px;
+			display: block;
+			margin-bottom:12px;
+		}
+		span.large_header {
+			font-family: $oswaldreg;
+			font-size:30px;
+			text-transform: uppercase;
+			letter-spacing: 1.2px;
+			margin-bottom: 18px;
+			display: inline-block;
+		}
+	}
+}
+
+
+/* Footer */
+
+
+footer {
+	background: url(images/footer_pattern.jpg) top left repeat;
+	width:100%;
+	padding:55px;
+	.inner_footer {
+		span.large_header {
+			font-family: $voltagereg;
+			text-transform: lowercase;
+			font-size:30px;
+			margin-bottom:25px;
+			display: block;
+		}
+		.locations {
+			border-bottom:1px solid #a6a6a6;
+			.location {
+				margin-bottom:50px;
+				.address {
+					font-family: $oswaldreg;
+					color:$grey;
+					display: block;
+					margin-bottom:15px;
+					line-height:1.3;
+				}
+				.phone {
+					display: block;
+					font-family: $oswaldreg;
+					font-size:18px;
+					margin-bottom:25px;
+					
+				}
+				.get_directions {
+					font-family: $voltagereg;
+					font-size: 20px;
+					color:$bluedark;
+					text-decoration: none;
+					text-transform: lowercase;
+				}
+			}
+		}
 	}
 }
 

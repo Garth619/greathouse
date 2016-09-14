@@ -24463,53 +24463,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/wp-content\/themes\/greathouse\/fonts\/fontsdotcom.og\/demo-async.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/greathouse\/fonts\/fontsdotcom.og\/demo-async.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/greathouse\/fonts\/fontsdotcom.og\/demo-async.htm": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/greathouse\/fonts\/fontsdotcom.og\/demo-async.htm",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/greathouse\/fonts\/fontsdotcom.og\/demo.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/greathouse\/fonts\/fontsdotcom.og\/demo.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/greathouse\/fonts\/fontsdotcom.og\/demo.htm": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/greathouse\/fonts\/fontsdotcom.og\/demo.htm",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/greathouse\/fonts\/fontsdotcom.og\/mtiFontTrackingCode.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/greathouse\/fonts\/fontsdotcom.og\/mtiFontTrackingCode.js",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/greathouse\/fonts\/fontsdotcom.og\/min\/mtiFontTrackingCode-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/wp-content\/themes\/greathouse\/fonts\/fontsdotcom\/demo-async.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -25045,6 +24998,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/themes\/greathouse\/images\/footer_pattern.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31985,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/greathouse\/images\/footer_pattern.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/greathouse\/images\/footer_pattern.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/themes\/greathouse\/images\/footer_pattern.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -25151,6 +25115,17 @@
 		"initialSize": 66738,
 		"inputAbbreviatedPath": "\/wp-content\/themes\/greathouse\/images\/hero_mob.jpg",
 		"outputAbbreviatedPath": "\/wp-content\/themes\/greathouse\/images\/hero_mob.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/greathouse\/images\/key-mobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26238,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/greathouse\/images\/key-mobile.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/greathouse\/images\/key-mobile.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
