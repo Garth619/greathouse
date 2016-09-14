@@ -46,18 +46,25 @@
 					
 					<div class="header_special_deal">
 					
-<!-- 						<span>Buy More, Save MorE<br/> --><span class="emphasis">GET UP TO 25% off with code <span style="color:#fff">megasale</span></span><!-- </span> -->
+						
+						<span class="mobile_deal emphasis">GET UP TO 25% off with code <span style="color:#fff">megasale</span></span>
+						<span class="tablet_deal">Buy More, Save MorE <span class="emphasis">&nbsp;GET UP TO 25% off with code <span style="color:#fff">megasale</span></span></span>
+						
 					
 					</div><!-- header_special_deal -->
 					
 					<div class="header_options">
 						
-						<img class="search_img" src="<?php bloginfo('template_directory');?>/images/search.png"/>
+						<div class="header_options_inner">
 						
-						<div class="cart_signin_wrapper">
+							<img class="search_img" src="<?php bloginfo('template_directory');?>/images/search.png"/>
+						
+							<div class="cart_signin_wrapper">
 							
-							<span>Cart</span>
-							<span>Sign In</span>
+								<span>Cart</span>
+								<span>Sign In</span>
+							
+							</div><!-- header_options_inner -->
 							
 						</div><!-- cart_signin_wrapper -->
 						
@@ -65,9 +72,14 @@
 					
 					<div class="header_logo_nav_wrapper">
 						
-						<a href="">
-							<img class="logo" src="<?php bloginfo('template_directory');?>/images/logo.png"/>
-						</a>
+						
+						<div class="logo_wrapper">
+						
+							<a href="">
+								<img class="logo" src="<?php bloginfo('template_directory');?>/images/logo.png"/>
+							</a>
+						
+						</div><!-- logo_wrapper -->
 				
 						<div class="mobile_menu_wrapper">
 							
@@ -77,7 +89,8 @@
 							
 						</div><!-- mobile_menu_wrapper -->
 						
-					</div><!-- header_logo_nav_wrapper -->
+						</div><!-- header_logo_nav_wrapper -->
+				
 					
 				</div><!-- inner_header -->
 				

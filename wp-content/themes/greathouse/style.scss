@@ -183,6 +183,9 @@ header {
 			text-align: center;
 			padding:10px 0;
 			line-height: 1.5;
+			.tablet_deal {
+				display:none;
+			}
 			.emphasis {
 				color:#000;
 				font-family: $oswaldreg;
@@ -212,23 +215,30 @@ header {
 			}
 		}
 		.header_logo_nav_wrapper {
+			overflow:hidden;
 			background:#000;
-			img.logo {
+			.logo_wrapper {
+				float:left;
+				background:#000;
+				padding: 18px 25px 13px;
 				width:225px;
-				padding: 15px 0 11px 25px;
+				img.logo {
+					max-width:100%;
+					height:auto;
+				}
 			}
 			.mobile_menu_wrapper {
-				float:right;
-				width:60px;
-				height: 50px;
-				background:#fff;
-				padding:17px 0 0 17px;
+				background: #fff none repeat scroll 0 0;
 				cursor: pointer;
+				float: right;
+				height: 52px;
+				padding: 19px 0 0 17px;
+				width: 60px;
 				.menu_bar {
 					width:27px;
-					height:4px;
+					height:3px;
 					background: $bluedark;
-					margin-bottom:4px;
+					margin-bottom:3px;
 				}
 			}
 		}
@@ -513,3 +523,101 @@ footer {
 	font-size:13px;
 	line-height:1.4;
 }
+
+
+@media screen and (min-width: 750px) {
+
+
+/* Global */
+
+.white_button {
+	padding:17px 30px;
+	font-size:21px;
+}
+
+	
+/* Header */
+
+
+header {
+	.inner_header {
+		.header_special_deal {
+			font-size:18px;
+			padding:15px 0;
+			.tablet_deal {
+				display:inline-block;
+			}
+			.mobile_deal {
+				display:none;
+			}
+			.emphasis {
+				font-size:15px;
+			}
+		}
+		.header_options {
+			padding:15px;
+			.header_options_inner {
+				float:right;
+				img.search_img {
+					width:20px;
+				}
+				.cart_signin_wrapper {
+					float:left;
+					font-size:14px;
+					margin-top: 5px;
+					span:first-of-type {
+						margin:0 25px;
+					}
+				}
+			}
+		}
+		.header_logo_nav_wrapper {
+			background: #fff;
+			.logo_wrapper {
+				background: #000 none repeat scroll 0 0;
+				float: left;
+				padding: 15px 30px 9px;
+				width: 374px;
+				&:after {
+					content:"indoor + outdoor";
+					display:block;
+					float:right;
+					margin:4px -213px 0 0px;
+					margin-right:-200px;
+					font-size:20px;
+					font-family: $didotbold;
+					
+				}
+			}
+			.mobile_menu_wrapper {
+				height:59px;
+				padding: 22px 0 0 17px;
+				.menu_bar {
+					
+				}
+			}
+		}
+	}
+}
+
+
+/* Main Banner */ 
+
+.main_banner_wrapper {
+	height:615px;
+	.vertical_align {
+		 
+		span.large_header {
+			font-size: 80px;
+			max-width:545px;
+		}
+		span.sub_header {
+			font-size:39px;
+			margin:14px 0 50px;
+		}
+	}
+}
+
+	
+	
+} /* Media Query */

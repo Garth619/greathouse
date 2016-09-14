@@ -79,7 +79,7 @@
 	
 </footer>
 
-<div class="copyright">Copyright 2016&copy; Greathouse Furniture.<br/>All rights reserved.</div>
+<div class="copyright">Copyright 2016&copy; Greathouse Furniture.<br/>All rights reserved. Sitemap &nbsp;|&nbsp; Google+</div>
 	
 <?php wp_footer(); ?>
 
