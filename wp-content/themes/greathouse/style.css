@@ -421,3 +421,13 @@ footer .inner_footer span.large_header {
 .footer_menu ul li:last-of-type {
   margin-bottom: 0;
 }
+
+.copyright {
+  text-align: center;
+  padding: 15px;
+  font-family: "oswaldregular", arial;
+  text-transform: uppercase;
+  color: #777777;
+  font-size: 13px;
+  line-height: 1.4;
+}

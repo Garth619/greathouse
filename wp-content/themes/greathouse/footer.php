@@ -78,6 +78,8 @@
 	</div><!-- inner_footer -->
 	
 </footer>
+
+<div class="copyright">Copyright 2016&copy; Greathouse Furniture.<br/>All rights reserved.</div>
 	
 <?php wp_footer(); ?>
 
