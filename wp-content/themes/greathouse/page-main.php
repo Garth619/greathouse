@@ -11,6 +11,8 @@ get_header(); ?>
 	
 	<section class="main_banner_wrapper">
 		
+		<div class="awards">Awards</div><!-- awards -->
+		
 		<div class="vertical_align">
 		
 			<span class="large_header">Colony Leather Sectional</span>
@@ -22,8 +24,6 @@ get_header(); ?>
 		
 	</section><!-- main_banner_wrapper -->
 	
-	
-
 
 <section class="product_categories_wrapper">
 	

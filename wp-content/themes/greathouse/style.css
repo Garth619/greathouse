@@ -194,6 +194,10 @@ header .inner_header .header_logo_nav_wrapper .mobile_menu_wrapper .menu_bar {
   text-align: center;
   color: #fff;
   font-family: "Didot- LP W01 Regular", arial;
+  position: relative;
+}
+.main_banner_wrapper .awards {
+  display: none;
 }
 .main_banner_wrapper .vertical_align {
   position: relative;
@@ -506,6 +510,22 @@ footer .inner_footer span.large_header {
   /* Main Banner */
   .main_banner_wrapper {
     height: 615px;
+  }
+  .main_banner_wrapper .awards {
+    display: block;
+    position: absolute;
+    top: 241px;
+    left: -47px;
+    color: #000;
+    background: #fff;
+    font-size: 19px;
+    font-family: "Didot W01 Bold";
+    text-transform: uppercase;
+    padding: 5px 15px;
+    letter-spacing: 1.2px;
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
   }
   .main_banner_wrapper .vertical_align span.large_header {
     font-size: 80px;

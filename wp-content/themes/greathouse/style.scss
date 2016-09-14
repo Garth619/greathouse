@@ -255,6 +255,10 @@ header {
 	text-align: center;
 	color:#fff;
 	font-family: $didot;
+	position: relative;
+	.awards {
+		display:none;
+	}
 	.vertical_align {
 		 position: relative;
 		 top: 50%;
@@ -605,6 +609,22 @@ header {
 
 .main_banner_wrapper {
 	height:615px;
+	.awards {
+		display: block;
+		position: absolute;
+		top: 241px;
+		left: -47px;
+		color:#000;
+		background:#fff;
+		font-size:19px;
+		font-family:$didotbold;
+		text-transform: uppercase;
+		padding:5px 15px;
+		letter-spacing: 1.2px;
+		-ms-transform: rotate(-90deg); 
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+	}
 	.vertical_align {
 		 
 		span.large_header {
