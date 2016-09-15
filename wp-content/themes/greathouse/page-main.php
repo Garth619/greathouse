@@ -211,7 +211,9 @@ get_header(); ?>
 
 <section class="life_well_lived">
 	
-	<span class="large_header">A Life Well Lived Begins With a GREATHOUSE</span><!-- large_header -->
+	<span class="large_header">A Life Well Lived Begins <br class="tablet_break"/>With a GREATHOUSE</span><!-- large_header -->
+	
+	<div class="life_well_lived_content">
 	
 	<p>We invite you to visit one of our award winning showrooms (San Diego & Carlsbad) to discover a home of possibilities.</p> 
 
@@ -219,13 +221,15 @@ get_header(); ?>
 
 	<p>As you tour the showroom you will discover San Diego's most unique and diverse selection of custom upholstery, sofas and sectionals.  With over one thousand designer fabrics to choose from you are sure to find the look that is uniquely yours.  Highlighting the showroom are name brands such as: Lexington, Stanley, Jonathan Adler, Teodora, Cisco Brothers, Classic Home, Camerich along with many others.</p>
 	
+	</div><!-- life_well_lived_content -->
+	
 
-<span class="quote">“let yourself in”<br/>- greathouse</span>
+<span class="quote">“let yourself in”<br class="pull_quote_break"/>- greathouse</span>
 
 	
 </section><!-- life_well_lived -->
 
-<section class="keyholder">
+<section class="keyholder mobile">
 	
 	<div class="inner_keyholder">
 	
@@ -238,6 +242,34 @@ get_header(); ?>
 	</div><!-- inner_keyholder -->
 	
 </section><!-- keyholder -->
+
+
+<section class="threeboxes_desktop">
+	
+	<div class="keyholder">
+		
+		<div class="inner_keyholder">
+		
+			<span class="sub_header">become a member</span><!-- sub_header -->
+			<span class="large_header">Keyholder<br/>Club</span><!-- sub_header -->
+		
+			<a href="" class="transparent_button">Sign Up Today</a>
+			
+		</div><!-- inner_keyholder -->
+		
+	</div><!-- keyholder -->
+	
+	<div class="shop_accessories">
+		
+		<div class="shop_bar">
+			
+			<div class="shop">Shop</div><!-- shop -->
+			
+		</div><!-- shop_bar -->
+		
+	</div><!-- shop_accessories -->
+
+</section><!-- threeboxes_desktop -->
 
 
 

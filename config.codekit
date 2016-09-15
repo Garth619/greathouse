@@ -25130,6 +25130,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/themes\/greathouse\/images\/keytab.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25982,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/greathouse\/images\/keytab.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/greathouse\/images\/keytab.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/themes\/greathouse\/images\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
