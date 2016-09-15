@@ -268,9 +268,22 @@ get_header(); ?>
 			
 		</div><!-- shop_bar -->
 		
-		
-		
 	</div><!-- shop_accessories -->
+	
+	<div class="seasonal_features">
+		
+		<div class="shop_bar">
+			
+			<div class="shop">Shop</div><!-- shop -->
+			<div class="shop_cta">Seasonal Features</div><!-- shop_cta -->
+			
+		</div><!-- shop_bar -->
+		
+		</div><!-- shop_accessories -->
+		
+	</div><!-- seasonal_features -->
+	
+
 
 </section><!-- threeboxes_desktop -->
 
