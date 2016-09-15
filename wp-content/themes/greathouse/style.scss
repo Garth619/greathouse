@@ -802,15 +802,41 @@ br.tablet_break {
 	background-size:cover;
 	height:400px;
 	margin-left:1%;
+	position: relative;
 	.shop_bar {
+		background: rgba(255, 255, 255, 0.7);
+		position: absolute;
+		bottom:28px;
+		width:77%;
+		right:0;
 		.shop {
 			background:#fff;
 			color:$bluedark;
 			font-family: $oswaldreg;
 			text-transform: uppercase;
 			font-size:15px;
-			padding:16px;
+			padding:19px 16px;
 			display: inline-block;
+			float:left;
+		}
+		.shop_cta {
+			float:left;
+			text-transform: uppercase;
+			font-size:15px;
+			font-family: $oswaldreg;
+			margin-top:9px;
+			margin-left:16px;
+			letter-spacing:0.8px;
+			&:after {
+				content: "";
+				background:url(images/arrow.png) top left no-repeat;
+				width:68px;
+				height:23px;
+				display: inline-block;
+				position: relative;
+				top:4px;
+				left:23px
+			}
 		}
 	}
 }

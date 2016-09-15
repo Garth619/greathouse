@@ -264,8 +264,11 @@ get_header(); ?>
 		<div class="shop_bar">
 			
 			<div class="shop">Shop</div><!-- shop -->
+			<div class="shop_cta">Accessories</div><!-- shop_cta -->
 			
 		</div><!-- shop_bar -->
+		
+		
 		
 	</div><!-- shop_accessories -->
 
