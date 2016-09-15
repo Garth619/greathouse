@@ -376,7 +376,7 @@ footer .inner_footer span.large_header {
   display: block;
 }
 
-.footer_logo {
+.footer_logo, .footer_menu.tablet {
   display: none;
 }
 
@@ -731,6 +731,10 @@ footer .inner_footer span.large_header {
   }
 
   /* Footer */
+  footer .inner_footer span.large_header {
+    font-size: 35px;
+  }
+
   .footer_logo {
     display: block;
     margin: 0 auto;
@@ -749,81 +753,40 @@ footer .inner_footer span.large_header {
     margin-top: 23px;
   }
 
-  .locations {
-    border-bottom: 1px solid #a6a6a6;
-  }
-  .locations .location {
-    margin-bottom: 50px;
-  }
-  .locations .location .address {
-    font-family: "oswaldregular", arial;
-    color: #777777;
+  .footer_menu.tablet {
     display: block;
-    margin-bottom: 15px;
-    line-height: 1.4;
-    text-decoration: none;
-    font-size: 15px;
-    letter-spacing: 0.9px;
-  }
-  .locations .location .phone {
-    display: block;
-    font-family: "oswaldregular", arial;
-    font-size: 18px;
-    margin-bottom: 25px;
-    color: #000;
-    text-decoration: none;
-  }
-  .locations .location .get_directions {
-    font-family: "Voltage W00 Regular", arial;
-    font-size: 20px;
-    color: #79b7c0;
-    text-decoration: none;
-    text-transform: lowercase;
   }
 
-  .follow_us {
-    padding: 35px 0;
-    border-bottom: 1px solid #a6a6a6;
-  }
-  .follow_us .social_icons a {
-    display: inline-block;
-  }
-  .follow_us .social_icons a .social_icon {
-    width: 46px;
-    height: 46px;
-    border: #777777 1px solid;
-    padding: 11px;
-    margin: 0 2px 4px;
+  .footer_menu.mobile {
+    display: none;
   }
 
   .footer_menu {
-    padding: 35px 0 0;
+    width: 40%;
+    float: left;
+    padding-top: 60px;
   }
   .footer_menu ul {
-    list-style: none;
+    padding-top: 0px;
   }
   .footer_menu ul li {
-    font-family: "oswaldregular", arial;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    margin-bottom: 22px;
-  }
-  .footer_menu ul li a {
-    color: #777777;
-    text-decoration: none;
-  }
-  .footer_menu ul li:last-of-type {
-    margin-bottom: 0;
+    font-size: 14px;
+    margin-bottom: 25px;
   }
 
-  .copyright {
-    text-align: center;
-    padding: 15px;
-    font-family: "oswaldregular", arial;
-    text-transform: uppercase;
-    font-size: 13px;
-    line-height: 1.4;
+  .locations {
+    width: 58%;
+    float: left;
+    padding-top: 60px;
+  }
+  .locations .location:first-of-type {
+    float: left;
+  }
+  .locations .location:last-of-type {
+    float: right;
+  }
+  .locations .location {
+    width: auto;
   }
 }
 /* Media Query */

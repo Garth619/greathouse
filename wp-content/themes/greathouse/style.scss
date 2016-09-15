@@ -462,9 +462,11 @@ footer {
 	}
 }
 
-.footer_logo {
+.footer_logo, .footer_menu.tablet {
 	display: none;
 }
+
+
 
 
 .locations {
@@ -883,10 +885,11 @@ footer {
 	
 	.inner_footer {
 		span.large_header {
-			
+			font-size:35px;
 		}
 	}
 }
+
 
 .footer_logo {
 	display:block;
@@ -910,85 +913,76 @@ footer {
 }
 
 
+.footer_menu.tablet {
+	display: block;
+}
+
+.footer_menu.mobile {
+	display: none;
+}
+
+
+.footer_menu {
+	width:40%;
+	float:left;
+	padding-top:60px;
+	ul {
+		padding-top:0px;
+		li {
+			font-size:14px;
+			margin-bottom:25px;
+			a {
+				
+			}
+			&:last-of-type {
+				
+			}
+		}
+	}
+}
+
+
 .locations {
-	border-bottom:1px solid #a6a6a6;
+	width:58%;
+	float:left;
+	padding-top:60px;
+	.location:first-of-type {
+		float:left;
+	}
+	.location:last-of-type {
+		float:right;
+	}
 	.location {
-		margin-bottom:50px;
+		width:auto;
+		
 		.address {
-			font-family: $oswaldreg;
-			color:$grey;
-			display: block;
-			margin-bottom:15px;
-			line-height:1.4;
-			text-decoration: none;
-			font-size:15px;
-			letter-spacing: 0.9px;
+			
 		}
 		.phone {
-			display: block;
-			font-family: $oswaldreg;
-			font-size:18px;
-			margin-bottom:25px;
-			color:#000;
-			text-decoration: none;
+			
 		}
 		.get_directions {
-			font-family: $voltagereg;
-			font-size: 20px;
-			color:$bluedark;
-			text-decoration: none;
-			text-transform: lowercase;
+			
 		}
 	}
 }
 	
 
 .follow_us {
-	padding:35px 0;
-	border-bottom:1px solid #a6a6a6;
-	.social_icons {
+		.social_icons {
 		a {
-			display: inline-block;
+			
 			.social_icon {
-				width:46px;
-				height:46px;
-				border:$grey 1px solid;
-				padding: 11px;
-				margin:0 2px 4px;
+				
 			}
 		}
 	}
 }
 
-.footer_menu {
-	padding:35px 0 0;
-	ul {
-		list-style: none;
-		li {
-			font-family: $oswaldreg;
-			font-size:12px;
-			text-transform: uppercase;
-			letter-spacing: 1.2px;
-			margin-bottom:22px;
-			a {
-				color:$grey;
-				text-decoration: none;
-			}
-			&:last-of-type {
-				margin-bottom:0;
-			}
-		}
-	}
-}
+
 
 .copyright {
-	text-align: center;
-	padding:15px;
-	font-family: $oswaldreg;
-	text-transform: uppercase;
 	
-	font-size:13px;
-	line-height:1.4;
 }
 
 

@@ -14,6 +14,20 @@
 			
 		</div><!-- footer_logo -->
 		
+		
+		<div class="footer_menu tablet">
+			
+			<ul>
+				<li><a href="">Shop</a></li>
+				<li><a href="">DESIGN SERVICES</a></li>
+				<li><a href="">contract sales</a></li>
+				<li><a href="">national shipping</a></li>
+				<li><a href="">blog</a></li>
+			</ul>
+			
+		</div><!-- footer_menu -->
+		
+		
 		<div class="locations">
 			
 			<span class="large_header">store locations</span><!-- large_header -->
@@ -72,7 +86,7 @@
 			
 		</div><!-- follow_us -->
 		
-		<div class="footer_menu">
+		<div class="footer_menu mobile">
 			
 			<ul>
 				<li><a href="">Shop</a></li>
