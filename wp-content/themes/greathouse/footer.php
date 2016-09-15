@@ -5,6 +5,15 @@
 	
 	<div class="inner_footer">
 		
+		<div class="footer_logo">
+			
+			<a href="">
+				<img src="<?php bloginfo('template_directory');?>/images/footer-logo.jpg"/>
+				<span>indoor + outdoor</span>
+			</a>
+			
+		</div><!-- footer_logo -->
+		
 		<div class="locations">
 			
 			<span class="large_header">store locations</span><!-- large_header -->

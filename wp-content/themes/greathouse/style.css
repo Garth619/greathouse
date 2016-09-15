@@ -136,7 +136,7 @@ header .inner_header .header_special_deal .emphasis {
   letter-spacing: 1.2px;
 }
 header .inner_header .header_options {
-  background: #f3f3f3;
+  background: #a6a6a6;
   padding: 10px;
   overflow: hidden;
 }
@@ -374,6 +374,10 @@ footer .inner_footer span.large_header {
   font-size: 30px;
   margin-bottom: 25px;
   display: block;
+}
+
+.footer_logo {
+  display: none;
 }
 
 .locations {
@@ -616,7 +620,7 @@ footer .inner_footer span.large_header {
   .threeboxes_desktop {
     display: block;
     overflow: hidden;
-    padding: 0 2%;
+    padding: 0 2% 2%;
   }
 
   .shop_bar {
@@ -637,7 +641,7 @@ footer .inner_footer span.large_header {
     text-transform: uppercase;
     font-size: 15px;
     font-family: "oswaldregular", arial;
-    margin-top: 9px;
+    margin-top: 10px;
     margin-left: 16px;
     letter-spacing: 0.8px;
   }
@@ -724,6 +728,102 @@ footer .inner_footer span.large_header {
   }
   .seasonal_features .shop_bar .shop_cta {
     color: #fff;
+  }
+
+  /* Footer */
+  .footer_logo {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #a6a6a6;
+    padding-bottom: 53px;
+  }
+  .footer_logo a {
+    text-decoration: none;
+  }
+  .footer_logo span {
+    display: block;
+    color: #000;
+    font-family: "Didot W01 Bold";
+    font-size: 20px;
+    margin-top: 23px;
+  }
+
+  .locations {
+    border-bottom: 1px solid #a6a6a6;
+  }
+  .locations .location {
+    margin-bottom: 50px;
+  }
+  .locations .location .address {
+    font-family: "oswaldregular", arial;
+    color: #777777;
+    display: block;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 0.9px;
+  }
+  .locations .location .phone {
+    display: block;
+    font-family: "oswaldregular", arial;
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #000;
+    text-decoration: none;
+  }
+  .locations .location .get_directions {
+    font-family: "Voltage W00 Regular", arial;
+    font-size: 20px;
+    color: #79b7c0;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+
+  .follow_us {
+    padding: 35px 0;
+    border-bottom: 1px solid #a6a6a6;
+  }
+  .follow_us .social_icons a {
+    display: inline-block;
+  }
+  .follow_us .social_icons a .social_icon {
+    width: 46px;
+    height: 46px;
+    border: #777777 1px solid;
+    padding: 11px;
+    margin: 0 2px 4px;
+  }
+
+  .footer_menu {
+    padding: 35px 0 0;
+  }
+  .footer_menu ul {
+    list-style: none;
+  }
+  .footer_menu ul li {
+    font-family: "oswaldregular", arial;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 22px;
+  }
+  .footer_menu ul li a {
+    color: #777777;
+    text-decoration: none;
+  }
+  .footer_menu ul li:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .copyright {
+    text-align: center;
+    padding: 15px;
+    font-family: "oswaldregular", arial;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 1.4;
   }
 }
 /* Media Query */

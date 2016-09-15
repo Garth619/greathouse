@@ -113,7 +113,7 @@ header, section, nav, footer {
 $black: #000;
 $blackmed: #2f2f2f;
 $grey: #777777;
-$greylight:#f3f3f3;
+$greylight:#a6a6a6;
 $greyfont:#7c786f;
 $bluedark: #79b7c0;
 $bluelight: #7dccd8;
@@ -462,6 +462,10 @@ footer {
 	}
 }
 
+.footer_logo {
+	display: none;
+}
+
 
 .locations {
 	border-bottom:1px solid #a6a6a6;
@@ -757,7 +761,7 @@ br.tablet_break {
 .threeboxes_desktop {
 	display: block;
 	overflow: hidden;
-	padding:0 2%;
+	padding:0 2% 2%;
 }
 
 
@@ -778,7 +782,7 @@ br.tablet_break {
 			text-transform: uppercase;
 			font-size:15px;
 			font-family: $oswaldreg;
-			margin-top:9px;
+			margin-top:10px;
 			margin-left:16px;
 			letter-spacing:0.8px;
 			&:after {
@@ -871,6 +875,122 @@ br.tablet_break {
 		}
 	}
 }
+
+/* Footer */
+
+
+footer {
+	
+	.inner_footer {
+		span.large_header {
+			
+		}
+	}
+}
+
+.footer_logo {
+	display:block;
+	margin:0 auto;
+	text-align: center;
+	border-bottom:1px solid $greylight;
+	padding-bottom:53px;
+	a {
+		text-decoration: none;
+	}
+	img {
+		
+	}
+	span {
+		display: block;
+		color:#000;
+		font-family:$didotbold;
+		font-size:20px;
+		margin-top:23px;
+	}
+}
+
+
+.locations {
+	border-bottom:1px solid #a6a6a6;
+	.location {
+		margin-bottom:50px;
+		.address {
+			font-family: $oswaldreg;
+			color:$grey;
+			display: block;
+			margin-bottom:15px;
+			line-height:1.4;
+			text-decoration: none;
+			font-size:15px;
+			letter-spacing: 0.9px;
+		}
+		.phone {
+			display: block;
+			font-family: $oswaldreg;
+			font-size:18px;
+			margin-bottom:25px;
+			color:#000;
+			text-decoration: none;
+		}
+		.get_directions {
+			font-family: $voltagereg;
+			font-size: 20px;
+			color:$bluedark;
+			text-decoration: none;
+			text-transform: lowercase;
+		}
+	}
+}
+	
+
+.follow_us {
+	padding:35px 0;
+	border-bottom:1px solid #a6a6a6;
+	.social_icons {
+		a {
+			display: inline-block;
+			.social_icon {
+				width:46px;
+				height:46px;
+				border:$grey 1px solid;
+				padding: 11px;
+				margin:0 2px 4px;
+			}
+		}
+	}
+}
+
+.footer_menu {
+	padding:35px 0 0;
+	ul {
+		list-style: none;
+		li {
+			font-family: $oswaldreg;
+			font-size:12px;
+			text-transform: uppercase;
+			letter-spacing: 1.2px;
+			margin-bottom:22px;
+			a {
+				color:$grey;
+				text-decoration: none;
+			}
+			&:last-of-type {
+				margin-bottom:0;
+			}
+		}
+	}
+}
+
+.copyright {
+	text-align: center;
+	padding:15px;
+	font-family: $oswaldreg;
+	text-transform: uppercase;
+	
+	font-size:13px;
+	line-height:1.4;
+}
+
 
 	
 	
