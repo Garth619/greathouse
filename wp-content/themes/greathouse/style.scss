@@ -326,11 +326,24 @@ header {
 .new_arrivals_wrapper {
 	text-align: center;
 	padding:56px 20px;
+	position: relative;
 	span.large_header {
 		font-family: $voltagereg;
 		color:$bluedark;
 		font-size:40px;
 		text-transform: lowercase;
+	}
+	.prev, .next {
+		width:17px;
+		position: absolute;
+		top:47%;
+		cursor: pointer;
+	}
+	.prev {
+		left:4.5%;
+	}
+	.next {
+		right:4.5%;
 	}
 	.new_arrival_slideshow {
 		margin:40px auto 0;
@@ -340,6 +353,7 @@ header {
 			img {
 				max-width:100%;
 				height:auto;
+				display: inline-block;
 			}
 			span {
 				display:block;
@@ -725,6 +739,44 @@ header {
 	padding:0px 2% 2%;
 	overflow: hidden;
 }
+
+
+
+/* New Arrivals */
+
+.new_arrivals_wrapper {
+	
+	span.large_header {
+		
+	}
+	.prev, .next {
+		width:22px;
+	}
+	.prev {
+		
+	}
+	.next {
+		
+	}
+	.new_arrival_slideshow {
+		
+		.slide {
+			margin-right:0.5%;
+			margin-left:0.5%;
+			img {
+				
+			}
+			span {
+				
+			}
+			a {
+				
+			}
+		}
+	}
+}
+
+
 
 
 

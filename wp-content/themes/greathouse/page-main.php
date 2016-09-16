@@ -198,6 +198,9 @@ get_header(); ?>
 	
 	<span class="large_header">new Arrivals</span><!-- large_header -->
 	
+	<img class="prev" src="<?php bloginfo('template_directory');?>/images/arrivals_prev.svg"/>
+	<img class="next" src="<?php bloginfo('template_directory');?>/images/arrivals_next.svg"/>
+	
 	<div class="new_arrival_slideshow">
 		
 		<div class="slide">

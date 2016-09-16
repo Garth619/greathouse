@@ -257,12 +257,25 @@ header .inner_header .header_logo_nav_wrapper .mobile_menu_wrapper .menu_bar {
 .new_arrivals_wrapper {
   text-align: center;
   padding: 56px 20px;
+  position: relative;
 }
 .new_arrivals_wrapper span.large_header {
   font-family: "Voltage W00 Regular", arial;
   color: #79b7c0;
   font-size: 40px;
   text-transform: lowercase;
+}
+.new_arrivals_wrapper .prev, .new_arrivals_wrapper .next {
+  width: 17px;
+  position: absolute;
+  top: 47%;
+  cursor: pointer;
+}
+.new_arrivals_wrapper .prev {
+  left: 4.5%;
+}
+.new_arrivals_wrapper .next {
+  right: 4.5%;
 }
 .new_arrivals_wrapper .new_arrival_slideshow {
   margin: 40px auto 0;
@@ -274,6 +287,7 @@ header .inner_header .header_logo_nav_wrapper .mobile_menu_wrapper .menu_bar {
 .new_arrivals_wrapper .new_arrival_slideshow .slide img {
   max-width: 100%;
   height: auto;
+  display: inline-block;
 }
 .new_arrivals_wrapper .new_arrival_slideshow .slide span {
   display: block;
@@ -594,6 +608,15 @@ footer .inner_footer span.large_header {
   .product_categories_wrapper {
     padding: 0px 2% 2%;
     overflow: hidden;
+  }
+
+  /* New Arrivals */
+  .new_arrivals_wrapper .prev, .new_arrivals_wrapper .next {
+    width: 22px;
+  }
+  .new_arrivals_wrapper .new_arrival_slideshow .slide {
+    margin-right: 0.5%;
+    margin-left: 0.5%;
   }
 
   /* Custom Design Services */
