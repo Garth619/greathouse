@@ -28,6 +28,8 @@ get_header(); ?>
 <section class="product_categories_wrapper">
 	
 	
+	<div class="product_inner">
+	
 	<div class="single_product_square">
 		
 		
@@ -187,12 +189,64 @@ get_header(); ?>
 		
 	</div><!-- single_product_square -->
 	
+	</div><!-- product_inner -->
+	
 	
 </section><!-- product_categories_wrapper -->
 
 <section class="new_arrivals_wrapper">
 	
 	<span class="large_header">new Arrivals</span><!-- large_header -->
+	
+	<div class="new_arrival_slideshow">
+		
+		<div class="slide">
+			
+			<a href="">
+				<img src="<?php bloginfo('template_directory');?>/images/arrival_1.png"/>
+				<span>LOREM IPSUM DOLOR SIT<br/>$59</span>
+			</a>
+			
+		</div><!-- slide -->
+		
+		<div class="slide">
+			
+			<a href="">
+				<img src="<?php bloginfo('template_directory');?>/images/arrival_2.png"/>
+				<span>LOREM IPSUM DOLOR SIT<br/>$59</span>
+			</a>
+			
+		</div><!-- slide -->
+		
+		<div class="slide">
+			
+			<a href="">
+				<img src="<?php bloginfo('template_directory');?>/images/arrival_3.png"/>
+				<span>LOREM IPSUM DOLOR SIT<br/>$59</span>
+			</a>
+			
+		</div><!-- slide -->
+		
+		<div class="slide">
+			
+			<a href="">
+				<img src="<?php bloginfo('template_directory');?>/images/arrival_4.png"/>
+				<span>LOREM IPSUM DOLOR SIT<br/>$59</span>
+			</a>
+			
+		</div><!-- slide -->
+		
+		<div class="slide">
+			
+			<a href="">
+				<img src="<?php bloginfo('template_directory');?>/images/arrival_5.png"/>
+				<span>LOREM IPSUM DOLOR SIT<br/>$59</span>
+			</a>
+			
+		</div><!-- slide -->
+		
+		
+	</div><!-- new_arrival_slideshow -->
 	
 </section><!-- new_arrivals_wrapper -->
 
