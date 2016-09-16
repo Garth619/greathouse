@@ -102,7 +102,15 @@
 	
 </footer>
 
-<div class="copyright">Copyright 2016&copy; Greathouse Furniture.<br/>All rights reserved. Sitemap &nbsp;|&nbsp; Google+</div>
+<div class="copyright">
+	
+	<span>Copyright 2016&copy; Greathouse Furniture.<br class="copy_mobile"/>All rights reserved. Sitemap &nbsp;|&nbsp; Google+</span>
+	
+	<a href="" target="_blank">
+		<img src="<?php bloginfo('template_directory');?>/images/footer-highrank.png"/>
+	</a>
+
+</div>
 	
 <?php wp_footer(); ?>
 

@@ -113,7 +113,7 @@ header, section, nav, footer {
 $black: #000;
 $blackmed: #2f2f2f;
 $grey: #777777;
-$greylight:#a6a6a6;
+$greylight:#f3f3f3;
 $greyfont:#7c786f;
 $bluedark: #79b7c0;
 $bluelight: #7dccd8;
@@ -490,6 +490,7 @@ footer {
 			margin-bottom:25px;
 			color:#000;
 			text-decoration: none;
+			letter-spacing:1.1px;
 		}
 		.get_directions {
 			font-family: $voltagereg;
@@ -886,6 +887,7 @@ footer {
 	.inner_footer {
 		span.large_header {
 			font-size:35px;
+			margin-bottom:35px;
 		}
 	}
 }
@@ -895,7 +897,7 @@ footer {
 	display:block;
 	margin:0 auto;
 	text-align: center;
-	border-bottom:1px solid $greylight;
+	border-bottom:1px solid #a6a6a6;
 	padding-bottom:53px;
 	a {
 		text-decoration: none;
@@ -925,12 +927,12 @@ footer {
 .footer_menu {
 	width:40%;
 	float:left;
-	padding-top:60px;
+	padding-top:73px;
 	ul {
 		padding-top:0px;
 		li {
 			font-size:14px;
-			margin-bottom:25px;
+			margin-bottom:28px;
 			a {
 				
 			}
@@ -946,6 +948,8 @@ footer {
 	width:58%;
 	float:left;
 	padding-top:60px;
+	padding-bottom: 33px;
+	border:none;
 	.location:first-of-type {
 		float:left;
 	}
@@ -962,13 +966,18 @@ footer {
 			
 		}
 		.get_directions {
-			
+			font-size:25px;
 		}
 	}
 }
 	
 
 .follow_us {
+	border-top:1px solid #a6a6a6;
+	border-bottom:none;
+	clear: both;
+	text-align: center;
+	padding:55px 0 0;
 		.social_icons {
 		a {
 			
@@ -982,7 +991,19 @@ footer {
 
 
 .copyright {
-	
+	text-align: left;
+	padding:30px 37px;
+	overflow: hidden;
+	span {
+		float:left;
+		margin-top:10px;
+	}
+	.copy_mobile {
+		display: none;
+	}
+	img {
+		float:right;
+	}
 }
 
 

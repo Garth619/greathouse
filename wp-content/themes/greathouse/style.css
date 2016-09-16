@@ -136,7 +136,7 @@ header .inner_header .header_special_deal .emphasis {
   letter-spacing: 1.2px;
 }
 header .inner_header .header_options {
-  background: #a6a6a6;
+  background: #f3f3f3;
   padding: 10px;
   overflow: hidden;
 }
@@ -403,6 +403,7 @@ footer .inner_footer span.large_header {
   margin-bottom: 25px;
   color: #000;
   text-decoration: none;
+  letter-spacing: 1.1px;
 }
 .locations .location .get_directions {
   font-family: "Voltage W00 Regular", arial;
@@ -733,6 +734,7 @@ footer .inner_footer span.large_header {
   /* Footer */
   footer .inner_footer span.large_header {
     font-size: 35px;
+    margin-bottom: 35px;
   }
 
   .footer_logo {
@@ -764,20 +766,22 @@ footer .inner_footer span.large_header {
   .footer_menu {
     width: 40%;
     float: left;
-    padding-top: 60px;
+    padding-top: 73px;
   }
   .footer_menu ul {
     padding-top: 0px;
   }
   .footer_menu ul li {
     font-size: 14px;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
   }
 
   .locations {
     width: 58%;
     float: left;
     padding-top: 60px;
+    padding-bottom: 33px;
+    border: none;
   }
   .locations .location:first-of-type {
     float: left;
@@ -787,6 +791,33 @@ footer .inner_footer span.large_header {
   }
   .locations .location {
     width: auto;
+  }
+  .locations .location .get_directions {
+    font-size: 25px;
+  }
+
+  .follow_us {
+    border-top: 1px solid #a6a6a6;
+    border-bottom: none;
+    clear: both;
+    text-align: center;
+    padding: 55px 0 0;
+  }
+
+  .copyright {
+    text-align: left;
+    padding: 30px 37px;
+    overflow: hidden;
+  }
+  .copyright span {
+    float: left;
+    margin-top: 10px;
+  }
+  .copyright .copy_mobile {
+    display: none;
+  }
+  .copyright img {
+    float: right;
   }
 }
 /* Media Query */
