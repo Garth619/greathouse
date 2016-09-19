@@ -349,20 +349,26 @@ get_header(); ?>
 
 	<section class="life_well_lived">
 		
-		<span class="large_header">A Life Well Lived Begins <br class="tablet_break"/>With a GREATHOUSE</span><!-- large_header -->
+		<div class="desktop_wrapper">
 		
-		<div class="life_well_lived_content">
+			<span class="large_header">A Life Well Lived Begins <br class="tablet_break"/>With a GREATHOUSE</span><!-- large_header -->
 		
-		<p>We invite you to visit one of our award winning showrooms (San Diego & Carlsbad) to discover a home of possibilities.</p> 
+			<div class="life_well_lived_content">
+		
+			<p>We invite you to visit one of our award winning showrooms (San Diego & Carlsbad) to discover a home of possibilities.</p> 
 	
-		<p>Greathouse features southern California's best selection of quality outdoor patio furniture. Whether you live along the coast or inland, we have the furnishings to create comfortable and customizable outdoor spaces.  Featuring brands such as: Mallin, Patio Republic, Lloyd Flanders, Ratana, Telescope, Alumont, Lane Venture and more.</p>
+			<p>Greathouse features southern California's best selection of quality outdoor patio furniture. Whether you live along the coast or inland, we have the furnishings to create comfortable and customizable outdoor spaces.  Featuring brands such as: Mallin, Patio Republic, Lloyd Flanders, Ratana, Telescope, Alumont, Lane Venture and more.</p>
 	
-		<p>As you tour the showroom you will discover San Diego's most unique and diverse selection of custom upholstery, sofas and sectionals.  With over one thousand designer fabrics to choose from you are sure to find the look that is uniquely yours.  Highlighting the showroom are name brands such as: Lexington, Stanley, Jonathan Adler, Teodora, Cisco Brothers, Classic Home, Camerich along with many others.</p>
+			<p>As you tour the showroom you will discover San Diego's most unique and diverse selection of custom upholstery, sofas and sectionals.  With over one thousand designer fabrics to choose from you are sure to find the look that is uniquely yours.  Highlighting the showroom are name brands such as: Lexington, Stanley, Jonathan Adler, Teodora, Cisco Brothers, Classic Home, Camerich along with many others.</p>
 		
 		</div><!-- life_well_lived_content -->
 		
+		
+		
 	
 	<span class="quote">“let yourself in”<br class="pull_quote_break"/>- greathouse</span>
+	
+	</div><!-- desktop_wrapper -->
 	
 		
 	</section><!-- life_well_lived -->

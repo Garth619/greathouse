@@ -820,10 +820,10 @@ header {
 	span.quote {
 		width:100%;
 		padding-left:45px;
-			br.pull_quote_break {
-				display: none;
-			}
+		br.pull_quote_break {
+			display: none;
 		}
+	}
 }
 
 br.tablet_break {
@@ -1010,12 +1010,6 @@ footer {
 		li {
 			font-size:14px;
 			margin-bottom:28px;
-			a {
-				
-			}
-			&:last-of-type {
-				
-			}
 		}
 	}
 }
@@ -1035,13 +1029,6 @@ footer {
 	}
 	.location {
 		width:auto;
-		
-		.address {
-			
-		}
-		.phone {
-			
-		}
 		.get_directions {
 			font-size:25px;
 		}
@@ -1240,8 +1227,6 @@ header {
 
 /* Keyholder */
 
-
-
 .threeboxes_desktop {
 	 margin-top: 75px;
    padding-left: 0;
@@ -1266,37 +1251,10 @@ footer {
 }
 
 
-.locations.mobile {
-	
-}
-
-.locations.desktop {
-	
-}
-
 
 .locations {
 	width:33.33333%;
 	float:left;
-	.location:first-of-type {
-		
-	}
-	.location:last-of-type {
-		
-	}
-	.location {
-		
-		
-		.address {
-			
-		}
-		.phone {
-			
-		}
-		.get_directions {
-			
-		}
-	}
 }
 	
 
@@ -1305,32 +1263,14 @@ footer {
 	float:left;
 	clear:none;
 	border-top:none;
-		.social_icons {
-		a {
-			
-			.social_icon {
-				
-			}
-		}
-	}
 }
-
 
 
 .copyright {
-	
-	span {
-		
-	}
-	.copy_mobile {
-		
-	}
-	img {
-		
-	}
+	padding:15px 55px 25px;
+	max-width:2000px;
+	margin:0 auto;
 }
-
-
 
 
 	
@@ -1344,17 +1284,6 @@ footer {
 
 
 /* Footer */
-
-
-footer {
-	
-	.inner_footer {
-		
-		span.large_header {
-			
-		}
-	}
-}
 
 .dekstop_logo_menu_wrapper {
 	width:33.3333333%;
@@ -1373,9 +1302,6 @@ footer {
 		max-width:100%;
 		height:auto;
 	}
-	span {
-		
-	}
 }
 
 
@@ -1388,26 +1314,14 @@ footer {
 
 }
 
-.footer_menu.mobile {
-	
-}
-
 
 .footer_menu {
 	width:39%;
 	float:right;
 	ul {
-		
 		li {
 			line-height:1.2;
 			margin-bottom: 20px;
-			
-			a {
-				
-			}
-			&:last-of-type {
-				
-			}
 		}
 	}
 }
@@ -1441,14 +1355,6 @@ footer {
 	float:left;
 	padding:40px 0;
 	border-top: 1px solid #a6a6a6;
-		.social_icons {
-		a {
-			
-			.social_icon {
-				
-			}
-		}
-	}
 }
 
 } /* Media Query */
@@ -1463,17 +1369,10 @@ footer {
 
 .main_banner_wrapper {
 	height:950px;
-	.awards {
-		
-	}
 	.vertical_align {
-		 
-		span.large_header {
+		 span.large_header {
 			max-width: 1015px;
 			font-size: 89px;
-		}
-		span.sub_header {
-			
 		}
 	}
 }
@@ -1483,13 +1382,8 @@ footer {
 
 
 .single_product_square {
-	
-	
-	
 	.product_overlay {
-		
 		.product_inner_wrapper {
-			 
 			span.large_header {
 				font-size:44px;
 			}
@@ -1497,9 +1391,6 @@ footer {
 				font-size:28px;
 			}
 		}
-	}
-	.product_background {
-		
 	}
 }
 
@@ -1522,10 +1413,8 @@ footer {
 		margin-top:80px;
 		width:90%;
 		.slide {
-
 			margin-left:0.1%;
 			margin-right:0.1%;
-
 		}
 	}
 }
@@ -1555,26 +1444,142 @@ footer {
 
 
 .life_holder_wrapper {
-	
 	padding:115px 0;
+
 }
 
 .life_well_lived {
-	 margin-right: 7%;
-	 width: 39%;
-	span.large_header {
+	 overflow: hidden;
+	 margin-right: 6%;
+	 width: 42%;
+	.desktop_wrapper {
+		max-width:680px;
+		float:right;
+		padding-right:3%;
+		span.large_header {
+			display: block;
+			margin:0 0 61px;
+    }
+		.life_well_lived_content {
 		
-		br.tablet_break{
-			
 		}
-	}
-	.life_well_lived_content {
-		
 	}
 }
 
 
+/* Keyholder */
+
+.threeboxes_desktop {
+	max-width:880px;
+	width:52%;
+}
+
+
+.keyholder.mobile {
+	display: none;
+}
+
+
+.keyholder {
+	.inner_keyholder {
+		span.sub_header {
+			font-size:30px;
+		}
+		span.large_header {
+			font-size:50px;
+		}
+	}
+}
+
+.shop_accessories {
+	.shop_bar {
+		.shop {
+			font-size:16px;
+		}
+	}
+}
+
+
+/* Footer */
+
+
+footer {
+	padding:123px 55px;
+	.inner_footer {
+		max-width:2000px;
+		margin:0 auto;
+		padding-bottom:10px;
+		span.large_header {
+			font-size:40px;
+			margin-bottom:45px;
+		}
+	}
+}
+
+
+.dekstop_logo_menu_wrapper {
+	.footer_logo {
+		width:50%;
+		float:left;
+		border:0;
+		a {
+		
+		}
+		img {
+			max-width:100%;
+			height:auto;
+		}
+	}
+
+
+
+
+.footer_menu.tablet {
+	padding-top:0;
+	float:right;
+	width:35%;
+}
+
+}
+
+
+
+
+
+
+.locations {
+	padding: 40px 40px 0;
+		.inner_location_wrapper {
+		.location {
+			margin-bottom:0;
+		}
+	}
+}
 	
+
+.follow_us {
+	.social_icons {
+		a {
+			.social_icon {
+				width:54px;
+				height:54px;
+			}
+		}
+	}
+}
+
+
+
+
+.copyright {
+	max-width:2110px
+}
+
+
+
+
+
+
 	
 } /* Media Query */
 

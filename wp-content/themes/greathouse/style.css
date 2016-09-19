@@ -998,6 +998,12 @@ footer .inner_footer span.large_header {
     clear: none;
     border-top: none;
   }
+
+  .copyright {
+    padding: 15px 55px 25px;
+    max-width: 2000px;
+    margin: 0 auto;
+  }
 }
 /* Media Query */
 @media screen and (min-width: 1300px) {
@@ -1121,8 +1127,84 @@ footer .inner_footer span.large_header {
   }
 
   .life_well_lived {
-    margin-right: 7%;
-    width: 39%;
+    overflow: hidden;
+    margin-right: 6%;
+    width: 42%;
+  }
+  .life_well_lived .desktop_wrapper {
+    max-width: 680px;
+    float: right;
+    padding-right: 3%;
+  }
+  .life_well_lived .desktop_wrapper span.large_header {
+    display: block;
+    margin: 0 0 61px;
+  }
+
+  /* Keyholder */
+  .threeboxes_desktop {
+    max-width: 880px;
+    width: 52%;
+  }
+
+  .keyholder.mobile {
+    display: none;
+  }
+
+  .keyholder .inner_keyholder span.sub_header {
+    font-size: 30px;
+  }
+  .keyholder .inner_keyholder span.large_header {
+    font-size: 50px;
+  }
+
+  .shop_accessories .shop_bar .shop {
+    font-size: 16px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 123px 55px;
+  }
+  footer .inner_footer {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+  footer .inner_footer span.large_header {
+    font-size: 40px;
+    margin-bottom: 45px;
+  }
+
+  .dekstop_logo_menu_wrapper .footer_logo {
+    width: 50%;
+    float: left;
+    border: 0;
+  }
+  .dekstop_logo_menu_wrapper .footer_logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  .dekstop_logo_menu_wrapper .footer_menu.tablet {
+    padding-top: 0;
+    float: right;
+    width: 35%;
+  }
+
+  .locations {
+    padding: 40px 40px 0;
+  }
+  .locations .inner_location_wrapper .location {
+    margin-bottom: 0;
+  }
+
+  .follow_us .social_icons a .social_icon {
+    width: 54px;
+    height: 54px;
+  }
+
+  .copyright {
+    max-width: 2110px;
   }
 }
 /* Media Query */
