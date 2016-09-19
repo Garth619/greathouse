@@ -503,7 +503,9 @@ footer {
 }
 
 
-
+.locations.desktop {
+	display:none;
+}
 
 .locations {
 	border-bottom:1px solid #a6a6a6;
@@ -1066,7 +1068,7 @@ footer {
 
 .copyright {
 	text-align: left;
-	padding:30px 37px;
+	padding:30px 55px;
 	overflow: hidden;
 	span {
 		float:left;
@@ -1205,7 +1207,7 @@ header {
 
 .life_keholder_wrapper {
 	overflow: hidden;
-// 	padding:90px 0 120px;
+	padding:35px 0;
 }
 
 .life_well_lived {
@@ -1216,10 +1218,9 @@ header {
 	margin-top:75px;
 	padding-top:55px;
 	span.large_header {
-		
 		width:100%;
-		
 		margin-bottom:50px;
+		max-width:620px;
 		br.tablet_break{
 			display: none;
 		}
@@ -1227,18 +1228,7 @@ header {
 	.life_well_lived_content {
 		border:none;
 		padding-top:0;
-		p {
-			
-			&:last-of-type {
-				
-			}
-		}
-	}
-	span.quote {
-		
-		br.pull_quote_break {
-			
-		}
+		margin-right:0;
 	}
 }
 
@@ -1251,9 +1241,90 @@ header {
 .threeboxes_desktop {
 	 margin-top: 75px;
    padding-left: 0;
-   width: 54%;
+	 width: 54%;
 }
 
+
+
+/* Footer */
+
+
+footer {
+	.inner_footer {
+		overflow: hidden;
+	}
+}
+
+
+.footer_menu {
+	width:19.33333%;
+	margin-left:4%;
+}
+
+
+.locations.mobile {
+	
+}
+
+.locations.desktop {
+	
+}
+
+
+.locations {
+	width:33.33333%;
+	float:left;
+	.location:first-of-type {
+		
+	}
+	.location:last-of-type {
+		
+	}
+	.location {
+		
+		
+		.address {
+			
+		}
+		.phone {
+			
+		}
+		.get_directions {
+			
+		}
+	}
+}
+	
+
+.follow_us {
+	width:43.333333%;
+	float:left;
+	clear:none;
+	border-top:none;
+		.social_icons {
+		a {
+			
+			.social_icon {
+				
+			}
+		}
+	}
+}
+
+
+
+.copyright {
+	
+	span {
+		
+	}
+	.copy_mobile {
+		
+	}
+	img {
+		
+	}
+}
 
 
 
@@ -1261,3 +1332,158 @@ header {
 	
 	
 } /* Media Query */
+
+
+
+
+@media screen and (min-width: 1300px) {
+
+
+/* Footer */
+
+
+footer {
+	
+	.inner_footer {
+		
+		span.large_header {
+			
+		}
+	}
+}
+
+.dekstop_logo_menu_wrapper {
+	width:33.3333333%;
+	float:left;
+	border-top: 1px solid #a6a6a6;
+	border-right: 1px solid #a6a6a6;
+	padding:40px 40px 40px 0;
+.footer_logo {
+	width:50%;
+	float:left;
+	border:0;
+	a {
+		
+	}
+	img {
+		max-width:100%;
+		height:auto;
+	}
+	span {
+		
+	}
+}
+
+
+
+
+.footer_menu.tablet {
+	padding-top:0;
+	float:right;
+}
+
+}
+
+.footer_menu.mobile {
+	
+}
+
+
+.footer_menu {
+	width:39%;
+	float:right;
+	ul {
+		
+		li {
+			line-height:1.2;
+			margin-bottom: 20px;
+			
+			a {
+				
+			}
+			&:last-of-type {
+				
+			}
+		}
+	}
+}
+
+
+.locations.mobile {
+	display: none;
+}
+
+.locations.desktop {
+	display:block;
+}
+
+
+.locations {
+	width:33.3333333%;
+	float:left;
+	border-left: 1px solid #a6a6a6;
+	border-top: 1px solid #a6a6a6;
+	text-align: center;
+	padding:40px;
+	.inner_location_wrapper {
+		max-width:400px;
+		margin:0 auto;
+		.location:first-of-type {
+		
+		}
+		.location:last-of-type {
+		
+		}
+		.location {
+		
+		
+			.address {
+			
+			}
+			.phone {
+			
+			}
+			.get_directions {
+			
+			}
+		}
+	}
+}
+	
+
+.follow_us {
+	width:33.3333333%;
+	float:left;
+	padding:40px 0;
+	border-top: 1px solid #a6a6a6;
+		.social_icons {
+		a {
+			
+			.social_icon {
+				
+			}
+		}
+	}
+}
+
+
+
+.copyright {
+	
+	span {
+		
+	}
+	.copy_mobile {
+		
+	}
+	img {
+		
+	}
+}
+
+
+
+} /* Media Query */
+
+
+
