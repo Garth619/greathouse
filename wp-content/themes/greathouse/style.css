@@ -185,6 +185,11 @@ header .inner_header .header_logo_nav_wrapper .mobile_menu_wrapper .menu_bar {
   margin-bottom: 3px;
 }
 
+/* Desktop Menu */
+.desktop_menu_wrapper {
+  display: none;
+}
+
 /* Main Banner */
 .main_banner_wrapper {
   background: url(images/hero.jpg) top center no-repeat;
@@ -891,6 +896,28 @@ footer .inner_footer span.large_header {
   }
   header .inner_header .header_logo_nav_wrapper .mobile_menu_wrapper {
     display: none;
+  }
+
+  /* Desktop Menu */
+  .desktop_menu_wrapper {
+    display: block;
+    float: right;
+  }
+  .desktop_menu_wrapper .desktop_menu ul {
+    list-style: none;
+  }
+  .desktop_menu_wrapper .desktop_menu ul li {
+    font-size: 14px;
+    font-family: "oswaldregular", arial;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 0.7px;
+  }
+  .desktop_menu_wrapper .desktop_menu ul li a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 22px 10px;
   }
 
   /* Main Banner */

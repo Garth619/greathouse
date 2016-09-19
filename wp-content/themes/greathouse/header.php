@@ -39,7 +39,7 @@
 <body <?php body_class(); ?>>
 				
 	
-	<?php // wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
+	
 			
 			
 			<header>
@@ -91,7 +91,22 @@
 							
 						</div><!-- mobile_menu_wrapper -->
 						
-						</div><!-- header_logo_nav_wrapper -->
+						
+						<div class="desktop_menu_wrapper">
+						
+							<div class="desktop_menu">
+								
+								<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
+							
+							</div><!-- desktop_menu -->
+							
+							<div class="cart_signin_wrapper">
+								
+							</div><!-- cart_signin_wrapper -->
+						
+						</div><!-- desktop_menu_wrapper -->
+						
+					</div><!-- header_logo_nav_wrapper -->
 				
 					
 				</div><!-- inner_header -->

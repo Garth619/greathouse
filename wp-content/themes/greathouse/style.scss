@@ -244,6 +244,17 @@ header {
 	}
 }
 
+
+
+
+/* Desktop Menu */
+
+.desktop_menu_wrapper {
+	display: none;
+}
+
+
+
 /* Main Banner */ 
 
 .main_banner_wrapper {
@@ -1095,6 +1106,32 @@ header {
 	}
 }
 
+/* Desktop Menu */
+
+.desktop_menu_wrapper {
+	display: block;
+	float:right;
+	.desktop_menu {
+		ul {
+			list-style: none;
+			li {
+				font-size:14px;
+				font-family: $oswaldreg;
+				text-transform: uppercase;
+				display: inline-block;
+				letter-spacing: 0.7px;
+				a {
+					color:#000;
+					text-decoration: none;
+					display: block;
+					padding:22px 10px;
+				}
+			}
+		}
+	}
+}
+
+
 
 /* Main Banner */ 
 
@@ -1549,7 +1586,7 @@ footer {
 
 .locations {
 	padding: 40px 40px 0;
-		.inner_location_wrapper {
+	.inner_location_wrapper {
 		.location {
 			margin-bottom:0;
 		}
