@@ -266,83 +266,89 @@ get_header(); ?>
 </section><!-- custom_design_services -->
 
 
-<section class="life_well_lived">
-	
-	<span class="large_header">A Life Well Lived Begins <br class="tablet_break"/>With a GREATHOUSE</span><!-- large_header -->
-	
-	<div class="life_well_lived_content">
-	
-	<p>We invite you to visit one of our award winning showrooms (San Diego & Carlsbad) to discover a home of possibilities.</p> 
+<section class="life_keholder_wrapper">
 
-	<p>Greathouse features southern California's best selection of quality outdoor patio furniture. Whether you live along the coast or inland, we have the furnishings to create comfortable and customizable outdoor spaces.  Featuring brands such as: Mallin, Patio Republic, Lloyd Flanders, Ratana, Telescope, Alumont, Lane Venture and more.</p>
 
-	<p>As you tour the showroom you will discover San Diego's most unique and diverse selection of custom upholstery, sofas and sectionals.  With over one thousand designer fabrics to choose from you are sure to find the look that is uniquely yours.  Highlighting the showroom are name brands such as: Lexington, Stanley, Jonathan Adler, Teodora, Cisco Brothers, Classic Home, Camerich along with many others.</p>
-	
-	</div><!-- life_well_lived_content -->
-	
-
-<span class="quote">“let yourself in”<br class="pull_quote_break"/>- greathouse</span>
-
-	
-</section><!-- life_well_lived -->
-
-<section class="keyholder mobile">
-	
-	<div class="inner_keyholder">
-	
-		<span class="sub_header">become a member</span><!-- sub_header -->
-		<span class="large_header">Keyholder Club</span><!-- sub_header -->
+	<section class="life_well_lived">
 		
-		<a href="" class="transparent_button">Sign Up Today</a>
+		<span class="large_header">A Life Well Lived Begins <br class="tablet_break"/>With a GREATHOUSE</span><!-- large_header -->
+		
+		<div class="life_well_lived_content">
+		
+		<p>We invite you to visit one of our award winning showrooms (San Diego & Carlsbad) to discover a home of possibilities.</p> 
 	
+		<p>Greathouse features southern California's best selection of quality outdoor patio furniture. Whether you live along the coast or inland, we have the furnishings to create comfortable and customizable outdoor spaces.  Featuring brands such as: Mallin, Patio Republic, Lloyd Flanders, Ratana, Telescope, Alumont, Lane Venture and more.</p>
 	
-	</div><!-- inner_keyholder -->
+		<p>As you tour the showroom you will discover San Diego's most unique and diverse selection of custom upholstery, sofas and sectionals.  With over one thousand designer fabrics to choose from you are sure to find the look that is uniquely yours.  Highlighting the showroom are name brands such as: Lexington, Stanley, Jonathan Adler, Teodora, Cisco Brothers, Classic Home, Camerich along with many others.</p>
+		
+		</div><!-- life_well_lived_content -->
+		
 	
-</section><!-- keyholder -->
-
-
-<section class="threeboxes_desktop">
+	<span class="quote">“let yourself in”<br class="pull_quote_break"/>- greathouse</span>
 	
-	<div class="keyholder">
+		
+	</section><!-- life_well_lived -->
+	
+	<section class="keyholder mobile">
 		
 		<div class="inner_keyholder">
 		
 			<span class="sub_header">become a member</span><!-- sub_header -->
-			<span class="large_header">Keyholder<br/>Club</span><!-- sub_header -->
-		
-			<a href="" class="transparent_button">Sign Up Today</a>
+			<span class="large_header">Keyholder Club</span><!-- sub_header -->
 			
+			<a href="" class="transparent_button">Sign Up Today</a>
+		
+		
 		</div><!-- inner_keyholder -->
 		
-	</div><!-- keyholder -->
-	
-	<div class="shop_accessories">
+	</section><!-- keyholder -->
+
+
+	<section class="threeboxes_desktop">
 		
-		<div class="shop_bar">
+		<div class="keyholder">
 			
-			<div class="shop">Shop</div><!-- shop -->
-			<div class="shop_cta">Accessories</div><!-- shop_cta -->
+			<div class="inner_keyholder">
 			
-		</div><!-- shop_bar -->
+				<span class="sub_header">become a member</span><!-- sub_header -->
+				<span class="large_header">Keyholder<br/>Club</span><!-- sub_header -->
+			
+				<a href="" class="transparent_button">Sign Up Today</a>
+				
+			</div><!-- inner_keyholder -->
+			
+		</div><!-- keyholder -->
 		
-	</div><!-- shop_accessories -->
-	
-	<div class="seasonal_features">
-		
-		<div class="shop_bar">
+		<div class="shop_accessories">
 			
-			<div class="shop">Shop</div><!-- shop -->
-			<div class="shop_cta">Seasonal Features</div><!-- shop_cta -->
+			<div class="shop_bar">
+				
+				<div class="shop">Shop</div><!-- shop -->
+				<div class="shop_cta">Accessories</div><!-- shop_cta -->
+				
+			</div><!-- shop_bar -->
 			
-		</div><!-- shop_bar -->
-		
 		</div><!-- shop_accessories -->
 		
-	</div><!-- seasonal_features -->
+		<div class="seasonal_features">
+			
+			<div class="shop_bar">
+				
+				<div class="shop">Shop</div><!-- shop -->
+				<div class="shop_cta">Seasonal Features</div><!-- shop_cta -->
+				
+			</div><!-- shop_bar -->
+			
+			</div><!-- shop_accessories -->
+			
+		</div><!-- seasonal_features -->
+		
 	
+	
+	</section><!-- threeboxes_desktop -->
 
 
-</section><!-- threeboxes_desktop -->
+</section><!-- life_keholder_wrapper -->
 
 
 

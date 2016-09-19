@@ -611,6 +611,9 @@ footer .inner_footer span.large_header {
   }
 
   /* New Arrivals */
+  .new_arrivals_wrapper {
+    padding-bottom: 75px;
+  }
   .new_arrivals_wrapper .prev, .new_arrivals_wrapper .next {
     width: 22px;
   }
@@ -882,16 +885,6 @@ footer .inner_footer span.large_header {
     width: 23.2%;
     padding: 0;
     margin: 0 .5% 1%;
-    /*
-    	&:nth-of-type(5) {
-    		margin-left:2%;
-    		margin-right:0;
-    	}
-    	&:nth-of-type(8) {
-    		margin-left:0%;
-    		margin-right:2%;
-    	}
-    */
   }
   .single_product_square:nth-of-type(4n + 1) {
     margin-left: 2%;
@@ -903,7 +896,7 @@ footer .inner_footer span.large_header {
   }
 
   .product_categories_wrapper {
-    padding: 140px 0px;
+    padding: 2% 0px 50px;
     overflow: hidden;
   }
   .product_categories_wrapper .product_inner {
@@ -913,6 +906,51 @@ footer .inner_footer span.large_header {
   /* New Arrivals */
   .new_arrivals_wrapper {
     padding-top: 0;
+  }
+
+  /* Custom Design Services */
+  .custom_design_services {
+    padding: 156px 45px;
+  }
+  .custom_design_services span.sub_header {
+    font-size: 25px;
+  }
+  .custom_design_services span.large_header {
+    font-size: 100px;
+    margin-bottom: 60px;
+    display: block;
+  }
+
+  /* A Life Well Lived */
+  .life_keholder_wrapper {
+    overflow: hidden;
+  }
+
+  .life_well_lived {
+    width: 41%;
+    float: left;
+    margin-right: 5%;
+    border-top: 1px solid #7dccd8;
+    margin-top: 75px;
+    padding-top: 55px;
+  }
+  .life_well_lived span.large_header {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .life_well_lived span.large_header br.tablet_break {
+    display: none;
+  }
+  .life_well_lived .life_well_lived_content {
+    border: none;
+    padding-top: 0;
+  }
+
+  /* Keyholder */
+  .threeboxes_desktop {
+    margin-top: 75px;
+    padding-left: 0;
+    width: 54%;
   }
 }
 /* Media Query */
