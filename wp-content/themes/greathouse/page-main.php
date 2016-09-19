@@ -249,6 +249,84 @@ get_header(); ?>
 		</div><!-- slide -->
 		
 		
+		
+		
+		<div class="slide">
+			
+			<a href="">
+				<img src="<?php bloginfo('template_directory');?>/images/arrival_5.png"/>
+				<span>LOREM IPSUM DOLOR SIT<br/>$59</span>
+			</a>
+			
+		</div><!-- slide -->
+		
+		
+		
+		<div class="slide">
+			
+			<a href="">
+				<img src="<?php bloginfo('template_directory');?>/images/arrival_5.png"/>
+				<span>LOREM IPSUM DOLOR SIT<br/>$59</span>
+			</a>
+			
+		</div><!-- slide -->
+		
+		
+		
+		<div class="slide">
+			
+			<a href="">
+				<img src="<?php bloginfo('template_directory');?>/images/arrival_5.png"/>
+				<span>LOREM IPSUM DOLOR SIT<br/>$59</span>
+			</a>
+			
+		</div><!-- slide -->
+		
+		
+		
+		<div class="slide">
+			
+			<a href="">
+				<img src="<?php bloginfo('template_directory');?>/images/arrival_5.png"/>
+				<span>LOREM IPSUM DOLOR SIT<br/>$59</span>
+			</a>
+			
+		</div><!-- slide -->
+		
+		
+		
+		<div class="slide">
+			
+			<a href="">
+				<img src="<?php bloginfo('template_directory');?>/images/arrival_5.png"/>
+				<span>LOREM IPSUM DOLOR SIT<br/>$59</span>
+			</a>
+			
+		</div><!-- slide -->
+		
+		
+		
+		<div class="slide">
+			
+			<a href="">
+				<img src="<?php bloginfo('template_directory');?>/images/arrival_5.png"/>
+				<span>LOREM IPSUM DOLOR SIT<br/>$59</span>
+			</a>
+			
+		</div><!-- slide -->
+		
+		
+		
+		<div class="slide">
+			
+			<a href="">
+				<img src="<?php bloginfo('template_directory');?>/images/arrival_5.png"/>
+				<span>LOREM IPSUM DOLOR SIT<br/>$59</span>
+			</a>
+			
+		</div><!-- slide -->
+		
+		
 	</div><!-- new_arrival_slideshow -->
 	
 </section><!-- new_arrivals_wrapper -->
@@ -266,7 +344,7 @@ get_header(); ?>
 </section><!-- custom_design_services -->
 
 
-<section class="life_keholder_wrapper">
+<section class="life_holder_wrapper">
 
 
 	<section class="life_well_lived">
@@ -348,7 +426,7 @@ get_header(); ?>
 	</section><!-- threeboxes_desktop -->
 
 
-</section><!-- life_keholder_wrapper -->
+</section><!-- life_holder_wrapper -->
 
 
 

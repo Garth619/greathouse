@@ -195,6 +195,7 @@ header .inner_header .header_logo_nav_wrapper .mobile_menu_wrapper .menu_bar {
   color: #fff;
   font-family: "Didot- LP W01 Regular", arial;
   position: relative;
+  padding: 0 20px;
 }
 .main_banner_wrapper .awards {
   display: none;
@@ -293,7 +294,7 @@ header .inner_header .header_logo_nav_wrapper .mobile_menu_wrapper .menu_bar {
   display: block;
   font-family: "oswaldregular", arial;
   font-size: 15px;
-  margin-top: 40px;
+  margin-top: 20px;
   line-height: 1.6;
 }
 .new_arrivals_wrapper .new_arrival_slideshow .slide a {
@@ -318,8 +319,8 @@ header .inner_header .header_logo_nav_wrapper .mobile_menu_wrapper .menu_bar {
   letter-spacing: 1.1px;
 }
 .custom_design_services .blue_block {
-  width: 75px;
-  height: 5px;
+  width: 100px;
+  height: 4px;
   background: #7dccd8;
   display: block;
   margin: 30px auto 0;
@@ -608,6 +609,12 @@ footer .inner_footer span.large_header {
   .single_product_square:nth-of-type(2n + 2) {
     margin-left: 1%;
   }
+  .single_product_square .product_overlay {
+    height: 355px;
+  }
+  .single_product_square .product_background {
+    height: 355px;
+  }
 
   .product_categories_wrapper {
     padding: 0px 2% 2%;
@@ -617,6 +624,9 @@ footer .inner_footer span.large_header {
   /* New Arrivals */
   .new_arrivals_wrapper {
     padding-bottom: 75px;
+  }
+  .new_arrivals_wrapper span.large_header {
+    font-size: 46px;
   }
   .new_arrivals_wrapper .prev, .new_arrivals_wrapper .next {
     width: 22px;
@@ -884,6 +894,13 @@ footer .inner_footer span.large_header {
   }
 
   /* Main Banner */
+  .main_banner_wrapper .awards {
+    font-size: 30px;
+    padding: 13px 27px;
+    top: 420px;
+    lefT: -74px;
+  }
+
   /* Product Overlays */
   .single_product_square {
     width: 23.2%;
@@ -926,7 +943,7 @@ footer .inner_footer span.large_header {
   }
 
   /* A Life Well Lived */
-  .life_keholder_wrapper {
+  .life_holder_wrapper {
     overflow: hidden;
     padding: 35px 0;
   }
@@ -1041,6 +1058,71 @@ footer .inner_footer span.large_header {
     float: left;
     padding: 40px 0;
     border-top: 1px solid #a6a6a6;
+  }
+}
+/* Media Query */
+@media screen and (min-width: 1400px) {
+  /* Main Banner */
+  .main_banner_wrapper {
+    height: 950px;
+  }
+  .main_banner_wrapper .vertical_align span.large_header {
+    max-width: 1015px;
+    font-size: 89px;
+  }
+
+  /* Product Overlays */
+  .single_product_square .product_overlay .product_inner_wrapper span.large_header {
+    font-size: 44px;
+  }
+  .single_product_square .product_overlay .product_inner_wrapper span.sub_header {
+    font-size: 28px;
+  }
+
+  .product_categories_wrapper {
+    padding: 145px 0 114px;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  /* New Arrivals */
+  .new_arrivals_wrapper {
+    padding-bottom: 155px;
+  }
+  .new_arrivals_wrapper span.large_header {
+    font-size: 50px;
+  }
+  .new_arrivals_wrapper .new_arrival_slideshow {
+    margin-top: 80px;
+    width: 90%;
+  }
+  .new_arrivals_wrapper .new_arrival_slideshow .slide {
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+  }
+
+  /* Custom Design Services */
+  .custom_design_services {
+    padding: 235px 45px;
+  }
+  .custom_design_services span.sub_header {
+    font-size: 34px;
+  }
+  .custom_design_services span.large_header {
+    font-size: 168px;
+    margin-bottom: 115px;
+    margin-top: 45px;
+    display: block;
+  }
+
+  /* A Life Well Lived */
+  .life_holder_wrapper {
+    padding: 115px 0;
+  }
+
+  .life_well_lived {
+    margin-right: 7%;
+    width: 39%;
   }
 }
 /* Media Query */
