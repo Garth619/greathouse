@@ -100,7 +100,7 @@ body {
 }
 
 
-header, section, nav, footer {
+header, main, section, nav, footer {
 	display: block;
 }
 
@@ -115,6 +115,7 @@ $blackmed: #2f2f2f;
 $grey: #777777;
 $greylight:#f3f3f3;
 $greyfont:#7c786f;
+$greymenuborder: #6f6f6f;
 $bluedark: #79b7c0;
 $bluelight: #7dccd8;
 $bluegrey: #cbdfe2;
@@ -214,8 +215,8 @@ header {
 			}
 		}
 		.header_logo_nav_wrapper {
-			overflow:hidden;
 			background:#000;
+			height: 52px;
 			.logo_wrapper {
 				float:left;
 				background:#000;
@@ -243,7 +244,6 @@ header {
 		}
 	}
 }
-
 
 
 
@@ -656,6 +656,7 @@ header {
 		}
 		.header_logo_nav_wrapper {
 			background: #fff;
+			height:59px;
 			.logo_wrapper {
 				background: #000 none repeat scroll 0 0;
 				float: left;
@@ -691,7 +692,7 @@ header {
 	.awards {
 		display: block;
 		position: absolute;
-		top: 241px;
+		top: 270px;
 		left: -47px;
 		color:#000;
 		background:#fff;
@@ -1094,6 +1095,7 @@ footer {
 
 
 header {
+	position:relative;
 	.inner_header {
 		.header_options {
 			display:none;
@@ -1111,6 +1113,7 @@ header {
 .desktop_menu_wrapper {
 	display: block;
 	float:right;
+	
 	.desktop_menu {
 		ul {
 			list-style: none;
@@ -1126,35 +1129,47 @@ header {
 					display: block;
 					padding:22px 10px;
 				}
+				ul.sub-menu {
+					position:absolute;
+					top:59;
+					left:0;
+					background:rgba(47, 47, 47, 0.98);
+					z-index: 1000;
+					width:100%;
+					height:500px;
+					padding:82px 160px;
+					margin:0;
+					li {
+						display: block;
+						font-size:12px;
+						a {
+							color:$bluedark;
+							border-bottom:1px solid $greymenuborder;
+							padding:0;
+							padding-bottom:15px;
+						}
+						ul.sub-menu {
+							background: none;
+							padding:0;
+							position: relative;
+							height:auto;
+							width:200px;
+							margin-bottom:60px;
+							li {
+								a {
+									color:#fff;
+									border-bottom:none;
+									margin-top:15px;
+									padding-bottom:0;
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 	}
 }
-
-
-
-/* Main Banner */ 
-
-.main_banner_wrapper {
-
-	.awards {
-		font-size:30px;
-		padding:13px 27px;
-		top:420px;
-		lefT:-74px; 
-	}
-	.vertical_align {
-		 
-		span.large_header {
-			
-		}
-		span.sub_header {
-			
-		}
-	}
-}
-
-
 
 
 
@@ -1406,6 +1421,12 @@ footer {
 
 .main_banner_wrapper {
 	height:950px;
+	.awards {
+		font-size:30px;
+		padding:13px 27px;
+		top:420px;
+		lefT:-74px; 
+	}
 	.vertical_align {
 		 span.large_header {
 			max-width: 1015px;

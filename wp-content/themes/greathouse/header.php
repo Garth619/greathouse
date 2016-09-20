@@ -39,10 +39,7 @@
 <body <?php body_class(); ?>>
 				
 	
-	
-			
-			
-			<header>
+		<header>
 				
 				<div class="inner_header">
 					
@@ -92,7 +89,7 @@
 						</div><!-- mobile_menu_wrapper -->
 						
 						
-						<div class="desktop_menu_wrapper">
+						<nav class="desktop_menu_wrapper">
 						
 							<div class="desktop_menu">
 								
@@ -104,7 +101,7 @@
 								
 							</div><!-- cart_signin_wrapper -->
 						
-						</div><!-- desktop_menu_wrapper -->
+						</nav><!-- desktop_menu_wrapper -->
 						
 					</div><!-- header_logo_nav_wrapper -->
 				
@@ -113,5 +110,7 @@
 				
 			</header>
 			
-			<section class="main">
+		
+			
+			<main>
  

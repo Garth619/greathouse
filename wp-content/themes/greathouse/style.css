@@ -78,7 +78,7 @@ body {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-header, section, nav, footer {
+header, main, section, nav, footer {
   display: block;
 }
 
@@ -157,8 +157,8 @@ header .inner_header .header_options .cart_signin_wrapper span:first-of-type {
   margin-right: 16px;
 }
 header .inner_header .header_logo_nav_wrapper {
-  overflow: hidden;
   background: #000;
+  height: 52px;
 }
 header .inner_header .header_logo_nav_wrapper .logo_wrapper {
   float: left;
@@ -552,6 +552,7 @@ footer .inner_footer span.large_header {
   }
   header .inner_header .header_logo_nav_wrapper {
     background: #fff;
+    height: 59px;
   }
   header .inner_header .header_logo_nav_wrapper .logo_wrapper {
     background: #000 none repeat scroll 0 0;
@@ -580,7 +581,7 @@ footer .inner_footer span.large_header {
   .main_banner_wrapper .awards {
     display: block;
     position: absolute;
-    top: 241px;
+    top: 270px;
     left: -47px;
     color: #000;
     background: #fff;
@@ -891,6 +892,9 @@ footer .inner_footer span.large_header {
 /* Media Query */
 @media screen and (min-width: 1150px) {
   /* Header */
+  header {
+    position: relative;
+  }
   header .inner_header .header_options {
     display: none;
   }
@@ -919,13 +923,40 @@ footer .inner_footer span.large_header {
     display: block;
     padding: 22px 10px;
   }
-
-  /* Main Banner */
-  .main_banner_wrapper .awards {
-    font-size: 30px;
-    padding: 13px 27px;
-    top: 420px;
-    lefT: -74px;
+  .desktop_menu_wrapper .desktop_menu ul li ul.sub-menu {
+    position: absolute;
+    top: 59;
+    left: 0;
+    background: rgba(47, 47, 47, 0.98);
+    z-index: 1000;
+    width: 100%;
+    height: 500px;
+    padding: 82px 160px;
+    margin: 0;
+  }
+  .desktop_menu_wrapper .desktop_menu ul li ul.sub-menu li {
+    display: block;
+    font-size: 12px;
+  }
+  .desktop_menu_wrapper .desktop_menu ul li ul.sub-menu li a {
+    color: #79b7c0;
+    border-bottom: 1px solid #6f6f6f;
+    padding: 0;
+    padding-bottom: 15px;
+  }
+  .desktop_menu_wrapper .desktop_menu ul li ul.sub-menu li ul.sub-menu {
+    background: none;
+    padding: 0;
+    position: relative;
+    height: auto;
+    width: 200px;
+    margin-bottom: 60px;
+  }
+  .desktop_menu_wrapper .desktop_menu ul li ul.sub-menu li ul.sub-menu li a {
+    color: #fff;
+    border-bottom: none;
+    margin-top: 15px;
+    padding-bottom: 0;
   }
 
   /* Product Overlays */
@@ -1098,6 +1129,12 @@ footer .inner_footer span.large_header {
   /* Main Banner */
   .main_banner_wrapper {
     height: 950px;
+  }
+  .main_banner_wrapper .awards {
+    font-size: 30px;
+    padding: 13px 27px;
+    top: 420px;
+    lefT: -74px;
   }
   .main_banner_wrapper .vertical_align span.large_header {
     max-width: 1015px;

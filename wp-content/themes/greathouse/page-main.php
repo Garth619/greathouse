@@ -337,7 +337,7 @@ get_header(); ?>
 		
 		<div class="blue_block"></div><!-- blue_block -->
 		
-		<span class="large_header">personalize your space</span><!-- large_header -->
+		<span class="large_header">personalize your space</span><!-- large_header -->
 		
 		<a href="" class="white_button" style="border:1px solid #000;">Free Instore Design Consultation</a><!-- white_button -->
 		
@@ -416,6 +416,7 @@ get_header(); ?>
 		
 		<div class="seasonal_features">
 			
+			
 			<div class="shop_bar">
 				
 				<div class="shop">Shop</div><!-- shop -->
@@ -423,7 +424,7 @@ get_header(); ?>
 				
 			</div><!-- shop_bar -->
 			
-			</div><!-- shop_accessories -->
+			
 			
 		</div><!-- seasonal_features -->
 		
