@@ -74,7 +74,7 @@
 						
 						<div class="logo_wrapper">
 						
-							<a href="">
+							<a href="<?php bloginfo('url');?>">
 								<img class="logo" src="<?php bloginfo('template_directory');?>/images/logo.png"/>
 							</a>
 						

@@ -910,6 +910,14 @@ footer .inner_footer span.large_header {
   .desktop_menu_wrapper .desktop_menu ul {
     list-style: none;
   }
+  .desktop_menu_wrapper .desktop_menu ul li:hover > ul.sub-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  .desktop_menu_wrapper .desktop_menu ul li:hover > a {
+    background: #2f2f2f;
+    color: #fff;
+  }
   .desktop_menu_wrapper .desktop_menu ul li {
     font-size: 14px;
     font-family: "oswaldregular", arial;
@@ -917,21 +925,33 @@ footer .inner_footer span.large_header {
     display: inline-block;
     letter-spacing: 0.7px;
   }
-  .desktop_menu_wrapper .desktop_menu ul li a {
+  .desktop_menu_wrapper .desktop_menu ul li > a {
     color: #000;
     text-decoration: none;
     display: block;
-    padding: 22px 10px;
+    padding: 23px 10px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+  }
+  .desktop_menu_wrapper .desktop_menu ul li > a:hover {
+    background: #2f2f2f;
+    color: #fff;
   }
   .desktop_menu_wrapper .desktop_menu ul li ul.sub-menu {
     position: absolute;
-    top: 59;
+    opacity: 0;
+    visibility: hidden;
+    top: 116px;
     left: 0;
     background: rgba(47, 47, 47, 0.98);
     z-index: 1000;
     width: 100%;
-    padding: 82px 160px;
+    padding: 82px 20% 0 40px;
     margin: 0;
+    transition: all .2s ease-in-out;
+  }
+  .desktop_menu_wrapper .desktop_menu ul li ul.sub-menu li:hover > a {
+    background: transparent;
   }
   .desktop_menu_wrapper .desktop_menu ul li ul.sub-menu li {
     font-size: 12px;
@@ -944,12 +964,18 @@ footer .inner_footer span.large_header {
     padding: 0;
     padding-bottom: 15px;
   }
+  .desktop_menu_wrapper .desktop_menu ul li ul.sub-menu li a:hover {
+    background: transparent;
+  }
   .desktop_menu_wrapper .desktop_menu ul li ul.sub-menu li ul.sub-menu {
     background: none;
     padding: 0;
     position: relative;
     height: auto;
     margin-bottom: 60px;
+    opacity: 1;
+    top: 0;
+    visibility: visible;
   }
   .desktop_menu_wrapper .desktop_menu ul li ul.sub-menu li ul.sub-menu li {
     display: block;
@@ -961,6 +987,11 @@ footer .inner_footer span.large_header {
     border-bottom: none;
     margin-top: 20px;
     padding-bottom: 0;
+    transition: all .2s ease-in-out;
+  }
+  .desktop_menu_wrapper .desktop_menu ul li ul.sub-menu li ul.sub-menu li a:hover {
+    color: #79b7c0;
+    background: transparent;
   }
 
   .menu_col {
