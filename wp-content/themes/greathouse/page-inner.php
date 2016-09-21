@@ -43,6 +43,29 @@ get_header(); ?>
 			
 		</div><!-- discount_wrapper -->
 		
+		<div id="sidebar">
+			
+			<ul>
+				<li><a href="">Patio</a></li>
+				<li><a href="">Sofas</a></li>
+				<li><a href="">Accessories</a></li>
+				<li><a href="">Bedroom</a></li>
+				<li><a href="">Dining Room</a></li>
+				<li><a href="">Living Room</a></li>
+				<li><a href="">Office</a></li>
+				<li><a href="">Pool Tables</a></li>
+				<li><a href="">Rugs</a></li>
+				<li><a href="">Rugs</a></li>
+				<li><a href="">Rugs</a></li>
+				<li><a href="">Rugs</a></li>
+				<li><a href="">Rugs</a></li>
+				<li><a href="">Rugs</a></li>
+				<li><a href="">Rugs</a></li>
+				<li><a href="">Rugs</a></li>
+			</ul>
+			
+		</div><!-- sidebar -->
+		
 	</div><!-- sidebar_wrapper -->
 	
 </div><!-- container_wrapper -->

@@ -540,40 +540,69 @@ footer .inner_footer span.large_header {
 
 /* Sidebar Template */
 .container_wrapper {
-  margin: 45px 20px;
+  margin: 45px 20px 28px;
 }
-.container_wrapper .sidebar_wrapper {
+
+.sidebar_wrapper {
   width: 100%;
 }
-.container_wrapper .sidebar_wrapper .discount_wrapper {
+
+.discount_wrapper {
   background: url(images/sidebar-pic.jpg) center center no-repeat;
   background-size: cover;
   text-align: center;
   padding: 60px 10px;
 }
-.container_wrapper .sidebar_wrapper .discount_wrapper a {
+.discount_wrapper a {
   color: #fff;
   text-decoration: none;
 }
-.container_wrapper .sidebar_wrapper .discount_wrapper .sale_title {
+.discount_wrapper .sale_title {
   font-family: "Voltage W00 Light", arial;
   font-size: 40px;
   display: block;
 }
-.container_wrapper .sidebar_wrapper .discount_wrapper .blue_box {
+.discount_wrapper .blue_box {
   background: #7dccd8;
   width: 60px;
   height: 3px;
   display: inline-block;
   margin: 8px 0 18px;
 }
-.container_wrapper .sidebar_wrapper .discount_wrapper .discount_description {
+.discount_wrapper .discount_description {
   display: block;
   font-family: "oswaldregular", arial;
   text-transform: uppercase;
   font-size: 35px;
   line-height: 1.2;
   margin-bottom: 25px;
+}
+
+#sidebar {
+  border-top: 4px #000 solid;
+  width: 100%;
+  margin-top: 18px;
+  background: #f3f3f3;
+  padding: 35px;
+  overflow: hidden;
+}
+#sidebar ul {
+  list-style: none;
+}
+#sidebar ul li:last-of-type {
+  margin-bottom: 0;
+}
+#sidebar ul li {
+  text-transform: uppercase;
+  font-family: "oswaldregular", arial;
+  margin-bottom: 30px;
+  letter-spacing: 0.8px;
+  width: 50%;
+  float: left;
+}
+#sidebar ul li a {
+  color: #000;
+  text-decoration: none;
 }
 
 #content {
@@ -605,6 +634,9 @@ footer .inner_footer span.large_header {
 }
 #content a:hover {
   text-decoration: underline;
+}
+#content ul {
+  margin: 0 0 35px 25px;
 }
 
 @media screen and (min-width: 750px) {

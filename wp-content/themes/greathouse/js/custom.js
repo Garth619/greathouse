@@ -12,9 +12,8 @@ for(var i = 0; i < divs.length; i+=2) {
 // This adds a see all link inside the wordpress menu, without messing up the function up above
 
 jQuery( "<a class='see_all_products' href='/shop'>See All Products</a>" ).insertBefore( ".menu_col:first-of-type" );
-  
-  
-  
+ 
+
   // New Arrivals
   
   jQuery('.new_arrival_slideshow').slick({
