@@ -228,6 +228,9 @@ header .inner_header .header_logo_nav_wrapper .mobile_menu_wrapper .menu_bar {
   position: relative;
   margin-top: 12px;
 }
+.single_product_square a {
+  text-decoration: none;
+}
 .single_product_square .product_overlay {
   background: rgba(0, 0, 0, 0.6);
   height: 280px;
@@ -505,6 +508,25 @@ footer .inner_footer span.large_header {
   color: #777777;
   font-size: 13px;
   line-height: 1.4;
+}
+
+.highrank_logo {
+  display: none;
+}
+
+/* Internal */
+.banner {
+  width: 100%;
+  background: url(images/hero_intl_allcategories.jpg) top left no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 100px 0;
+}
+.banner span {
+  font-family: "Voltage W00 Light", arial;
+  color: #000;
+  text-transform: lowercase;
+  font-size: 50px;
 }
 
 @media screen and (min-width: 750px) {
@@ -889,6 +911,10 @@ footer .inner_footer span.large_header {
   .copyright img {
     float: right;
   }
+
+  .highrank_logo {
+    display: block;
+  }
 }
 /* Media Query */
 @media screen and (min-width: 1150px) {
@@ -946,8 +972,8 @@ footer .inner_footer span.large_header {
   }
   .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li > ul.sub-menu {
     position: absolute;
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
     /* */
     top: 116px;
     left: 0;
@@ -1035,7 +1061,7 @@ footer .inner_footer span.large_header {
   }
 
   .product_categories_wrapper {
-    padding: 2% 0px 50px;
+    padding: 2% 0px;
     overflow: hidden;
   }
   .product_categories_wrapper .product_inner {
@@ -1121,6 +1147,14 @@ footer .inner_footer span.large_header {
     padding: 15px 55px 25px;
     max-width: 2000px;
     margin: 0 auto;
+  }
+
+  /* Internal */
+  .banner {
+    padding: 120px 0;
+  }
+  .banner span {
+    font-size: 80px;
   }
 }
 /* Media Query */
@@ -1210,7 +1244,7 @@ footer .inner_footer span.large_header {
   }
 
   .product_categories_wrapper {
-    padding: 145px 0 114px;
+    padding: 145px 0;
     max-width: 1600px;
     margin: 0 auto;
   }
@@ -1329,6 +1363,14 @@ footer .inner_footer span.large_header {
 
   .copyright {
     max-width: 2110px;
+  }
+
+  /* Internal */
+  .banner {
+    padding: 145px 0;
+  }
+  .banner span {
+    font-size: 120px;
   }
 }
 /* Media Query */

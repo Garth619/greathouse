@@ -296,6 +296,9 @@ header {
 	text-align: center;
 	position: relative;
 	margin-top:12px;
+	a {
+		text-decoration: none;
+	}
 	.product_overlay {
 		background:rgba(0, 0, 0, 0.6);
 		height:280px;
@@ -601,6 +604,30 @@ footer {
 	font-size:13px;
 	line-height:1.4;
 }
+
+.highrank_logo {
+	display: none;
+}
+
+
+/* Internal */
+
+
+
+.banner {
+	width:100%;
+	background:url(images/hero_intl_allcategories.jpg) top left no-repeat;
+	background-size:cover;
+	text-align: center;
+	padding:100px 0;
+	span {
+		font-family: $voltagelight;
+		color:$black;
+		text-transform: lowercase;
+		font-size:50px;
+	}
+}
+
 
 
 @media screen and (min-width: 750px) {
@@ -1084,6 +1111,10 @@ footer {
 	}
 }
 
+.highrank_logo {
+	display: block;
+}
+
 
 	
 	
@@ -1119,9 +1150,6 @@ header {
 	display: block;
 	float:right;
 	.desktop_menu {
-		
-		
-		
 		ul#menu-menu-1 {
 			list-style: none;
 			> li.current_page_item {
@@ -1158,8 +1186,8 @@ header {
 				}
 				> ul.sub-menu {
 					position:absolute;
-					opacity:1;
-					visibility: visible; /* */
+					opacity:0;
+					visibility: hidden; /* */
 					top:116px;
 					left:0;
 					background:rgba(47, 47, 47, 0.98);
@@ -1173,8 +1201,7 @@ header {
 						font-size:12px;
 						width:100%;
 						margin:0%;
-						
-						 a {
+						a {
 							color:$bluedark;
 							border-bottom:1px solid $greymenuborder;
 							padding-bottom:15px;
@@ -1188,12 +1215,10 @@ header {
 								width:100%;
 								margin-bottom:60px;
 							li.current_page_item {
-				
-				a {
-					color:$bluedark;
-				}
-			}
-							
+								a {
+									color:$bluedark;
+								}
+							}
 							li {
 								display: block;
 								a {
@@ -1279,7 +1304,7 @@ header {
 
 
 .product_categories_wrapper {
-	padding:2% 0px 50px;
+	padding:2% 0px;
 	overflow: hidden;
 	.product_inner {
 		overflow: hidden;
@@ -1394,6 +1419,21 @@ footer {
 	padding:15px 55px 25px;
 	max-width:2000px;
 	margin:0 auto;
+}
+
+
+
+
+/* Internal */
+
+
+
+.banner {
+	padding:120px 0;
+	span {
+		
+		font-size:80px;
+	}
 }
 
 
@@ -1525,7 +1565,7 @@ footer {
 }
 
 .product_categories_wrapper {
-	padding: 145px 0 114px;
+	padding: 145px 0;
 	max-width:1600px;
 	margin:0 auto;
 }
@@ -1706,7 +1746,17 @@ footer {
 }
 
 
+/* Internal */
 
+
+
+.banner {
+	padding:145px 0;
+	span {
+		
+		font-size:120px;
+	}
+}
 
 
 

@@ -145,7 +145,7 @@
 	<span>Copyright 2016&copy; Greathouse Furniture.<br class="copy_mobile"/>All rights reserved. Sitemap &nbsp;|&nbsp; Google+</span>
 	
 	<a href="" target="_blank">
-		<img src="<?php bloginfo('template_directory');?>/images/footer-highrank.png"/>
+		<img class="highrank_logo" src="<?php bloginfo('template_directory');?>/images/footer-highrank.png"/>
 	</a>
 
 </div>
