@@ -1116,25 +1116,27 @@ header {
 .desktop_menu_wrapper {
 	display: block;
 	float:right;
-	
 	.desktop_menu {
-		ul {
+		
+		
+		
+		ul#menu-menu-1 {
 			list-style: none;
-			li:hover > ul.sub-menu {
+			> li:hover > ul.sub-menu {
 				opacity:1;
 				visibility: visible; 
 			}
-			li:hover > a {
+			> li:hover > a {
 				background:$blackmed;
 				color:#fff;
 			}
-			li {
+			> li {
 				font-size:14px;
 				font-family: $oswaldreg;
 				text-transform: uppercase;
 				display: inline-block;
 				letter-spacing: 0.7px;
-				> a {
+				 > a {
 					color:#000;
 					text-decoration: none;
 					display: block;
@@ -1146,10 +1148,10 @@ header {
 						color:#fff;
 					}
 				}
-				ul.sub-menu {
+				> ul.sub-menu {
 					position:absolute;
 					opacity:0;
-					visibility: hidden;
+					visibility: hidden; /* */
 					top:116px;
 					left:0;
 					background:rgba(47, 47, 47, 0.98);
@@ -1158,44 +1160,34 @@ header {
 					padding: 82px 20% 0 40px;
 					margin:0;
 					transition: all .2s ease-in-out;
-					li:hover > a {
-						background:transparent;
-						
-					}
-					li {
+					list-style: none;
+					 li {
 						font-size:12px;
 						width:100%;
 						margin:0%;
 						
-						a {
+						 a {
 							color:$bluedark;
 							border-bottom:1px solid $greymenuborder;
-							padding:0;
 							padding-bottom:15px;
+							display: block;
+							
 							&:hover {
 								background:transparent;
 							}
 						}
-						ul.sub-menu {
-							background: none;
-							padding:0;
-							position: relative;
-							height:auto;
-							margin-bottom:60px;
-							opacity:1;
-							top:0;
-							visibility: visible;
+						> ul.sub-menu {
+								width:100%;
+								margin-bottom:60px;
 							li {
 								display: block;
-								margin:0;
-								width:100%;
-								
 								a {
 									color:#fff;
-									border-bottom:none;
+									border:none;
 									margin-top:20px;
 									padding-bottom:0;
 									transition:all .2s ease-in-out;
+									text-decoration: none;
 									&:hover {
 										color:$bluedark;
 										background:transparent;

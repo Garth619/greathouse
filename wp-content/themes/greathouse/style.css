@@ -907,25 +907,25 @@ footer .inner_footer span.large_header {
     display: block;
     float: right;
   }
-  .desktop_menu_wrapper .desktop_menu ul {
+  .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 {
     list-style: none;
   }
-  .desktop_menu_wrapper .desktop_menu ul li:hover > ul.sub-menu {
+  .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li:hover > ul.sub-menu {
     opacity: 1;
     visibility: visible;
   }
-  .desktop_menu_wrapper .desktop_menu ul li:hover > a {
+  .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li:hover > a {
     background: #2f2f2f;
     color: #fff;
   }
-  .desktop_menu_wrapper .desktop_menu ul li {
+  .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li {
     font-size: 14px;
     font-family: "oswaldregular", arial;
     text-transform: uppercase;
     display: inline-block;
     letter-spacing: 0.7px;
   }
-  .desktop_menu_wrapper .desktop_menu ul li > a {
+  .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li > a {
     color: #000;
     text-decoration: none;
     display: block;
@@ -933,14 +933,15 @@ footer .inner_footer span.large_header {
     transition: all .2s ease-in-out;
     cursor: pointer;
   }
-  .desktop_menu_wrapper .desktop_menu ul li > a:hover {
+  .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li > a:hover {
     background: #2f2f2f;
     color: #fff;
   }
-  .desktop_menu_wrapper .desktop_menu ul li ul.sub-menu {
+  .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li > ul.sub-menu {
     position: absolute;
     opacity: 0;
     visibility: hidden;
+    /* */
     top: 116px;
     left: 0;
     background: rgba(47, 47, 47, 0.98);
@@ -949,47 +950,38 @@ footer .inner_footer span.large_header {
     padding: 82px 20% 0 40px;
     margin: 0;
     transition: all .2s ease-in-out;
+    list-style: none;
   }
-  .desktop_menu_wrapper .desktop_menu ul li ul.sub-menu li:hover > a {
-    background: transparent;
-  }
-  .desktop_menu_wrapper .desktop_menu ul li ul.sub-menu li {
+  .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li > ul.sub-menu li {
     font-size: 12px;
     width: 100%;
     margin: 0%;
   }
-  .desktop_menu_wrapper .desktop_menu ul li ul.sub-menu li a {
+  .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li > ul.sub-menu li a {
     color: #79b7c0;
     border-bottom: 1px solid #6f6f6f;
-    padding: 0;
     padding-bottom: 15px;
+    display: block;
   }
-  .desktop_menu_wrapper .desktop_menu ul li ul.sub-menu li a:hover {
+  .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li > ul.sub-menu li a:hover {
     background: transparent;
   }
-  .desktop_menu_wrapper .desktop_menu ul li ul.sub-menu li ul.sub-menu {
-    background: none;
-    padding: 0;
-    position: relative;
-    height: auto;
-    margin-bottom: 60px;
-    opacity: 1;
-    top: 0;
-    visibility: visible;
-  }
-  .desktop_menu_wrapper .desktop_menu ul li ul.sub-menu li ul.sub-menu li {
-    display: block;
-    margin: 0;
+  .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li > ul.sub-menu li > ul.sub-menu {
     width: 100%;
+    margin-bottom: 60px;
   }
-  .desktop_menu_wrapper .desktop_menu ul li ul.sub-menu li ul.sub-menu li a {
+  .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li > ul.sub-menu li > ul.sub-menu li {
+    display: block;
+  }
+  .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li > ul.sub-menu li > ul.sub-menu li a {
     color: #fff;
-    border-bottom: none;
+    border: none;
     margin-top: 20px;
     padding-bottom: 0;
     transition: all .2s ease-in-out;
+    text-decoration: none;
   }
-  .desktop_menu_wrapper .desktop_menu ul li ul.sub-menu li ul.sub-menu li a:hover {
+  .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li > ul.sub-menu li > ul.sub-menu li a:hover {
     color: #79b7c0;
     background: transparent;
   }
