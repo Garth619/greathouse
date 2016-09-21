@@ -267,6 +267,7 @@ header {
 	font-family: $didot;
 	position: relative;
 	padding:0 20px;
+	overflow: hidden;
 	.awards {
 		display:none;
 	}
@@ -660,7 +661,7 @@ header {
 			.logo_wrapper {
 				background: #000 none repeat scroll 0 0;
 				float: left;
-				padding: 15px 30px 9px;
+				padding: 15px 30px 10px;
 				width: 374px;
 				&:after {
 					content:"indoor + outdoor";
@@ -689,6 +690,7 @@ header {
 
 .main_banner_wrapper {
 	height:615px;
+	
 	.awards {
 		display: block;
 		position: absolute;
@@ -1122,6 +1124,12 @@ header {
 		
 		ul#menu-menu-1 {
 			list-style: none;
+			> li.current_page_item {
+				background:$blackmed;
+				a {
+					color:#fff;
+				}
+			}
 			> li:hover > ul.sub-menu {
 				opacity:1;
 				visibility: visible; 
@@ -1179,6 +1187,13 @@ header {
 						> ul.sub-menu {
 								width:100%;
 								margin-bottom:60px;
+							li.current_page_item {
+				
+				a {
+					color:$bluedark;
+				}
+			}
+							
 							li {
 								display: block;
 								a {

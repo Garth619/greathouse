@@ -201,6 +201,7 @@ header .inner_header .header_logo_nav_wrapper .mobile_menu_wrapper .menu_bar {
   font-family: "Didot- LP W01 Regular", arial;
   position: relative;
   padding: 0 20px;
+  overflow: hidden;
 }
 .main_banner_wrapper .awards {
   display: none;
@@ -557,7 +558,7 @@ footer .inner_footer span.large_header {
   header .inner_header .header_logo_nav_wrapper .logo_wrapper {
     background: #000 none repeat scroll 0 0;
     float: left;
-    padding: 15px 30px 9px;
+    padding: 15px 30px 10px;
     width: 374px;
   }
   header .inner_header .header_logo_nav_wrapper .logo_wrapper:after {
@@ -910,6 +911,12 @@ footer .inner_footer span.large_header {
   .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 {
     list-style: none;
   }
+  .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li.current_page_item {
+    background: #2f2f2f;
+  }
+  .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li.current_page_item a {
+    color: #fff;
+  }
   .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li:hover > ul.sub-menu {
     opacity: 1;
     visibility: visible;
@@ -969,6 +976,9 @@ footer .inner_footer span.large_header {
   .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li > ul.sub-menu li > ul.sub-menu {
     width: 100%;
     margin-bottom: 60px;
+  }
+  .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li > ul.sub-menu li > ul.sub-menu li.current_page_item a {
+    color: #79b7c0;
   }
   .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li > ul.sub-menu li > ul.sub-menu li {
     display: block;
