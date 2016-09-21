@@ -1,18 +1,17 @@
 jQuery(document).ready(function(){
   
   
-  
+// This scans the list items on the desktop menu and add <div class="menu_col"></div> around every two items. This creates Four coulmns that will stack the items vertically 
 
- //jQuery("ul#menu-menu-1 > li > ul.sub-menu > li").addClass("garrett");
- 
 
 var divs = jQuery("ul#menu-menu-1 > li > ul.sub-menu > li");
 for(var i = 0; i < divs.length; i+=2) {
   divs.slice(i, i+2).wrapAll("<div class='menu_col'></div>");
 }
 
+// This adds a see all link inside the wordpress menu, without messing up the function up above
 
-
+jQuery( "<a class='see_all_products' href='/shop'>See All Products</a>" ).insertBefore( ".menu_col:first-of-type" );
   
   
   

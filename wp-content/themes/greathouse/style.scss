@@ -1158,14 +1158,14 @@ header {
 				}
 				> ul.sub-menu {
 					position:absolute;
-					opacity:0;
-					visibility: hidden; /* */
+					opacity:1;
+					visibility: visible; /* */
 					top:116px;
 					left:0;
 					background:rgba(47, 47, 47, 0.98);
 					z-index: 1000;
 					width:100%;
-					padding: 82px 20% 0 40px;
+					padding: 100px 20% 50px 40px;
 					margin:0;
 					transition: all .2s ease-in-out;
 					list-style: none;
@@ -1215,6 +1215,20 @@ header {
 			}
 		}
 	}
+}
+
+
+.see_all_products {
+	color:#fff;
+	text-decoration: none;
+	position:absolute;
+	top:57px;
+	left:84px;
+	font-size:12px;
+}
+
+.see_all_products:hover {
+	color:$bluedark;
 }
 
 
