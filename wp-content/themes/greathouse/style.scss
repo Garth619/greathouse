@@ -165,6 +165,16 @@ body {
 	font-size:14px;
 	padding:11px 20px 9px;
 	letter-spacing: 1.1px;
+
+}
+
+.blue_shop {
+	background: $bluedark;
+	font-size:14px;
+	font-family:$oswaldreg;
+	text-transform: uppercase;
+	padding:18px 55px;
+	display:inline-block;
 }
 
 
@@ -625,6 +635,82 @@ footer {
 		color:$black;
 		text-transform: lowercase;
 		font-size:50px;
+	}
+}
+
+/* Sidebar Template */
+
+
+.container_wrapper {
+	margin:45px 20px;
+	.sidebar_wrapper {
+		width:100%;
+		.discount_wrapper {
+			background:url(images/sidebar-pic.jpg) center center no-repeat;
+			background-size:cover;
+			text-align: center;
+			padding:60px 10px;
+			a {
+				color:#fff;
+				text-decoration: none;
+			}
+			.sale_title {
+				font-family: $voltagelight;
+				font-size:40px;
+				display:block;
+			}
+			.blue_box {
+				background: $bluelight;
+				width:60px;
+				height:3px;
+				display: inline-block;
+				margin:8px 0 18px;
+			}
+			.discount_description {
+				display: block;
+				font-family: $oswaldreg;
+				text-transform: uppercase;
+				font-size:35px;
+				line-height:1.2;
+				margin-bottom:25px;
+			}
+		}
+		
+		
+		.container {
+			
+		}
+	}
+}
+
+#content {
+	font-size:19px;
+	line-height:1.4;
+	h1 {
+		font-family: $oswaldreg;
+		font-size:50px;
+		text-transform: uppercase;
+		margin-bottom:14px;
+		font-style:none;
+		font-weight: 300;
+	}
+	h2 {
+		font-family: $oswaldreg;
+		font-size:22px;
+		text-transform: uppercase;
+		font-style:none;
+		font-weight: 300;
+		margin-bottom:6px;
+	}
+	p {
+		margin-bottom:35px;
+	}
+	a {
+		color:$bluedark;
+		text-decoration: none;
+		&:hover {
+			text-decoration:underline;
+		}
 	}
 }
 

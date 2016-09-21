@@ -115,6 +115,15 @@ body {
   letter-spacing: 1.1px;
 }
 
+.blue_shop {
+  background: #79b7c0;
+  font-size: 14px;
+  font-family: "oswaldregular", arial;
+  text-transform: uppercase;
+  padding: 18px 55px;
+  display: inline-block;
+}
+
 /* Header */
 header .inner_header .header_special_deal {
   background: #79b7c0;
@@ -527,6 +536,75 @@ footer .inner_footer span.large_header {
   color: #000;
   text-transform: lowercase;
   font-size: 50px;
+}
+
+/* Sidebar Template */
+.container_wrapper {
+  margin: 45px 20px;
+}
+.container_wrapper .sidebar_wrapper {
+  width: 100%;
+}
+.container_wrapper .sidebar_wrapper .discount_wrapper {
+  background: url(images/sidebar-pic.jpg) center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 60px 10px;
+}
+.container_wrapper .sidebar_wrapper .discount_wrapper a {
+  color: #fff;
+  text-decoration: none;
+}
+.container_wrapper .sidebar_wrapper .discount_wrapper .sale_title {
+  font-family: "Voltage W00 Light", arial;
+  font-size: 40px;
+  display: block;
+}
+.container_wrapper .sidebar_wrapper .discount_wrapper .blue_box {
+  background: #7dccd8;
+  width: 60px;
+  height: 3px;
+  display: inline-block;
+  margin: 8px 0 18px;
+}
+.container_wrapper .sidebar_wrapper .discount_wrapper .discount_description {
+  display: block;
+  font-family: "oswaldregular", arial;
+  text-transform: uppercase;
+  font-size: 35px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+#content {
+  font-size: 19px;
+  line-height: 1.4;
+}
+#content h1 {
+  font-family: "oswaldregular", arial;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  font-style: none;
+  font-weight: 300;
+}
+#content h2 {
+  font-family: "oswaldregular", arial;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-style: none;
+  font-weight: 300;
+  margin-bottom: 6px;
+}
+#content p {
+  margin-bottom: 35px;
+}
+#content a {
+  color: #79b7c0;
+  text-decoration: none;
+}
+#content a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 750px) {
