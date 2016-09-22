@@ -721,7 +721,7 @@ footer {
 	.no_sidebar_inner {
 		width:92%;
 		float:left;
-		span.large_header {
+		span.large_header_no_sidebar {
 			font-family:$oswaldreg;
 			text-transform: uppercase;
 			font-size:50px;
@@ -745,6 +745,53 @@ footer {
 	}
 }
 
+
+/* Team Pics */
+
+#content {
+	.team_wrapper {
+		.single_team_square {
+			width:100%;
+			text-align: center;
+			position: relative;
+			margin-top:12px;
+			a {
+				text-decoration: none;
+			}
+			.team_overlay {
+				background:rgba(0, 0, 0, 0.6);
+				height:280px;
+				position: relative;
+				z-index:5;
+				.team_inner_wrapper {
+					position: relative;
+					top: 50%;
+					transform: translateY(-50%);
+					span.large_header {
+						color:#fff;
+						font-family: $oswaldreg;
+						text-transform: uppercase;
+						font-size:41px;
+						display: block;
+						margin-bottom: 10px;
+					}
+					span.sub_header {
+						color:$bluedark;
+						font-family: $voltagereg;
+						font-size:26px;
+					}
+				}
+			}
+			.team_background {
+				width:100%;
+				height:280px;
+				position: absolute;
+				top:0;
+				left:0;
+			}
+		}
+	}
+}
 
 
 
@@ -1333,6 +1380,49 @@ footer {
 }
 
 
+
+
+
+/* Team Pics */
+
+#content {
+	.team_wrapper {
+		overflow: hidden;
+		.single_team_square {
+			margin-top:2%;
+			width:49%;
+			float:left;
+
+			&:nth-of-type(2n + 1) {
+				margin-right:1%;
+			}
+			&:nth-of-type(2n + 2) {
+				margin-left:1%;
+			}
+
+			.team_overlay {
+				height:355px;
+				.team_inner_wrapper {
+					
+					span.large_header {
+						
+					}
+					span.sub_header {
+						
+					}
+				}
+			}
+			.team_background {
+				height:355px;
+			}
+		}
+	}
+}
+
+
+
+
+
 	
 	
 } /* Media Query */
@@ -1730,6 +1820,56 @@ footer {
 		font-size:80px;
 	}
 }
+
+
+
+
+
+/* Team Pics */
+
+#content {
+	.team_wrapper {
+		padding:2% 0px;
+		overflow: hidden;
+		.single_team_square {
+			width: 20%;
+			padding:0;
+			margin:0 .5% 1%;
+			&:first-of-type {
+				margin-left:0;
+			}
+			&:nth-of-type(5n + 5) {
+				margin-right:0%;
+			}
+			&:nth-of-type(2n + 1) {
+				margin-right:0%;
+			}
+			&:nth-of-type(2n + 2) {
+				margin-left:0%;
+			}
+
+			.team_overlay {
+				height:210px;
+				.team_inner_wrapper {
+					
+					span.large_header {
+						font-size:18px;
+						margin-bottom:0;
+					}
+					span.sub_header {
+						font-size:26px;
+					}
+				}
+			}
+			.team_background {
+				height:210px;
+			}
+		}
+	}
+}
+
+
+
 
 
 	
