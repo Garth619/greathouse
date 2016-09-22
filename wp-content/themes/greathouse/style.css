@@ -1325,6 +1325,11 @@ footer .inner_footer span.large_header {
   }
 }
 /* Media Query */
+@media screen and (min-width: 1200px) {
+  .discount_wrapper {
+    padding: 60px;
+  }
+}
 @media screen and (min-width: 1300px) {
   /* Footer */
   .dekstop_logo_menu_wrapper {
