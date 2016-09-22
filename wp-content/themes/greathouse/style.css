@@ -607,13 +607,11 @@ footer .inner_footer span.large_header {
 /* No Sidebar Template */
 .no_sidebar_wrapper {
   margin: 98px 0;
-  width: 100%;
-  border-top: #79b7c0 1px solid;
-  padding: 0 25px;
+  overflow: hidden;
 }
 .no_sidebar_wrapper .no_sidebar_inner {
-  max-width: 1125px;
-  margin: 0 auto;
+  width: 92%;
+  float: left;
 }
 .no_sidebar_wrapper .no_sidebar_inner span.large_header {
   font-family: "oswaldregular", arial;
@@ -623,6 +621,16 @@ footer .inner_footer span.large_header {
   padding-top: 60px;
   padding-bottom: 30px;
   line-height: 1.1;
+  border-top: #79b7c0 1px solid;
+}
+.no_sidebar_wrapper .no_sidebar_spacer {
+  border-top: #79b7c0 1px solid;
+  float: left;
+  width: 4%;
+  height: 1px;
+}
+.no_sidebar_wrapper .no_sidebar_spacer:last-of-type {
+  border-top: none;
 }
 
 /* Inner Page Content */
@@ -1106,10 +1114,6 @@ footer .inner_footer span.large_header {
   }
 }
 /* Media Query */
-@media screen and (min-width: 1060px) {
-  /* No Sidebar Template */
-}
-/* Media Query */
 @media screen and (min-width: 1150px) {
   /* Header */
   header {
@@ -1357,6 +1361,14 @@ footer .inner_footer span.large_header {
   }
 }
 @media screen and (min-width: 1300px) {
+  /* No Sidebar Template */
+  .no_sidebar_wrapper .no_sidebar_inner {
+    width: 80%;
+  }
+  .no_sidebar_wrapper .no_sidebar_spacer {
+    width: 10%;
+  }
+
   /* Footer */
   .dekstop_logo_menu_wrapper {
     width: 33.3333333%;
@@ -1574,5 +1586,41 @@ footer .inner_footer span.large_header {
 /* Media Query */
 @media screen and (min-width: 1670px) {
   /* No Sidebar Template */
+  .no_sidebar_wrapper .no_sidebar_inner {
+    width: 66%;
+  }
+  .no_sidebar_wrapper .no_sidebar_spacer {
+    width: 17%;
+  }
+}
+/* Media Query */
+@media screen and (min-width: 2000px) {
+  /* No Sidebar Template */
+  .no_sidebar_wrapper .no_sidebar_inner {
+    width: 60%;
+  }
+  .no_sidebar_wrapper .no_sidebar_spacer {
+    width: 20%;
+  }
+}
+/* Media Query */
+@media screen and (min-width: 2400px) {
+  /* No Sidebar Template */
+  .no_sidebar_wrapper .no_sidebar_inner {
+    width: 50%;
+  }
+  .no_sidebar_wrapper .no_sidebar_spacer {
+    width: 25%;
+  }
+}
+/* Media Query */
+@media screen and (min-width: 3800px) {
+  /* No Sidebar Template */
+  .no_sidebar_wrapper .no_sidebar_inner {
+    width: 35%;
+  }
+  .no_sidebar_wrapper .no_sidebar_spacer {
+    width: 32.5%;
+  }
 }
 /* Media Query */

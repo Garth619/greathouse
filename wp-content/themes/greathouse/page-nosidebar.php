@@ -17,6 +17,8 @@ get_header(); ?>
 
 <div class="no_sidebar_wrapper">
 	
+	<div class="no_sidebar_spacer"></div><!-- no_sidebar_spacer -->
+
 	<div class="no_sidebar_inner">
 	
 		<span class="large_header">More than just a furniture store</span><!-- large_header -->
@@ -34,6 +36,8 @@ get_header(); ?>
 		</div><!-- no_sidebar_content -->
 	
 	</div><!-- no_sidebar_inner -->
+	
+	<div class="no_sidebar_spacer"></div><!-- no_sidebar_spacer -->
 		
 </div><!-- no_sidebar_wrapper -->
 
