@@ -529,7 +529,7 @@ footer .inner_footer span.large_header {
   background: url(images/hero_intl_allcategories.jpg) top left no-repeat;
   background-size: cover;
   text-align: center;
-  padding: 100px 0;
+  padding: 100px 20px;
 }
 .banner span {
   font-family: "Voltage W00 Light", arial;
@@ -604,6 +604,28 @@ footer .inner_footer span.large_header {
   text-decoration: none;
 }
 
+/* No Sidebar Template */
+.no_sidebar_wrapper {
+  margin: 98px 0;
+  width: 100%;
+  border-top: #79b7c0 1px solid;
+  padding: 0 25px;
+}
+.no_sidebar_wrapper .no_sidebar_inner {
+  max-width: 1125px;
+  margin: 0 auto;
+}
+.no_sidebar_wrapper .no_sidebar_inner span.large_header {
+  font-family: "oswaldregular", arial;
+  text-transform: uppercase;
+  font-size: 50px;
+  display: inline-block;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  line-height: 1.1;
+}
+
+/* Inner Page Content */
 #content {
   font-size: 19px;
   line-height: 1.4;
@@ -1084,6 +1106,10 @@ footer .inner_footer span.large_header {
   }
 }
 /* Media Query */
+@media screen and (min-width: 1060px) {
+  /* No Sidebar Template */
+}
+/* Media Query */
 @media screen and (min-width: 1150px) {
   /* Header */
   header {
@@ -1544,5 +1570,9 @@ footer .inner_footer span.large_header {
   .banner span {
     font-size: 120px;
   }
+}
+/* Media Query */
+@media screen and (min-width: 1670px) {
+  /* No Sidebar Template */
 }
 /* Media Query */
