@@ -535,7 +535,7 @@ footer .inner_footer span.large_header {
   font-family: "Voltage W00 Light", arial;
   color: #000;
   text-transform: lowercase;
-  font-size: 50px;
+  font-size: 60px;
 }
 
 /* Sidebar Template */
@@ -588,6 +588,7 @@ footer .inner_footer span.large_header {
 }
 #sidebar ul {
   list-style: none;
+  text-align: center;
 }
 #sidebar ul li:last-of-type {
   margin-bottom: 0;
@@ -597,8 +598,6 @@ footer .inner_footer span.large_header {
   font-family: "oswaldregular", arial;
   margin-bottom: 30px;
   letter-spacing: 0.8px;
-  width: 50%;
-  float: left;
 }
 #sidebar ul li a {
   color: #000;
@@ -639,6 +638,34 @@ footer .inner_footer span.large_header {
   margin: 0 0 35px 25px;
 }
 
+@media screen and (min-width: 455px) {
+  /* Sidebar Template */
+  #sidebar {
+    text-align: center;
+    padding-bottom: 4px;
+  }
+  #sidebar ul {
+    text-align: left;
+    overflow: hidden;
+  }
+  #sidebar ul li:last-of-type {
+    margin-bottom: 30px;
+  }
+  #sidebar ul li {
+    width: 50%;
+    float: left;
+    padding-left: 10%;
+  }
+}
+/* Media Query */
+@media screen and (min-width: 670px) {
+  /* Sidebar Template */
+  #sidebar ul li {
+    width: 33.33333%;
+    padding-left: 7%;
+  }
+}
+/* Media Query */
 @media screen and (min-width: 750px) {
   /* Global */
   .white_button {
@@ -1024,6 +1051,36 @@ footer .inner_footer span.large_header {
 
   .highrank_logo {
     display: block;
+  }
+}
+/* Media Query */
+@media screen and (min-width: 1000px) {
+  /* Sidebar Template */
+  .container_wrapper {
+    overflow: hidden;
+    max-width: 1300px;
+    margin: 97px auto;
+    padding: 0 45px;
+  }
+  .container_wrapper .container {
+    width: 70%;
+    float: right;
+    padding-left: 45px;
+    margin-top: -10px;
+  }
+
+  .sidebar_wrapper {
+    width: 30%;
+    float: left;
+  }
+
+  #sidebar ul {
+    text-align: left;
+  }
+  #sidebar ul li {
+    float: none;
+    width: 100%;
+    padding: 0;
   }
 }
 /* Media Query */
