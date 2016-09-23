@@ -14,10 +14,16 @@
 
 get_header(); ?>
 
-		<div id="container">
-			<div id="content" role="main">
+		
+<?php include('banner.php');?>
 
-<?php
+<div class="container_wrapper">
+	
+	<div class="container">
+		
+		<div id="content">
+			
+			<?php
 	/*
 	 * Queue the first post, that way we know
 	 * what date we're dealing with (if that is the case).
@@ -29,7 +35,7 @@ get_header(); ?>
 		the_post();
 ?>
 
-			<h1 class="page-title">
+			<h1 style="margin-top:20px;" class="page-title">
 <?php if ( is_day() ) : ?>
 				<?php printf( __( 'Daily Archives: <span>%s</span>', 'twentyten' ), get_the_date() ); ?>
 <?php elseif ( is_month() ) : ?>
@@ -57,8 +63,23 @@ get_header(); ?>
 	get_template_part( 'loop', 'archive' );
 ?>
 
-			</div><!-- #content -->
-		</div><!-- #container -->
+		
+			
+		</div><!-- content -->
+		
+	</div><!-- container -->
+	
+	
+	
+	<?php get_sidebar('blog'); ?>
+	
+	
+	
+</div><!-- container_wrapper -->
 
-<?php get_sidebar(); ?>
+
+		
 <?php get_footer(); ?>
+
+
+
