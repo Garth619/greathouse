@@ -648,6 +648,10 @@ footer {
 .sidebar_wrapper {
 	width:100%;
 }
+
+.sidebar_wrapper.blog {
+	display: none;
+}
 	
 .discount_wrapper {
 	background:url(images/sidebar-pic.jpg) center center no-repeat;
@@ -701,9 +705,14 @@ footer {
 			font-family: $oswaldreg;
 			margin-bottom:30px;
 			letter-spacing: 0.8px;
+			line-height:1.3;
 			a {
 				color:$black;
 				text-decoration: none;
+				transition:all .2s ease-in-out;
+				&:hover {
+					color:$bluedark;
+				}
 			}
 		}
 	}
@@ -860,6 +869,39 @@ footer {
 	}
 }
 
+
+/* Image Alignment */
+
+
+img.alignnone,
+img.alignleft,
+img.alignright,
+img.aligncenter {
+	display:block;
+	max-width:100%;
+	height:auto;
+	margin-bottom:20px
+}
+
+
+.wp-caption {
+	line-height: 18px;
+	margin-bottom: 5px;
+	max-width: 632px !important; /* prevent too-wide images from breaking layout */
+	text-align: center;
+}
+.wp-caption img {
+	max-width: 622px; /* caption width - 10px */
+}
+.wp-caption p.wp-caption-text {
+	color: #000;
+	font-size: 15px;
+	margin: 5px 5px 15px !important;
+	
+}
+
+
+
 /* Blog Posts */
 
 
@@ -869,6 +911,8 @@ footer {
 
 #nav-below {
 	margin-top:65px;
+	font-family: $oswaldreg;
+	text-transform: uppercase;
 }
 
 
@@ -925,6 +969,45 @@ footer {
 	
 	
 	
+} /* Media Query */
+
+
+
+@media screen and (min-width: 565px) {
+
+
+/* Image Alignment */
+
+
+
+.alignleft,
+img.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 24px;
+	margin-top: 4px;
+}
+.alignright,
+img.alignright {
+	display: inline;
+	float: right;
+	margin-left: 24px;
+	margin-top: 4px;
+}
+.aligncenter,
+img.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+img.alignleft,
+img.alignright,
+img.aligncenter {
+	margin-bottom: 12px;
+}
+
+
 } /* Media Query */
 
 
@@ -1514,28 +1597,31 @@ footer {
 	}
 }
 
+
+.sidebar_wrapper.blog {
+	display: block;
+	ul {
+		li.recent {
+			color:$bluedark;
+		}
+		li.categories {
+			border-bottom:2px solid #000;
+			color:$bluedark;
+		}
+		li {
+			ul {
+				margin-top:35px;
+			}
+		}
+	}
+}
+
 .sidebar_wrapper {
 	width:30%;
 	float:left;
+}
+	
 
-	
-}
-	
-.discount_wrapper {
-	
-	a {
-		
-	}
-	.sale_title {
-		
-	}
-	.blue_box {
-		
-	}
-	.discount_description {
-		
-	}
-}
 
 
 
