@@ -699,6 +699,14 @@ footer .inner_footer span.large_header {
   font-weight: 300;
   margin-bottom: 6px;
 }
+#content h2.blog_post_title a {
+  color: #000;
+  transition: all .2s ease-in-out;
+}
+#content h2.blog_post_title a:hover {
+  color: #79b7c0;
+  text-decoration: none;
+}
 #content p {
   margin-bottom: 30px;
 }
@@ -725,6 +733,38 @@ footer .inner_footer span.large_header {
   display: block;
   margin: 30px auto;
   text-align: left;
+}
+
+/* Blog Posts */
+#nav-above {
+  margin-top: 25px;
+}
+
+#nav-below {
+  margin-top: 65px;
+}
+
+.blog_post:first-of-type {
+  padding-top: 0;
+}
+
+.blog_post:last-of-type {
+  border-bottom: 0;
+}
+
+.blog_post {
+  margin: 24px 0 0;
+  padding: 35px 0;
+  border-bottom: 1px solid #a6a6a6;
+}
+.blog_post .entry-meta {
+  text-transform: uppercase;
+  font-family: "oswaldregular", arial;
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+.blog_post .entry-meta span {
+  color: #79b7c0;
 }
 
 @media screen and (min-width: 455px) {

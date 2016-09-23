@@ -7,12 +7,7 @@
 get_header(); ?>
 
 
-<div class="banner">
-	
-	<span class="">Designs Services</span>
-	
-	
-</div><!-- banner -->
+<?php include('banner.php');?>
 
 
 <div class="no_sidebar_wrapper">
