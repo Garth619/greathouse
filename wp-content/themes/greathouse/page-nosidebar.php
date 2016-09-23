@@ -235,14 +235,39 @@ get_header(); ?>
 	
 			</div><!-- single_product_square -->
 					
-					
-					
+
+		</section><!-- team_wrapper -->
 				
 				
+				<h2>in-home Design Consultation</h2>
+				
+				<p>Greathouse proudly offers in Home Design Consultations with one of our professional interior designers. Let us help you transform ordinary into extraordinary living. Our team of talented designers will work with you to produce awe inspiring custom home packages unique to your lifestyle. Visit or call our showroom today to schedule an appointment and get you on your way.</p>
 				
 				
-				</section><!-- team_wrapper -->
+				<span class="quote">“treat yourself, you deserve it ” -greathouse</span>
 				
+				
+				<h2>Free Instore Design Consultation</h2>
+					<p>Greathouse offers our customers complimentary in store design services.  Our Sales associates are professional designers who can help you conceive & create the home of your dreams.  Stop by our beautiful showroom anytime or call ahead to schedule a one on one free in store consultation with one of expert designers today.  To maximize your experience, you may find it helpful to bring with you the following:</p>
+
+<ul>
+<li>Room Dimensions/Floor Plan</li>
+<li>Photographs</li>
+<li>Pictures of  current furniture</li>
+<li>Magazine shots (images of preferred styling)</li>
+<li>Paint Sample</li>
+<li>Floor Sample</li>
+</ul>
+
+<h2>asid industry partner</h2>
+
+<p>Greathouse is delighted to be an ASID Industry Partner. We offer Exclusive discount to our all designers who are registered with us. To register, simply bring:</p>
+
+<ul>
+<li>Copy of Business License</li>
+<li>Copy of Resellers Permit</li>
+<li>Business Card</li>
+</ul>			
 			
 			</div><!-- content -->
 	
