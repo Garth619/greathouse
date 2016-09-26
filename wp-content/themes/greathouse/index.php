@@ -6,7 +6,10 @@
 
 get_header(); ?>
 
-		<?php include('banner.php');?>
+
+
+<?php include('banner-blog.php');?>
+		
 
 <div class="container_wrapper">
 	

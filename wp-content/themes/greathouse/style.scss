@@ -940,6 +940,62 @@ img.aligncenter {
 }
 
 
+/* Locations */
+
+
+#content {
+	.locations_wrapper {
+		margin-top:10px;
+		.location {
+			margin-bottom:25px;
+			span.large_header {
+				text-transform: uppercase;
+				font-family: $oswaldreg;
+				font-size:25px;
+				color: $bluedark;
+				display: block;
+				margin-bottom:5px;
+			}
+			a.sub_header {
+				font-family: $oswaldreg;
+				text-transform: uppercase;
+				color:$grey;
+				font-size:18px;
+				line-height:1.4;
+				display: inline-block;
+				&:hover {
+					color:$bluedark;
+					transition:all .2s ease-in-out;
+					text-decoration: none;
+				}
+			}
+			a.locations_phone {
+				color:$black;
+				font-size:21px;
+				font-family: $oswaldreg;
+				display: block;
+				margin:8px 0;
+				&:hover {
+					color:$bluedark;
+					transition:all .2s ease-in-out;
+					text-decoration: none;
+				}
+			}
+			a.locations_directions {
+				font-family: $voltagereg;
+				text-transform: lowercase;
+				font-size:26px;
+				
+			}
+			iframe {
+				width:100%;
+				height:315px;
+				margin-top:25px;
+			}
+		}
+	}
+}
+
 
 
 @media screen and (min-width: 455px) {

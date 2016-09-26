@@ -1,4 +1,4 @@
-<!-- Banners for the Inner Staic Pages. Blog and Posts are located on the index.php and other post temlplates -->
+<!-- Banners for the Inner Staic Pages. -->
 
 <?php if(get_field('inner_page_banners')): ?>
 
@@ -13,6 +13,7 @@
 <?php endif;?>
 
 <!-- Below is changing the color options for the banner text on inner pages -->
+
 
 	<?php if( get_field('banner_font_color') == 'Black' ): ?>
 
@@ -31,6 +32,9 @@
 		<span style="color:#79b7c0"><?php the_title();?></span>
 		
 	<?php endif;?>
+	
+
+
 	
 </div><!-- banner -->
 

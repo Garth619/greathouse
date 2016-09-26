@@ -606,3 +606,18 @@ function my_jquery_enqueue() {
    wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js", false, null,true);
    wp_enqueue_script('jquery');
 }
+
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Blog Banner Settings',
+		'menu_title'	=> 'Blog Banner Settings',
+		'menu_slug' 	=> 'blogp-banner-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+	
+	
+	
+}

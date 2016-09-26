@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<?php include('banner.php');?>
+<?php include('banner-blog.php');?>
 		
 
 
@@ -20,7 +20,7 @@ get_header(); ?>
 		
 		<div id="content">
 			
-			<?php
+	<?php
 	/*
 	 * Queue the first post, that way we know who
 	 * the author is when we try to get their name,

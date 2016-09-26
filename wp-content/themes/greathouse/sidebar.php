@@ -26,13 +26,6 @@
 				<li><a href="">Office</a></li>
 				<li><a href="">Pool Tables</a></li>
 				<li><a href="">Rugs</a></li>
-				<li><a href="">Rugs</a></li>
-				<li><a href="">Rugs</a></li>
-				<li><a href="">Rugs</a></li>
-				<li><a href="">Rugs</a></li>
-				<li><a href="">Rugs</a></li>
-				<li><a href="">Rugs</a></li>
-				<li><a href="">Rugs</a></li>
 			</ul>
 			
 		</div><!-- sidebar -->
