@@ -54,6 +54,8 @@ get_header(); ?>
 				
 			</div><!-- locations_wrapper -->
 			
+			<span class="hours_title">Store Hours</span>
+			<span class="hours">mon - sun &nbsp;|&nbsp;  10am - 6pm</span>
 			
 		</div><!-- content -->
 		
@@ -63,6 +65,18 @@ get_header(); ?>
 	
 </div><!-- container_wrapper -->
 
+<section class="form_wrapper">
+	
+	<div class="form_inner">
+		
+		<span class="sub_header">ask us anything</span>
+		<span class="large_header">We are here to help</span>
+		
+		<?php gravity_form(1, false, false, false, '', true, 12); ?>
+		
+	</div><!-- form_inner -->
+	
+</section><!-- form_banner -->
 
 		
 <?php get_footer(); ?>
