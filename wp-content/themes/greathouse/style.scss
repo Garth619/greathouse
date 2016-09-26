@@ -1122,6 +1122,81 @@ img.aligncenter {
 
 
 
+/* Overlay */
+
+
+.overlay {
+	width:100%;
+	height:100%;
+	position: fixed;
+	top:0;
+	left:0;
+	background:rgba(0, 0, 0, 0.8);
+	text-align: center;
+	.overlay_inner {
+		background:#fff;
+		width:90%;
+		margin:10% auto;
+		padding:5%;
+		position: relative;
+		
+	}
+	.overlay_close {
+		position: absolute;
+		top:15px;
+		right:15px;
+		width:20px;
+	}
+	span.sub_header {
+		font-size:40px;
+		font-family: $voltagereg;
+		color:$bluedark;
+		display: block;
+		margin:40px 5px 20px;
+	}
+	span.large_header {
+		font-family: $oswaldreg;
+		font-size:33px;
+		text-transform: uppercase;
+		display: block;
+		line-height:1.2;
+		margin-bottom:20px;
+	}
+	span.additional {
+		
+	}
+	ul.gform_fields {
+		list-style: none;
+		margin-top:25px;
+		li {
+			label {
+					display: none;
+				}
+				input {
+					border:1px solid $bluedark;
+					text-align: center;
+					font-size:16px;
+					padding:7px;
+					font-family: $didot;
+					text-transform: lowercase;
+					width:100%;
+					max-width:465px;
+					-webkit-appearance: none;
+					border-radius:0;
+				}
+			}
+		}
+		#gform_submit_button_2 {
+			background:$bluedark;
+			border:none;
+			color:#fff;
+			
+		}
+	}
+
+
+
+
 @media screen and (min-width: 455px) {
 	
 	

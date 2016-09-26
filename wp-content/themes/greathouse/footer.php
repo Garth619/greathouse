@@ -148,7 +148,21 @@
 		<img class="highrank_logo" src="<?php bloginfo('template_directory');?>/images/footer-highrank.png"/>
 	</a>
 
-</div>
+</div><!-- copyright -->
+
+<div class="overlay">
+	
+	<div class="overlay_inner">
+		<img class="overlay_close" src="<?php bloginfo('template_directory');?>/images/x.png" />
+		<span class="sub_header">let yourself in.</span>
+		<span class="large_header">GET 15% off your next purchase</span>
+		<span class="additional">Plus, insider sales, invites + special offers.</span>
+		
+		<?php gravity_form(2, false, false, false, '', true, 15); ?>
+		
+	</div><!-- overlay_inner -->
+	
+</div><!-- overlay -->
 	
 <?php wp_footer(); ?>
 <script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/slick/slick/slick.min.js"></script>
