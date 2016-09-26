@@ -948,6 +948,8 @@ img.aligncenter {
 		margin-top:10px;
 		.location {
 			margin-bottom:25px;
+			padding-bottom:25px;
+			border-bottom:1px solid #d3d3d3;
 			span.large_header {
 				text-transform: uppercase;
 				font-family: $oswaldreg;
@@ -1697,6 +1699,55 @@ footer {
 		}
 	}
 }
+
+
+
+
+
+/* Locations */
+
+
+#content {
+	.locations_wrapper {
+		padding-left:35px;
+		.location {
+			overflow: hidden;
+			.location_content {
+				float:left;
+				width:30%;
+				span.large_header {
+				
+				}
+				a.sub_header {
+				
+					&:hover {
+					
+					}
+				}
+				a.locations_phone {
+				
+					&:hover {
+					
+					}
+					}
+				a.locations_directions {
+								
+				}
+			}
+			iframe {
+				float:left;
+				width:70%;
+				margin-top:0;
+				height:215px;
+			}
+		}
+	}
+}
+
+
+
+
+
 
 
 } /* Media Query */

@@ -814,6 +814,8 @@ img.aligncenter {
 }
 #content .locations_wrapper .location {
   margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #d3d3d3;
 }
 #content .locations_wrapper .location span.large_header {
   text-transform: uppercase;
@@ -1371,6 +1373,24 @@ img.aligncenter {
     float: none;
     width: 100%;
     padding: 0;
+  }
+
+  /* Locations */
+  #content .locations_wrapper {
+    padding-left: 35px;
+  }
+  #content .locations_wrapper .location {
+    overflow: hidden;
+  }
+  #content .locations_wrapper .location .location_content {
+    float: left;
+    width: 30%;
+  }
+  #content .locations_wrapper .location iframe {
+    float: left;
+    width: 70%;
+    margin-top: 0;
+    height: 215px;
   }
 }
 /* Media Query */
