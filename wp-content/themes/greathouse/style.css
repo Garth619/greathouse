@@ -906,7 +906,7 @@ img.aligncenter {
 .form_wrapper .form_inner ul li {
   width: 100%;
   margin-bottom: 12px;
-  width: 24.2%;
+  width: 100%;
   float: left;
   margin-right: 1%;
 }
@@ -926,15 +926,6 @@ img.aligncenter {
 .form_wrapper .form_inner ul li input:focus, .form_wrapper .form_inner ul li textarea:focus {
   border: 3px solid #000;
   padding: 10px;
-}
-.form_wrapper .form_inner ul li textarea {
-  height: 165px;
-}
-.form_wrapper .form_inner ul li#field_1_4 {
-  margin-right: 0;
-}
-.form_wrapper .form_inner ul li#field_1_5 {
-  width: 100%;
 }
 .form_wrapper .gform_button {
   background: #000;
@@ -960,6 +951,7 @@ img.aligncenter {
   letter-spacing: .7px;
   margin-top: 10px;
   padding-left: 13px;
+  color: #000;
 }
 
 .form_wrapper ul li ::-webkit-input-placeholder {
@@ -993,6 +985,7 @@ img.aligncenter {
   text-align: center;
   z-index: 100;
   overflow-y: scroll;
+  display: none;
 }
 .overlay .overlay_inner {
   background: #fff;
@@ -1013,7 +1006,7 @@ img.aligncenter {
   font-family: "Voltage W00 Regular", arial;
   color: #79b7c0;
   display: block;
-  margin: 40px 5px 20px;
+  margin: 30px 5px 20px;
 }
 .overlay span.large_header {
   font-family: "oswaldregular", arial;
@@ -1022,6 +1015,7 @@ img.aligncenter {
   display: block;
   line-height: 1.2;
   margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 .overlay span.additional {
   font-size: 19px;
@@ -1056,6 +1050,16 @@ img.aligncenter {
   margin-top: 25px;
   -webkit-appearance: none;
   border-radius: 0;
+}
+
+.validation_error {
+  display: none;
+}
+
+.validation_message {
+  margin-top: 15px;
+  font-family: "oswaldregular", arial;
+  color: #79b7c0;
 }
 
 @media screen and (min-width: 455px) {
@@ -1905,6 +1909,24 @@ img.aligncenter {
   #content .team_wrapper .single_team_square .team_background {
     height: 210px;
   }
+
+  /* Form */
+  .form_wrapper .form_inner ul li {
+    width: 100%;
+    margin-bottom: 12px;
+    width: 24.2%;
+    float: left;
+    margin-right: 1%;
+  }
+  .form_wrapper .form_inner ul li textarea {
+    height: 165px;
+  }
+  .form_wrapper .form_inner ul li#field_1_4 {
+    margin-right: 0;
+  }
+  .form_wrapper .form_inner ul li#field_1_5 {
+    width: 100%;
+  }
 }
 /* Media Query */
 @media screen and (min-width: 1200px) {
@@ -2148,6 +2170,7 @@ img.aligncenter {
   /* Overlay */
   .overlay .overlay_inner {
     max-width: 815px;
+    margin: 5% auto;
   }
   .overlay span.sub_header {
     margin: 40px 5px 25px;

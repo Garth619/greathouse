@@ -1042,7 +1042,7 @@ img.aligncenter {
 			li {
 				width:100%;
 				margin-bottom:12px;
-				width:24.2%;
+				width:100%;
 				float:left;
 				margin-right:1%;
 				label {
@@ -1058,23 +1058,10 @@ img.aligncenter {
 					letter-spacing: 1.2px;
 					border-radius: 0;
 				}
-				input {
-					
-				}
 				input:focus, textarea:focus {
 					border:3px solid $black;
 					padding:10px;
 				}
-				textarea {
-					height:165px;
-				}
-				
-			}
-			li#field_1_4 {
-				margin-right:0;
-			}
-			li#field_1_5 {
-				width:100%;
 			}
 		}
 	}
@@ -1104,6 +1091,7 @@ img.aligncenter {
 		letter-spacing: .7px;
 		margin-top:10px;
 		padding-left:13px;
+		color:$black;
 	}
 	
 }
@@ -1135,6 +1123,7 @@ img.aligncenter {
 	text-align: center;
 	z-index:100;
 	overflow-y:scroll;
+	display: none;
 	.overlay_inner {
 		background:#fff;
 		width:90%;
@@ -1155,7 +1144,7 @@ img.aligncenter {
 		font-family: $voltagereg;
 		color:$bluedark;
 		display: block;
-		margin:40px 5px 20px;
+		margin: 30px 5px 20px;
 	}
 	span.large_header {
 		font-family: $oswaldreg;
@@ -1164,6 +1153,7 @@ img.aligncenter {
 		display: block;
 		line-height:1.2;
 		margin-bottom:20px;
+		letter-spacing: 1px;
 	}
 	span.additional {
 		font-size:19px;
@@ -1201,6 +1191,16 @@ img.aligncenter {
 			-webkit-appearance: none;
 			border-radius:0;
 		}
+	}
+	
+	.validation_error {
+		display: none;
+	}
+	
+	.validation_message {
+		margin-top:15px;
+		font-family: $oswaldreg;
+		color:$bluedark;
 	}
 
 
@@ -2383,6 +2383,65 @@ footer {
 
 
 
+/* Form */
+
+.form_wrapper {
+	
+	.form_inner {
+		
+		span.sub_header {
+					}
+		span.large_header {
+			
+		}
+		ul {
+			
+			
+			li {
+				width:100%;
+				margin-bottom:12px;
+				width:24.2%;
+				float:left;
+				margin-right:1%;
+				label {
+					
+				}
+				input, textarea {
+									}
+				input {
+					
+				}
+				input:focus, textarea:focus {
+					
+				}
+				textarea {
+					height:165px;
+				}
+				
+			}
+			li#field_1_4 {
+				margin-right:0;
+			}
+			li#field_1_5 {
+				width:100%;
+			}
+		}
+	}
+	
+	.gform_button {
+		
+	}
+	
+	.validation_error {
+		
+	}
+	.gfield_description, .validation_message {
+		
+	}
+	
+}
+
+
 
 	
 	
@@ -2770,6 +2829,7 @@ footer {
 	
 	.overlay_inner {
 		max-width:815px;
+		margin: 5% auto;
 	}
 	.overlay_close {
 		
