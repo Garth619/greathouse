@@ -991,12 +991,14 @@ img.aligncenter {
   left: 0;
   background: rgba(0, 0, 0, 0.8);
   text-align: center;
+  z-index: 100;
+  overflow-y: scroll;
 }
 .overlay .overlay_inner {
   background: #fff;
   width: 90%;
   margin: 10% auto;
-  padding: 5%;
+  padding: 30px 5% 50px;
   position: relative;
 }
 .overlay .overlay_close {
@@ -1004,6 +1006,7 @@ img.aligncenter {
   top: 15px;
   right: 15px;
   width: 20px;
+  cursor: pointer;
 }
 .overlay span.sub_header {
   font-size: 40px;
@@ -1020,6 +1023,9 @@ img.aligncenter {
   line-height: 1.2;
   margin-bottom: 20px;
 }
+.overlay span.additional {
+  font-size: 19px;
+}
 .overlay ul.gform_fields {
   list-style: none;
   margin-top: 25px;
@@ -1031,11 +1037,11 @@ img.aligncenter {
   border: 1px solid #79b7c0;
   text-align: center;
   font-size: 16px;
-  padding: 7px;
+  padding: 10px;
   font-family: "Didot- LP W01 Regular", arial;
   text-transform: lowercase;
   width: 100%;
-  max-width: 465px;
+  max-width: 300px;
   -webkit-appearance: none;
   border-radius: 0;
 }
@@ -1043,6 +1049,13 @@ img.aligncenter {
   background: #79b7c0;
   border: none;
   color: #fff;
+  font-size: 21px;
+  font-family: "oswaldregular", arial;
+  text-transform: uppercase;
+  padding: 9px 55px;
+  margin-top: 25px;
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 @media screen and (min-width: 455px) {
@@ -1513,6 +1526,32 @@ img.aligncenter {
   }
   #content .team_wrapper .single_team_square .team_background {
     height: 355px;
+  }
+
+  /* Overlay */
+  .overlay .overlay_inner {
+    max-width: 600px;
+    padding: 30px 5% 67px;
+  }
+  .overlay .overlay_close {
+    top: 25px;
+    right: 25px;
+  }
+  .overlay span.sub_header {
+    font-size: 60px;
+  }
+  .overlay span.large_header {
+    font-size: 55px;
+  }
+  .overlay span.additional {
+    font-size: 20px;
+  }
+  .overlay ul.gform_fields li input {
+    padding: 14px;
+    max-width: 350px;
+  }
+  .overlay #gform_submit_button_2 {
+    padding: 9px 65px;
   }
 }
 /* Media Query */
@@ -2104,6 +2143,24 @@ img.aligncenter {
   }
   .no_sidebar_wrapper .no_sidebar_spacer {
     width: 17%;
+  }
+
+  /* Overlay */
+  .overlay .overlay_inner {
+    max-width: 815px;
+  }
+  .overlay span.sub_header {
+    margin: 40px 5px 25px;
+  }
+  .overlay span.large_header {
+    font-size: 65px;
+  }
+  .overlay ul.gform_fields {
+    margin-top: 55px;
+  }
+  .overlay ul.gform_fields li input {
+    font-size: 17px;
+    max-width: 460px;
   }
 }
 /* Media Query */

@@ -155,7 +155,7 @@
 	<div class="overlay_inner">
 		<img class="overlay_close" src="<?php bloginfo('template_directory');?>/images/x.png" />
 		<span class="sub_header">let yourself in.</span>
-		<span class="large_header">GET 15% off your next purchase</span>
+		<span class="large_header">GET 15% off your next&nbsp;purchase</span>
 		<span class="additional">Plus, insider sales, invites + special offers.</span>
 		
 		<?php gravity_form(2, false, false, false, '', true, 15); ?>

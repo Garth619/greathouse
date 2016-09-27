@@ -1133,11 +1133,13 @@ img.aligncenter {
 	left:0;
 	background:rgba(0, 0, 0, 0.8);
 	text-align: center;
+	z-index:100;
+	overflow-y:scroll;
 	.overlay_inner {
 		background:#fff;
 		width:90%;
 		margin:10% auto;
-		padding:5%;
+		padding: 30px 5% 50px;
 		position: relative;
 		
 	}
@@ -1146,6 +1148,7 @@ img.aligncenter {
 		top:15px;
 		right:15px;
 		width:20px;
+		cursor: pointer;
 	}
 	span.sub_header {
 		font-size:40px;
@@ -1163,7 +1166,7 @@ img.aligncenter {
 		margin-bottom:20px;
 	}
 	span.additional {
-		
+		font-size:19px;
 	}
 	ul.gform_fields {
 		list-style: none;
@@ -1176,11 +1179,11 @@ img.aligncenter {
 					border:1px solid $bluedark;
 					text-align: center;
 					font-size:16px;
-					padding:7px;
+					padding:10px;
 					font-family: $didot;
 					text-transform: lowercase;
 					width:100%;
-					max-width:465px;
+					max-width:300px;
 					-webkit-appearance: none;
 					border-radius:0;
 				}
@@ -1190,7 +1193,13 @@ img.aligncenter {
 			background:$bluedark;
 			border:none;
 			color:#fff;
-			
+			font-size:21px;
+			font-family: $oswaldreg;
+			text-transform: uppercase;
+			padding:9px 55px;
+			margin-top:25px;
+			-webkit-appearance: none;
+			border-radius:0;
 		}
 	}
 
@@ -1820,6 +1829,45 @@ footer {
 }
 
 
+/* Overlay */
+
+
+.overlay {
+	
+	.overlay_inner {
+		max-width:600px;
+		padding: 30px 5% 67px;
+	}
+	.overlay_close {
+		top:25px;
+		right:25px;
+	}
+	span.sub_header {
+		font-size:60px;
+	}
+	span.large_header {
+		font-size:55px;
+	}
+	span.additional {
+		font-size:20px;
+	}
+	ul.gform_fields {
+		
+		li {
+			label {
+					
+				}
+				input {
+					padding:14px;
+					max-width:350px;
+					
+				}
+			}
+		}
+		#gform_submit_button_2 {
+			  padding: 9px 65px;
+		}
+	}
 
 
 
@@ -2711,6 +2759,50 @@ footer {
  		width:17%;
  	}
 }
+
+
+
+
+/* Overlay */
+
+
+.overlay {
+	
+	.overlay_inner {
+		max-width:815px;
+	}
+	.overlay_close {
+		
+	}
+	span.sub_header {
+		margin: 40px 5px 25px;
+	}
+	span.large_header {
+		font-size:65px;
+	}
+	span.additional {
+		
+	}
+	ul.gform_fields {
+		margin-top:55px;
+		li {
+			label {
+					
+				}
+				input {
+					font-size:17px;
+					max-width:460px;
+				}
+			}
+		}
+		#gform_submit_button_2 {
+			  
+		}
+	}
+
+
+
+
 
 } /* Media Query */ 
 
