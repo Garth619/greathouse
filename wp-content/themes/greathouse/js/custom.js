@@ -45,11 +45,11 @@ jQuery( "<a class='see_all_products' href='/shop'>See All Products</a>" ).insert
   // Cookie that displays a special offer to first time users 
   
   if($.cookie('popup') != 'seen'){
-    $.cookie('popup', 'seen', { expires: 365, path: '/' }); // Set it to last a year, for example.
+    $.cookie('popup', 'seen', { expires: 365, path: '/' }); 
     jQuery(".overlay").delay(2000).fadeIn();
-    jQuery('.overlay_close').click(function(e) // You are clicking the close button
+    jQuery('.overlay_close').click(function(e)
         {
-        jQuery('.overlay').fadeOut(); // Now the pop up is hiden.
+        jQuery('.overlay').fadeOut(); 
     });
    };
   

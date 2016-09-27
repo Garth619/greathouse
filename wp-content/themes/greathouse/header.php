@@ -108,6 +108,8 @@
 					
 				</div><!-- inner_header -->
 				
+				<div class="mobile_dropdown_wrapper"></div><!-- mobile_dropdown_wrapper -->
+				
 			</header>
 			
 			<main>

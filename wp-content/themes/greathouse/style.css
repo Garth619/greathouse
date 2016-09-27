@@ -194,6 +194,16 @@ header .inner_header .header_logo_nav_wrapper .mobile_menu_wrapper .menu_bar {
   margin-bottom: 3px;
 }
 
+.mobile_dropdown_wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 128px;
+  left: 0;
+  background: #000;
+  z-index: 150;
+}
+
 /* Desktop Menu */
 .desktop_menu_wrapper {
   display: none;
