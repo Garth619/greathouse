@@ -107,13 +107,10 @@
 							</nav><!-- desktop_menu_wrapper -->
 							
 						</div><!-- header_logo_nav_wrapper -->
-					
-					</div><!-- mobile_fixed_wrapper -->
-				
-					
-				</div><!-- inner_header -->
-				
-				<div class="mobile_dropdown_wrapper">
+						
+						
+						
+						<div class="mobile_dropdown_wrapper">
 					
 					
 					<div class="mobile_dropdown_inner">
@@ -124,6 +121,15 @@
 					
 					
 				</div><!-- mobile_dropdown_wrapper -->
+						
+						
+					
+					</div><!-- mobile_fixed_wrapper -->
+				
+					
+				</div><!-- inner_header -->
+				
+				
 				
 			</header>
 			

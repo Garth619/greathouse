@@ -1,4 +1,7 @@
 jQuery(document).ready(function(){
+	
+	
+	
   
   
 // This scans the list items on the desktop menu and add <div class="menu_col"></div> around every two items. This creates Four coulmns that will stack the items vertically 
@@ -58,18 +61,34 @@ jQuery( "<a class='see_all_products' href='/shop'>See All Products</a>" ).insert
    
    
    
+
+var sticky = new Waypoint.Sticky({
+  element: jQuery('.mobile_fixed_wrapper')[0]
+})
+
+
+   
+
+/*
    jQuery(window).scroll(function(){
   	
   	var sticky = jQuery('header, .header_special_deal, .mobile_dropdown_wrapper'),
   			
       	scroll = jQuery(window).scrollTop();
 
-		if (scroll >= 41) sticky.addClass('fixed');
+		if (scroll >= 59) sticky.addClass('fixed');
 
 		else sticky.removeClass('fixed')
 		 			
 	
 	});
+*/
+
+
+
+
+
+
 	
 	// Slidetoggle on mobile menu 
 	
@@ -79,6 +98,20 @@ jQuery( "<a class='see_all_products' href='/shop'>See All Products</a>" ).insert
 		jQuery(this).toggleClass('active');
 		
 		
+		
+	});
+	
+	
+	// Click to Open Mobile Menu
+	
+	
+	
+	
+	jQuery('.mobile_menu_wrapper').click(function(){
+		
+		jQuery('.mobile_dropdown_wrapper').slideToggle(200);
+		jQuery(this).toggleClass('open');
+		jQuery('.menu_bar').toggleClass('open');
 		
 	});
   
