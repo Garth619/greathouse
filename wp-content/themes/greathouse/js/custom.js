@@ -70,6 +70,17 @@ jQuery( "<a class='see_all_products' href='/shop'>See All Products</a>" ).insert
 		 			
 	
 	});
+	
+	// Slidetoggle on mobile menu 
+	
+	jQuery('.mobile_dropdown_wrapper li.menu-item-has-children a').click(function(){
+		
+		jQuery(this).next('ul.sub-menu').slideToggle(200);
+		jQuery(this).toggleClass('active');
+		
+		
+		
+	});
   
   
 

@@ -220,6 +220,7 @@ header.fixed {
 }
 .mobile_dropdown_wrapper .mobile_dropdown_inner {
   text-align: center;
+  padding-bottom: 100px;
 }
 .mobile_dropdown_wrapper .mobile_dropdown_inner ul {
   list-style: none;
@@ -229,14 +230,19 @@ header.fixed {
   text-transform: uppercase;
   font-size: 14px;
 }
+.mobile_dropdown_wrapper .mobile_dropdown_inner ul li a.active {
+  color: #79b7c0;
+}
 .mobile_dropdown_wrapper .mobile_dropdown_inner ul li a {
   color: #fff;
-  padding: 20px 0;
+  padding: 23px 0;
   display: inline-block;
   text-decoration: none;
+  cursor: pointer;
 }
 .mobile_dropdown_wrapper .mobile_dropdown_inner ul li ul.sub-menu {
   display: none;
+  background: #363636;
 }
 
 .mobile_dropdown_wrapper.fixed {

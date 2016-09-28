@@ -289,22 +289,29 @@ header.fixed {
 	background:#2f2f2f;
 	z-index:150;
 	overflow-y:scroll;
+// 	padding:20px 0;
 	.mobile_dropdown_inner {
 		text-align: center;
+		padding-bottom:100px;
 		ul {
 			list-style:none;
 			li {
 				font-family: $oswaldreg;
 				text-transform: uppercase;
 				font-size:14px;
+				a.active {
+					color:$bluedark;
+				}
 				a {
 					color:#fff;
-					padding:20px 0;
+					padding:23px 0;
 					display: inline-block;
 					text-decoration: none;
+					cursor: pointer;
 				}
 				ul.sub-menu {
 					display: none;
+					background: #363636;
 				}
 			}
 		}
