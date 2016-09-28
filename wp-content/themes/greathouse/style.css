@@ -125,6 +125,12 @@ body {
 }
 
 /* Header */
+header {
+  width: 100%;
+}
+header .inner_header .header_special_deal.fixed {
+  display: none;
+}
 header .inner_header .header_special_deal {
   background: #79b7c0;
   color: #fff;
@@ -194,14 +200,49 @@ header .inner_header .header_logo_nav_wrapper .mobile_menu_wrapper .menu_bar {
   margin-bottom: 3px;
 }
 
+/* Fixed Mobile Menu and Dropdown */
+header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
 .mobile_dropdown_wrapper {
   width: 100%;
   height: 100%;
-  position: fixed;
+  position: absolute;
   top: 128px;
   left: 0;
-  background: #000;
+  background: #2f2f2f;
   z-index: 150;
+  overflow-y: scroll;
+}
+.mobile_dropdown_wrapper .mobile_dropdown_inner {
+  text-align: center;
+}
+.mobile_dropdown_wrapper .mobile_dropdown_inner ul {
+  list-style: none;
+}
+.mobile_dropdown_wrapper .mobile_dropdown_inner ul li {
+  font-family: "oswaldregular", arial;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.mobile_dropdown_wrapper .mobile_dropdown_inner ul li a {
+  color: #fff;
+  padding: 20px 0;
+  display: inline-block;
+  text-decoration: none;
+}
+.mobile_dropdown_wrapper .mobile_dropdown_inner ul li ul.sub-menu {
+  display: none;
+}
+
+.mobile_dropdown_wrapper.fixed {
+  position: fixed;
+  top: 87px;
+  left: 0;
 }
 
 /* Desktop Menu */

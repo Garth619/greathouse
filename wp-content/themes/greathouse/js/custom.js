@@ -52,6 +52,24 @@ jQuery( "<a class='see_all_products' href='/shop'>See All Products</a>" ).insert
         jQuery('.overlay').fadeOut(); 
     });
    };
+   
+   
+   // Fixed Mobile Menu 
+   
+   
+   
+   jQuery(window).scroll(function(){
+  	
+  	var sticky = jQuery('header, .header_special_deal, .mobile_dropdown_wrapper'),
+  			
+      	scroll = jQuery(window).scrollTop();
+
+		if (scroll >= 41) sticky.addClass('fixed');
+
+		else sticky.removeClass('fixed')
+		 			
+	
+	});
   
   
 

@@ -52,63 +52,78 @@
 					
 					</div><!-- header_special_deal -->
 					
-					<div class="header_options">
-						
-						<div class="header_options_inner">
-						
-							<img class="search_img" src="<?php bloginfo('template_directory');?>/images/search.png"/>
-						
-							<div class="cart_signin_wrapper">
-							
-								<span>Cart</span>
-								<span>Sign In</span>
-							
-							</div><!-- header_options_inner -->
-							
-						</div><!-- cart_signin_wrapper -->
-						
-					</div><!-- header_options -->
 					
-					<div class="header_logo_nav_wrapper">
-						
-						
-						<div class="logo_wrapper">
-						
-							<a href="<?php bloginfo('url');?>">
-								<img class="logo" src="<?php bloginfo('template_directory');?>/images/logo.png"/>
-							</a>
-						
-						</div><!-- logo_wrapper -->
-				
-						<div class="mobile_menu_wrapper">
+					<div class="mobile_fixed_wrapper">
+					
+						<div class="header_options">
 							
-							<div class="menu_bar"></div><!-- menu_bar -->
-							<div class="menu_bar"></div><!-- menu_bar -->
-							<div class="menu_bar"></div><!-- menu_bar -->
+							<div class="header_options_inner">
 							
-						</div><!-- mobile_menu_wrapper -->
-						
-						
-						<nav class="desktop_menu_wrapper">
-						
-							<div class="desktop_menu">
+								<img class="search_img" src="<?php bloginfo('template_directory');?>/images/search.png"/>
+							
+								<div class="cart_signin_wrapper">
 								
-								<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
-							
-							</div><!-- desktop_menu -->
-							
-							<div class="cart_signin_wrapper">
+									<span>Cart</span>
+									<span>Sign In</span>
+								
+								</div><!-- header_options_inner -->
 								
 							</div><!-- cart_signin_wrapper -->
+							
+						</div><!-- header_options -->
 						
-						</nav><!-- desktop_menu_wrapper -->
+						<div class="header_logo_nav_wrapper">
+							
+							
+							<div class="logo_wrapper">
+							
+								<a href="<?php bloginfo('url');?>">
+									<img class="logo" src="<?php bloginfo('template_directory');?>/images/logo.png"/>
+								</a>
+							
+							</div><!-- logo_wrapper -->
 						
-					</div><!-- header_logo_nav_wrapper -->
+							<div class="mobile_menu_wrapper">
+								
+								<div class="menu_bar"></div><!-- menu_bar -->
+								<div class="menu_bar"></div><!-- menu_bar -->
+								<div class="menu_bar"></div><!-- menu_bar -->
+								
+							</div><!-- mobile_menu_wrapper -->
+							
+							
+							<nav class="desktop_menu_wrapper">
+							
+								<div class="desktop_menu">
+									
+									<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
+								
+								</div><!-- desktop_menu -->
+								
+								<div class="cart_signin_wrapper">
+									
+								</div><!-- cart_signin_wrapper -->
+							
+							</nav><!-- desktop_menu_wrapper -->
+							
+						</div><!-- header_logo_nav_wrapper -->
+					
+					</div><!-- mobile_fixed_wrapper -->
 				
 					
 				</div><!-- inner_header -->
 				
-				<div class="mobile_dropdown_wrapper"></div><!-- mobile_dropdown_wrapper -->
+				<div class="mobile_dropdown_wrapper">
+					
+					
+					<div class="mobile_dropdown_inner">
+					
+						<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
+					
+					</div>
+					
+					
+				</div><!-- mobile_dropdown_wrapper -->
 				
 			</header>
 			
