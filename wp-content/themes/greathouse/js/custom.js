@@ -1,13 +1,16 @@
 jQuery(document).ready(function(){
 	
-	
-	
+
   
-  
+// Adds an inner wrapper div to the dekstop wordpress menu drop down, so it can scroll on small screens
+
+jQuery( "ul#menu-menu-1 > li > ul.sub-menu" ).wrapInner( "<div class='inner_drown_wrapper'></div>");
+
+
 // This scans the list items on the desktop menu and add <div class="menu_col"></div> around every two items. This creates Four coulmns that will stack the items vertically 
 
 
-var divs = jQuery("ul#menu-menu-1 > li > ul.sub-menu > li");
+var divs = jQuery("ul#menu-menu-1 > li > ul.sub-menu > .inner_drown_wrapper > li");
 for(var i = 0; i < divs.length; i+=2) {
   divs.slice(i, i+2).wrapAll("<div class='menu_col'></div>");
 }
@@ -66,33 +69,10 @@ var sticky = new Waypoint.Sticky({
   element: jQuery('.mobile_fixed_wrapper')[0]
 })
 
-
-   
-
-/*
-   jQuery(window).scroll(function(){
-  	
-  	var sticky = jQuery('header, .header_special_deal, .mobile_dropdown_wrapper'),
-  			
-      	scroll = jQuery(window).scrollTop();
-
-		if (scroll >= 59) sticky.addClass('fixed');
-
-		else sticky.removeClass('fixed')
-		 			
-	
-	});
-*/
-
-
-
-
-
-
 	
 	// Slidetoggle on mobile menu 
 	
-	jQuery('.mobile_dropdown_wrapper li.menu-item-has-children a').click(function(){
+	jQuery('.mobile_dropdown_wrapper > li.menu-item-has-children > a').click(function(){
 		
 		jQuery(this).next('ul.sub-menu').slideToggle(200);
 		jQuery(this).toggleClass('active');
