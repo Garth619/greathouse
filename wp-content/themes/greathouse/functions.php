@@ -623,12 +623,20 @@ if( function_exists('acf_add_options_page') ) {
 }
 
 
+// Declare Wocommerce Support 
 
+add_theme_support( 'woocommerce' );
+
+// Disable Woo Commerce Style
+
+add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 
 
 
 
 // Force Gravity Forms to init scripts in the footer and ensure that the DOM is loaded before scripts are executed
+
+
 add_filter( 'gform_init_scripts_footer', '__return_true' );
 add_filter( 'gform_cdata_open', 'wrap_gform_cdata_open', 1 );
 function wrap_gform_cdata_open( $content = '' ) {
@@ -648,5 +656,27 @@ return $content;
 }
 
 
+// Shows instock on the single product page
 
+
+add_filter( 'woocommerce_get_availability', 'custom_get_availability', 1, 2);
+ 
+function custom_get_availability( $availability, $_product ) {
+  global $product;
+  $stock = $product->get_total_stock();
+ 
+  if ( $_product->is_in_stock() ) $availability['availability'] = __('Availability: In Stock ', 'woocommerce');
+  if ( !$_product->is_in_stock() ) $availability['availability'] = __('Sold Out', 'woocommerce');
+ 
+  return $availability;
+}
+
+
+// Reordering of the Single Product Page 
+
+
+/*
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 60 );
+*/
 
