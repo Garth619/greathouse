@@ -684,6 +684,11 @@ remove_action('woocommerce_single_product_summary', 'woocommerce_template_single
 
 remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
+
+
+
+
+
 // Custom Tabs
 
 
@@ -722,6 +727,33 @@ function woo_new_product_tab_content() {
 	echo '<p>Here\'s your new product tab.</p>';
 	
 }
+
+// Removes the Variable Product Price Range
+
+add_filter( 'woocommerce_variable_sale_price_html', 'bbloomer_remove_variation_price', 10, 2 );
+add_filter( 'woocommerce_variable_price_html', 'bbloomer_remove_variation_price', 10, 2 );
+ 
+function bbloomer_remove_variation_price( $price ) {
+$price = '';
+return $price;
+}
+
+
+// Company Titles
+
+
+function single_company_title()
+{
+       
+    echo get_field('company_title');
+
+}
+
+add_action( 'woocommerce_single_product_summary', 'single_company_title', 6 );
+
+
+
+
 
 
 
