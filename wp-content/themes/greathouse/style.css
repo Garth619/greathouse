@@ -1139,6 +1139,12 @@ img.aligncenter {
   color: #79b7c0;
 }
 
+/* Product Pages */
+.product_wrapper {
+  max-width: 1255px;
+  margin: 45px auto;
+}
+
 @media screen and (min-width: 455px) {
   /* Sidebar Template */
   #sidebar {

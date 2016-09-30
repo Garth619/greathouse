@@ -625,7 +625,10 @@ if( function_exists('acf_add_options_page') ) {
 
 // Declare Wocommerce Support 
 
-add_theme_support( 'woocommerce' );
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
 
 // Disable Woo Commerce Style
 
@@ -675,8 +678,52 @@ function custom_get_availability( $availability, $_product ) {
 // Reordering of the Single Product Page 
 
 
-/*
-remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
-add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 60 );
-*/
+// Product Excerpt 
+
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 ); // Product Excerpt 
+
+remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
+// Custom Tabs
+
+
+add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
+
+function woo_remove_product_tabs( $tabs ) {
+
+    
+    unset( $tabs['reviews'] ); 			// Remove the reviews tab
+    
+
+    return $tabs;
+
+}
+
+
+add_filter( 'woocommerce_product_tabs', 'woo_new_product_tab' );
+function woo_new_product_tab( $tabs ) {
+	
+	// Adds the new tab
+	
+	$tabs['test_tab'] = array(
+		'title' 	=> __( 'New Product Tab', 'woocommerce' ),
+		'priority' 	=> 50,
+		'callback' 	=> 'woo_new_product_tab_content'
+	);
+
+	return $tabs;
+
+}
+function woo_new_product_tab_content() {
+
+	// The new tab content
+
+	echo '<h2>New Product Tab</h2>';
+	echo '<p>Here\'s your new product tab.</p>';
+	
+}
+
+
+
+
 
