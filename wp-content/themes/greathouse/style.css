@@ -1199,6 +1199,50 @@ form.variations_form table.variations label {
   display: block;
   margin-bottom: 20px;
 }
+.woocommerce-variation-add-to-cart input.input-text.qty.text {
+  border: none;
+  font-size: 17px;
+  width: 100px;
+  padding: 15px 0 15px 0px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.woocommerce-variation-add-to-cart button.single_add_to_cart_button {
+  border: 1px solid #000;
+  font-size: 14px;
+  padding: 8px 16px;
+  font-family: "oswaldregular", arial;
+}
+
+.woocommerce-tabs.wc-tabs-wrapper {
+  border: 3px solid #f3f3f3;
+  max-width: 480px;
+  margin: 0 30px;
+}
+.woocommerce-tabs.wc-tabs-wrapper ul.tabs.wc-tabs {
+  list-style: none;
+  margin: 0;
+  background: #f3f3f3;
+  overflow: hidden;
+}
+.woocommerce-tabs.wc-tabs-wrapper ul.tabs.wc-tabs li {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+.woocommerce-tabs.wc-tabs-wrapper ul.tabs.wc-tabs li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 10px 0;
+  display: block;
+}
+.woocommerce-tabs.wc-tabs-wrapper ul.tabs.wc-tabs li.active {
+  border-bottom: 3px solid #000;
+}
+.woocommerce-tabs.wc-tabs-wrapper .woocommerce-Tabs-panel h2 {
+  display: none;
+}
 
 @media screen and (min-width: 455px) {
   /* Sidebar Template */

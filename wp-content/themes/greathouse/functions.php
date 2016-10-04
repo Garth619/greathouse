@@ -740,6 +740,16 @@ function woo_remove_product_tabs( $tabs ) {
 
 }
 
+add_filter( 'woocommerce_product_tabs', 'woo_rename_tabs', 98 );
+function woo_rename_tabs( $tabs ) {
+
+	
+	$tabs['additional_information']['title'] = __( 'Dimensions' );	// Rename the additional information tab
+
+	return $tabs;
+
+}
+
 
 add_filter( 'woocommerce_product_tabs', 'woo_new_product_tab' );
 function woo_new_product_tab( $tabs ) {
@@ -747,7 +757,7 @@ function woo_new_product_tab( $tabs ) {
 	// Adds the new tab
 	
 	$tabs['test_tab'] = array(
-		'title' 	=> __( 'New Product Tab', 'woocommerce' ),
+		'title' 	=> __( 'Shipping Info', 'woocommerce' ),
 		'priority' 	=> 50,
 		'callback' 	=> 'woo_new_product_tab_content'
 	);
@@ -759,7 +769,7 @@ function woo_new_product_tab_content() {
 
 	// The new tab content
 
-	echo '<h2>New Product Tab</h2>';
+	echo '<h2>Shipping Info</h2>';
 	echo '<p>Here\'s your new product tab.</p>';
 	
 }
