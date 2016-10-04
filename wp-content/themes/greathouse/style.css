@@ -1141,8 +1141,52 @@ img.aligncenter {
 
 /* Product Pages */
 .product_wrapper {
-  max-width: 1255px;
-  margin: 45px auto;
+  font-family: "oswaldregular", arial;
+  text-transform: uppercase;
+  max-width: 540px;
+  margin: 0px auto;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+.product_wrapper .images img.attachment-shop_single {
+  max-width: 100% !important;
+  height: auto !important;
+}
+.product_wrapper .entry-summary {
+  position: relative;
+  padding: 0 30px;
+}
+.product_wrapper .entry-summary h1 {
+  letter-spacing: 0.4px;
+  font-style: none;
+  font-weight: 300;
+  margin: 30px 0 15px;
+  font-size: 40px;
+}
+.product_wrapper .entry-summary span.sub_title {
+  font-family: "oswaldregular", arial;
+}
+
+form.variations_form .single_variation_wrap .single_variation .woocommerce-variation-price {
+  font-style: none;
+  font-weight: 300;
+  margin: 35px 0 15px;
+  font-size: 35px;
+}
+form.variations_form .single_variation_wrap .single_variation .woocommerce-variation-availability {
+  font-size: 14px;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #000;
+  padding-bottom: 20px;
+}
+form.variations_form .single_variation_wrap .single_variation .woocommerce-variation-availability span.myin_stock {
+  color: #00a651;
+}
+form.variations_form table.variations label {
+  color: #79b7c0;
+  font-size: 14px;
+  display: block;
 }
 
 @media screen and (min-width: 455px) {

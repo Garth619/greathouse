@@ -617,24 +617,7 @@ if( function_exists('acf_add_options_page') ) {
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false
 	));
-	
-	
-	
 }
-
-
-// Declare Wocommerce Support 
-
-add_action( 'after_setup_theme', 'woocommerce_support' );
-function woocommerce_support() {
-    add_theme_support( 'woocommerce' );
-}
-
-// Disable Woo Commerce Style
-
-add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
-
-
 
 
 // Force Gravity Forms to init scripts in the footer and ensure that the DOM is loaded before scripts are executed
@@ -659,6 +642,53 @@ return $content;
 }
 
 
+
+// Woocommerce
+
+
+// Declare Wocommerce Support 
+
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
+// Disable Woo Commerce Style
+
+add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
+
+
+
+
+
+// Reordering of the Single Product Page 
+
+
+// Company Titles
+
+
+function single_company_title()
+{
+       
+    echo "<span class='sub_title'>" . get_field('company_title'). "</span>";
+
+}
+
+add_action( 'woocommerce_single_product_summary', 'single_company_title', 6 );
+
+
+
+// Removes the Variable Product Price Range
+
+add_filter( 'woocommerce_variable_sale_price_html', 'bbloomer_remove_variation_price', 10, 2 );
+add_filter( 'woocommerce_variable_price_html', 'bbloomer_remove_variation_price', 10, 2 );
+ 
+function bbloomer_remove_variation_price( $price ) {
+$price = '';
+return $price;
+}
+
+
 // Shows instock on the single product page
 
 
@@ -668,24 +698,30 @@ function custom_get_availability( $availability, $_product ) {
   global $product;
   $stock = $product->get_total_stock();
  
-  if ( $_product->is_in_stock() ) $availability['availability'] = __('Availability: In Stock ', 'woocommerce');
+  if ( $_product->is_in_stock() ) $availability['availability'] = __('Availability: <span class="myin_stock">In Stock</span> ', 'woocommerce');
   if ( !$_product->is_in_stock() ) $availability['availability'] = __('Sold Out', 'woocommerce');
  
   return $availability;
 }
 
 
-// Reordering of the Single Product Page 
-
-
 // Product Excerpt 
 
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 ); // Product Excerpt 
 
-remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
+
+// Moves add to cart after the form hook
+
+remove_action('woocommerce_single_variation', 'woocommerce_single_variation_add_to_cart_button', 20 );
+add_action('woocommerce_after_add_to_cart_form', 'woocommerce_single_variation_add_to_cart_button', 20 );
 
 
 
+// Remove the meta information
+
+
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
 
 
 
@@ -728,33 +764,12 @@ function woo_new_product_tab_content() {
 	
 }
 
-// Removes the Variable Product Price Range
-
-add_filter( 'woocommerce_variable_sale_price_html', 'bbloomer_remove_variation_price', 10, 2 );
-add_filter( 'woocommerce_variable_price_html', 'bbloomer_remove_variation_price', 10, 2 );
- 
-function bbloomer_remove_variation_price( $price ) {
-$price = '';
-return $price;
-}
 
 
-// Company Titles
+// Related Products 
 
 
-function single_company_title()
-{
-       
-    echo get_field('company_title');
-
-}
-
-add_action( 'woocommerce_single_product_summary', 'single_company_title', 6 );
-
-
-
-
-
+remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
 
 
