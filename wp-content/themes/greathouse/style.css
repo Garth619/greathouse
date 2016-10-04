@@ -1217,7 +1217,7 @@ form.variations_form table.variations label {
 .woocommerce-tabs.wc-tabs-wrapper {
   border: 3px solid #f3f3f3;
   max-width: 480px;
-  margin: 0 30px;
+  margin: 0 30px 30px;
 }
 .woocommerce-tabs.wc-tabs-wrapper ul.tabs.wc-tabs {
   list-style: none;
@@ -1226,9 +1226,11 @@ form.variations_form table.variations label {
   overflow: hidden;
 }
 .woocommerce-tabs.wc-tabs-wrapper ul.tabs.wc-tabs li {
-  width: 25%;
-  float: left;
-  text-align: center;
+  /*
+  				width:25%;
+  				float:left;
+  				text-align:center;
+  */
 }
 .woocommerce-tabs.wc-tabs-wrapper ul.tabs.wc-tabs li a {
   color: #000;
@@ -1240,7 +1242,10 @@ form.variations_form table.variations label {
 .woocommerce-tabs.wc-tabs-wrapper ul.tabs.wc-tabs li.active {
   border-bottom: 3px solid #000;
 }
-.woocommerce-tabs.wc-tabs-wrapper .woocommerce-Tabs-panel h2 {
+.woocommerce-tabs.wc-tabs-wrapper .panel {
+  padding: 45px 20px 75px;
+}
+.woocommerce-tabs.wc-tabs-wrapper .panel h2 {
   display: none;
 }
 

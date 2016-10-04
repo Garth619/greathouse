@@ -1383,16 +1383,18 @@ img.aligncenter {
 	.woocommerce-tabs.wc-tabs-wrapper {
 		border:3px solid $greylight;
 		max-width:480px;
-		margin:0 30px;
+		margin:0 30px 30px;
 		ul.tabs.wc-tabs {
 			list-style: none;
 			margin:0;
 			background:$greylight;
 			overflow: hidden;
 			li {
+/*
 				width:25%;
 				float:left;
 				text-align:center;
+*/
 				a {
 					color:#000;
 					text-decoration: none;
@@ -1405,7 +1407,8 @@ img.aligncenter {
 				border-bottom:3px solid #000;
 			}
 		}
-		.woocommerce-Tabs-panel {
+		.panel {
+			padding:45px 20px 75px;
 			h2 {
 				display:none;
 			}
