@@ -1187,6 +1187,17 @@ form.variations_form table.variations label {
   color: #79b7c0;
   font-size: 14px;
   display: block;
+  margin: 10px 0 10px;
+}
+
+.woocommerce-variation-add-to-cart {
+  background: #f3f3f3;
+  padding: 25px;
+  margin: 25px 0;
+}
+.woocommerce-variation-add-to-cart span.quantity {
+  display: block;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 455px) {

@@ -1351,7 +1351,18 @@ img.aligncenter {
 				color:$bluedark;
 				font-size:14px;
 				display: block;
+				margin:10px 0 10px;
 			}
+		}
+	}
+	
+	.woocommerce-variation-add-to-cart {
+		background:$greylight;
+		padding:25px;
+		margin:25px 0;
+		span.quantity {
+			display: block;
+			margin-bottom:20px;
 		}
 	}
 
