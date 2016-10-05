@@ -1291,7 +1291,7 @@ img.aligncenter {
 	}
 	
 	
-	/* Product Pages */
+	/* Single Product Pages */
 	
 	
 	.product_wrapper {
@@ -1311,6 +1311,7 @@ img.aligncenter {
 		.entry-summary {
 			position: relative;
 			padding:0 30px;
+			
 			h1 {
 				letter-spacing:0.4px;
 				font-style: none;
@@ -1378,14 +1379,14 @@ img.aligncenter {
 			border:none;
 			font-size:17px;
 			width:100px;
-			padding:15px 0 15px 0px;
+			padding:17px 0 15px 0px;
 			text-align: center;
 			margin-bottom:20px;
 		}
 		button.single_add_to_cart_button {
 			border:1px solid #000;
 			font-size:14px;
-			padding:8px 16px;
+			padding:8px 20px;
 			font-family: $oswaldreg;
 		}
 	}
@@ -1525,6 +1526,141 @@ img.alignright,
 img.aligncenter {
 	margin-bottom: 12px;
 }
+
+
+
+
+
+
+
+/* Single Product Pages */
+	
+	
+	.product_wrapper {
+		margin-top:50px;
+		.images {
+			img.attachment-shop_single  {
+				
+			}
+		}
+		.entry-summary {
+			padding:0;
+			border-bottom:4px solid #000;
+			h1 {
+				
+			}
+			span.sub_title {
+				
+			}
+		}
+		
+	}
+	
+	form.variations_form {
+		.single_variation_wrap {
+			.single_variation {
+				.woocommerce-variation-price {
+					position: absolute;
+					top:0;
+					right:0;
+					
+				}
+				.woocommerce-variation-availability {
+					margin-bottom:0;
+					border:none;
+					span.myin_stock {
+						
+					}
+				}
+			}
+		}
+		table.variations {
+			float:left;
+			width:50%;
+			
+			label {
+				margin: 25px 0 10px;
+				font-size:14px;
+			}
+			.reset_variations {
+				
+			}
+		}
+	}
+	
+	.woocommerce-variation-add-to-cart {
+		float:left;
+		width:50%;
+		margin: 4px 0 15px;
+		span.quantity {
+			font-size:14px;
+		}
+		input.input-text.qty.text {
+					}
+		button.single_add_to_cart_button {
+			
+		}
+	}
+	
+	.woocommerce-tabs.wc-tabs-wrapper {
+		clear:both;
+		margin:0px 0 30px;
+		max-width:540px;
+	
+		ul.tabs.wc-tabs {
+			padding:0;
+			li {
+				width:25%;
+				margin-bottom:0;
+
+				a {
+					font-size:14px;
+					padding-bottom: 15px;
+				}
+			}
+			li:last-of-type {
+				margin-bottom:0;
+			}
+			li.active {
+				border-bottom:4px solid #000;
+			a {
+				
+			}
+
+		}
+		}
+		.panel {
+			
+			h2 {
+				
+			}
+			p {
+				
+				
+			}
+			p:last-of-type {
+				
+			}
+			table.shop_attributes {
+				
+				tr {
+					
+					td {
+						
+					}
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
 
 
 } /* Media Query */

@@ -1139,7 +1139,7 @@ img.aligncenter {
   color: #79b7c0;
 }
 
-/* Product Pages */
+/* Single Product Pages */
 .product_wrapper {
   font-family: "oswaldregular", arial;
   text-transform: uppercase;
@@ -1213,14 +1213,14 @@ form.variations_form table.variations .reset_variations {
   border: none;
   font-size: 17px;
   width: 100px;
-  padding: 15px 0 15px 0px;
+  padding: 17px 0 15px 0px;
   text-align: center;
   margin-bottom: 20px;
 }
 .woocommerce-variation-add-to-cart button.single_add_to_cart_button {
   border: 1px solid #000;
   font-size: 14px;
-  padding: 8px 16px;
+  padding: 8px 20px;
   font-family: "oswaldregular", arial;
 }
 
@@ -1334,6 +1334,65 @@ form.variations_form table.variations .reset_variations {
   img.alignright,
   img.aligncenter {
     margin-bottom: 12px;
+  }
+
+  /* Single Product Pages */
+  .product_wrapper {
+    margin-top: 50px;
+  }
+  .product_wrapper .entry-summary {
+    padding: 0;
+    border-bottom: 4px solid #000;
+  }
+
+  form.variations_form .single_variation_wrap .single_variation .woocommerce-variation-price {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  form.variations_form .single_variation_wrap .single_variation .woocommerce-variation-availability {
+    margin-bottom: 0;
+    border: none;
+  }
+  form.variations_form table.variations {
+    float: left;
+    width: 50%;
+  }
+  form.variations_form table.variations label {
+    margin: 25px 0 10px;
+    font-size: 14px;
+  }
+
+  .woocommerce-variation-add-to-cart {
+    float: left;
+    width: 50%;
+    margin: 4px 0 15px;
+  }
+  .woocommerce-variation-add-to-cart span.quantity {
+    font-size: 14px;
+  }
+
+  .woocommerce-tabs.wc-tabs-wrapper {
+    clear: both;
+    margin: 0px 0 30px;
+    max-width: 540px;
+  }
+  .woocommerce-tabs.wc-tabs-wrapper ul.tabs.wc-tabs {
+    padding: 0;
+  }
+  .woocommerce-tabs.wc-tabs-wrapper ul.tabs.wc-tabs li {
+    width: 25%;
+    margin-bottom: 0;
+  }
+  .woocommerce-tabs.wc-tabs-wrapper ul.tabs.wc-tabs li a {
+    font-size: 14px;
+    padding-bottom: 15px;
+  }
+  .woocommerce-tabs.wc-tabs-wrapper ul.tabs.wc-tabs li:last-of-type {
+    margin-bottom: 0;
+  }
+  .woocommerce-tabs.wc-tabs-wrapper ul.tabs.wc-tabs li.active {
+    border-bottom: 4px solid #000;
   }
 }
 /* Media Query */
