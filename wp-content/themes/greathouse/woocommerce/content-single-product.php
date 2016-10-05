@@ -83,6 +83,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<meta itemprop="url" content="<?php the_permalink(); ?>" />
 	
+	<div class="suggestion_wrapper">
+	
+		<span class="suggestions">don’t see what you like?</span><!-- suggestions -->
+		<a href="<?php bloginfo('url');?>/locations" class="come_visit">Come Visit Our Store</a><!-- come_visit -->
+		<a href="<?php bloginfo('url');?>/locations" class="come_visit_button">Find Nearest Store</a><!-- come_visit_button -->
+	
+	</div><!-- suggestion_wrapper -->
+	
 	</div><!-- product_content_wrap -->
 
 </div><!-- #product-<?php the_ID(); ?> -->

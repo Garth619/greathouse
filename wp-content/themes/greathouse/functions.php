@@ -713,8 +713,8 @@ remove_action('woocommerce_single_product_summary', 'woocommerce_template_single
 
 // Moves add to cart after the form hook
 
-remove_action('woocommerce_single_variation', 'woocommerce_single_variation_add_to_cart_button', 20 );
-add_action('woocommerce_after_add_to_cart_form', 'woocommerce_single_variation_add_to_cart_button', 20 );
+//remove_action('woocommerce_single_variation', 'woocommerce_single_variation_add_to_cart_button', 20 );
+//add_action('woocommerce_after_add_to_cart_form', 'woocommerce_single_variation_add_to_cart_button', 20 );
 
 
 

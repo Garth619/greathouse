@@ -1298,7 +1298,7 @@ img.aligncenter {
 		font-family: $oswaldreg;
 		text-transform: uppercase;
 		max-width:540px;
-		margin:0px auto;
+		margin:0px auto 65px;
 		position: relative;
 		text-transform: uppercase;
 		letter-spacing:0.7px;
@@ -1341,16 +1341,30 @@ img.aligncenter {
 				}
 				.woocommerce-variation-availability {
 					font-size:14px;
-					margin-bottom:20px;
+					
 					border-bottom:4px solid #000;
 					padding-bottom:20px;
 					span.myin_stock {
 						color:#00a651;
 					}
 				}
+				.woocommerce-variation-description {
+					font-family:$didot;
+					text-transform: none;
+					font-size:18px;
+					line-height: 1.2;
+					margin-bottom:25px;
+					p {
+						margin-bottom:30px;
+					}
+					p:last-of-type {
+						margin-bottom:0;
+					}
+				}
 			}
 		}
 		table.variations {
+			margin-bottom:45px;
 			label {
 				color:$bluedark;
 				font-size:16px;
@@ -1371,7 +1385,7 @@ img.aligncenter {
 	.woocommerce-variation-add-to-cart {
 		background:$greylight;
 		padding:25px;
-		margin:25px 0;
+		margin:0px 0 25px;
 		span.quantity {
 			display: block;
 			margin-bottom:20px;
@@ -1439,7 +1453,7 @@ img.aligncenter {
 				display:none;
 			}
 			p {
-				margin-bottom:40px;
+				margin-bottom:30px;
 				
 			}
 			p:last-of-type {
@@ -1457,6 +1471,39 @@ img.aligncenter {
 					}
 				}
 			}
+		}
+	}
+	
+	
+	
+	.suggestion_wrapper {
+		text-align: center;
+		span.suggestions {
+			color:$bluedark;
+			font-family:$voltagelight;
+			text-transform: lowercase;
+			font-size:26px;
+			display:block;
+			text-align: center;
+		}
+		a.come_visit {
+			display: block;
+			color:$black;
+			font-family: $oswaldreg;
+			font-size:14px;
+			text-decoration: none;
+			text-transform: uppercase;
+			margin-top:10px
+		}
+		a.come_visit_button {
+			background:$bluedark;
+			color:#fff;
+			text-decoration: none;
+			font-size:14px;
+			display:inline-block;
+			margin:15px auto;
+			padding:11px 18px;
+			text-align: center;
 		}
 	}
 	
@@ -1538,7 +1585,7 @@ img.aligncenter {
 	
 	
 	.product_wrapper {
-		margin-top:50px;
+		margin:50px auto;
 		.images {
 			img.attachment-shop_single  {
 				
@@ -1590,7 +1637,7 @@ img.aligncenter {
 	}
 	
 	.woocommerce-variation-add-to-cart {
-		float:left;
+		float:right;
 		width:50%;
 		margin: 4px 0 15px;
 		span.quantity {
@@ -3040,7 +3087,7 @@ footer {
 		}
 		}
 		.panel {
-			
+			padding-bottom:100px;
 			h2 {
 				
 			}
@@ -3062,6 +3109,9 @@ footer {
 			}
 		}
 	}
+
+
+
 
 
 
@@ -3185,6 +3235,37 @@ footer {
 	padding:40px 0;
 	border-top: 1px solid #a6a6a6;
 }
+
+
+
+
+.suggestion_wrapper {
+		text-align: left;
+		width:100%;
+		span.suggestions {
+			float:left;
+			margin-top:25px
+		}
+		a.come_visit {
+			float:left;
+			margin-top:32px;
+			margin-left:15px;
+		}
+		a.come_visit_button {
+			background:$bluedark;
+			color:#fff;
+			text-decoration: none;
+			font-size:14px;
+			display:inline-block;
+			margin:25px auto;
+			padding:11px 18px;
+			text-align: center;
+			float:right;
+		}
+	}
+
+
+
 
 } /* Media Query */
 

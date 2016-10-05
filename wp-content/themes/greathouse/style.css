@@ -1144,7 +1144,7 @@ img.aligncenter {
   font-family: "oswaldregular", arial;
   text-transform: uppercase;
   max-width: 540px;
-  margin: 0px auto;
+  margin: 0px auto 65px;
   position: relative;
   text-transform: uppercase;
   letter-spacing: 0.7px;
@@ -1179,12 +1179,27 @@ form.variations_form .single_variation_wrap .single_variation .woocommerce-varia
 }
 form.variations_form .single_variation_wrap .single_variation .woocommerce-variation-availability {
   font-size: 14px;
-  margin-bottom: 20px;
   border-bottom: 4px solid #000;
   padding-bottom: 20px;
 }
 form.variations_form .single_variation_wrap .single_variation .woocommerce-variation-availability span.myin_stock {
   color: #00a651;
+}
+form.variations_form .single_variation_wrap .single_variation .woocommerce-variation-description {
+  font-family: "Didot- LP W01 Regular", arial;
+  text-transform: none;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+form.variations_form .single_variation_wrap .single_variation .woocommerce-variation-description p {
+  margin-bottom: 30px;
+}
+form.variations_form .single_variation_wrap .single_variation .woocommerce-variation-description p:last-of-type {
+  margin-bottom: 0;
+}
+form.variations_form table.variations {
+  margin-bottom: 45px;
 }
 form.variations_form table.variations label {
   color: #79b7c0;
@@ -1204,7 +1219,7 @@ form.variations_form table.variations .reset_variations {
 .woocommerce-variation-add-to-cart {
   background: #f3f3f3;
   padding: 25px;
-  margin: 25px 0;
+  margin: 0px 0 25px;
 }
 .woocommerce-variation-add-to-cart span.quantity {
   display: block;
@@ -1267,7 +1282,7 @@ form.variations_form table.variations .reset_variations {
   display: none;
 }
 .woocommerce-tabs.wc-tabs-wrapper .panel p {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .woocommerce-tabs.wc-tabs-wrapper .panel p:last-of-type {
   margin-bottom: 0;
@@ -1283,6 +1298,37 @@ form.variations_form table.variations .reset_variations {
 .woocommerce-tabs.wc-tabs-wrapper .panel table.shop_attributes tr td {
   width: 49%;
   margin: 0 1%;
+}
+
+.suggestion_wrapper {
+  text-align: center;
+}
+.suggestion_wrapper span.suggestions {
+  color: #79b7c0;
+  font-family: "Voltage W00 Light", arial;
+  text-transform: lowercase;
+  font-size: 26px;
+  display: block;
+  text-align: center;
+}
+.suggestion_wrapper a.come_visit {
+  display: block;
+  color: #000;
+  font-family: "oswaldregular", arial;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.suggestion_wrapper a.come_visit_button {
+  background: #79b7c0;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  margin: 15px auto;
+  padding: 11px 18px;
+  text-align: center;
 }
 
 @media screen and (min-width: 455px) {
@@ -1339,7 +1385,7 @@ form.variations_form table.variations .reset_variations {
 
   /* Single Product Pages */
   .product_wrapper {
-    margin-top: 50px;
+    margin: 50px auto;
   }
   .product_wrapper .entry-summary {
     padding: 0;
@@ -1365,7 +1411,7 @@ form.variations_form table.variations .reset_variations {
   }
 
   .woocommerce-variation-add-to-cart {
-    float: left;
+    float: right;
     width: 50%;
     margin: 4px 0 15px;
   }
@@ -2266,6 +2312,9 @@ form.variations_form table.variations .reset_variations {
   .woocommerce-tabs.wc-tabs-wrapper {
     max-width: 100%;
   }
+  .woocommerce-tabs.wc-tabs-wrapper .panel {
+    padding-bottom: 100px;
+  }
 }
 /* Media Query */
 @media screen and (min-width: 1200px) {
@@ -2339,6 +2388,31 @@ form.variations_form table.variations .reset_variations {
     float: left;
     padding: 40px 0;
     border-top: 1px solid #a6a6a6;
+  }
+
+  .suggestion_wrapper {
+    text-align: left;
+    width: 100%;
+  }
+  .suggestion_wrapper span.suggestions {
+    float: left;
+    margin-top: 25px;
+  }
+  .suggestion_wrapper a.come_visit {
+    float: left;
+    margin-top: 32px;
+    margin-left: 15px;
+  }
+  .suggestion_wrapper a.come_visit_button {
+    background: #79b7c0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin: 25px auto;
+    padding: 11px 18px;
+    text-align: center;
+    float: right;
   }
 }
 /* Media Query */
