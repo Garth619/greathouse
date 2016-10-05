@@ -97,6 +97,9 @@ var sticky = new Waypoint.Sticky({
 		jQuery('.menu_bar').toggleClass('open');
 		
 	});
+	
+	
+	// Adds a div around the content of the single product page
   
   
 

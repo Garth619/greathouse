@@ -48,6 +48,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 		do_action( 'woocommerce_before_single_product_summary' );
 	?>
 
+	
+	<div class="product_content_wrap">
+	
 	<div class="summary entry-summary">
 
 		<?php
@@ -79,6 +82,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	?>
 
 	<meta itemprop="url" content="<?php the_permalink(); ?>" />
+	
+	</div><!-- product_content_wrap -->
 
 </div><!-- #product-<?php the_ID(); ?> -->
 

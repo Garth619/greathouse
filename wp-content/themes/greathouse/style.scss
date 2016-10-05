@@ -1323,6 +1323,7 @@ img.aligncenter {
 				font-family: $oswaldreg;
 				margin-bottom:35px;
 				display:block;
+				font-size:18px;
 			}
 		}
 		
@@ -2937,6 +2938,138 @@ footer {
 	}
 	
 }
+
+
+
+
+
+
+
+/* Single Product Pages */
+	
+	
+	.product_wrapper {
+		max-width:1350px;
+		overflow: hidden;
+		padding:0 45px;
+		margin:100px auto;
+		.images {
+			width:40%;
+			float:left;
+			img.attachment-shop_single  {
+				
+			}
+		}
+		.product_content_wrap {
+			width:60%;
+			float:left;
+			padding-left:60px;
+		}
+		.entry-summary {
+			
+			h1 {
+				margin-top:0;
+			}
+			span.sub_title {
+				
+			}
+		}
+		
+	}
+	
+	form.variations_form {
+		.single_variation_wrap {
+			.single_variation {
+				.woocommerce-variation-price {
+					
+					
+				}
+				.woocommerce-variation-availability {
+					
+					span.myin_stock {
+						
+					}
+				}
+			}
+		}
+		table.variations {
+			
+			
+			label {
+				
+			}
+			.reset_variations {
+				
+			}
+		}
+	}
+	
+	.woocommerce-variation-add-to-cart {
+		
+		span.quantity {
+			
+		}
+		input.input-text.qty.text {
+					}
+		button.single_add_to_cart_button {
+			
+		}
+	}
+	
+	.woocommerce-tabs.wc-tabs-wrapper {
+		max-width: 100%;
+	
+		ul.tabs.wc-tabs {
+			
+			li {
+				
+
+				a {
+					
+				}
+			}
+			li:last-of-type {
+				
+			}
+			li.active {
+				
+			a {
+				
+			}
+
+		}
+		}
+		.panel {
+			
+			h2 {
+				
+			}
+			p {
+				
+				
+			}
+			p:last-of-type {
+				
+			}
+			table.shop_attributes {
+				
+				tr {
+					
+					td {
+						
+					}
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+
+
 
 
 
