@@ -1320,7 +1320,8 @@ img.aligncenter {
 			}
 			span.sub_title {
 				font-family: $oswaldreg;
-				
+				margin-bottom:35px;
+				display:block;
 			}
 		}
 		
@@ -1332,8 +1333,9 @@ img.aligncenter {
 				.woocommerce-variation-price {
 					font-style: none;
 					font-weight: 300;
-					margin: 35px 0 15px;
+					margin: 0px 0 15px;
 					font-size:35px;
+					
 				}
 				.woocommerce-variation-availability {
 					font-size:14px;
@@ -1349,9 +1351,17 @@ img.aligncenter {
 		table.variations {
 			label {
 				color:$bluedark;
-				font-size:14px;
+				font-size:16px;
 				display: block;
 				margin:10px 0 10px;
+			}
+			.reset_variations {
+				color:$bluedark;
+				text-decoration: none;
+				font-size:16px;
+				position: relative;
+				top:3px;
+				left:9px;
 			}
 		}
 	}
@@ -1389,28 +1399,61 @@ img.aligncenter {
 			margin:0;
 			background:$greylight;
 			overflow: hidden;
+			padding:0 10px;
 			li {
-/*
-				width:25%;
+
+				width:50%;
 				float:left;
 				text-align:center;
-*/
+
 				a {
 					color:#000;
 					text-decoration: none;
-					font-size:14px;
-					padding:10px 0;
+					font-size:16px;
+					padding-top: 15px;
 					display: block;
+					transition:all .2s ease-in-out;
 				}
 			}
-			li.active {
-				border-bottom:3px solid #000;
+			li:last-of-type {
+				margin-bottom:15px;
 			}
+			li.active {
+// 				border-bottom:3px solid #000;
+// 				margin:0 0 8px 0;
+			a {
+				color:$bluedark;
+			}
+
+		}
 		}
 		.panel {
-			padding:45px 20px 75px;
+			padding:35px 20px;
+			font-family: $didot;
+			text-transform: none;
+			font-size:18px;
+			line-height: 1.2;
 			h2 {
 				display:none;
+			}
+			p {
+				margin-bottom:40px;
+				
+			}
+			p:last-of-type {
+				margin-bottom:0;
+			}
+			table.shop_attributes {
+				text-align: left;
+				margin:0 auto;
+				width:90%;
+				tr {
+					vertical-align: top;
+					td {
+						width:49%;
+						margin:0 1%;
+					}
+				}
 			}
 		}
 	}

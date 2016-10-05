@@ -769,10 +769,49 @@ function woo_new_product_tab_content() {
 
 	// The new tab content
 
-	echo '<h2>Shipping Info</h2>';
-	echo '<p>Here\'s your new product tab.</p>';
+	
+	echo '<p>Shipping Class Info</p>';
 	
 }
+
+
+
+
+add_filter( 'woocommerce_product_tabs', 'woo_new_product_tab_two' );
+function woo_new_product_tab_two( $tabs ) {
+	
+	// Adds the new tab
+	
+	$tabs['testtwo_tab'] = array(
+		'title' 	=> __( 'Product Care', 'woocommerce' ),
+		'priority' 	=> 100,
+		'callback' 	=> 'woo_new_product_tab_content_two'
+	);
+
+	return $tabs;
+
+}
+function woo_new_product_tab_content_two() {
+
+	// The new tab content
+
+	
+	echo '<p>New Product Care Info</p>';
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
