@@ -1578,7 +1578,7 @@ img.aligncenter {
 	
 	
 	
-	/* My table Styels */
+	/* My Table Styles */
 	
 	
 	.my_table_wrapper {
@@ -1634,12 +1634,11 @@ img.aligncenter {
 
 		.alt td,
 		.alt th {
-			background: rgba(0,0,0,0.025);
+// 			background: rgba(0,0,0,0.025);
 		}
 	}
 
 	table.shop_table {
-		border: 1px solid rgba(0,0,0,0.1);
 		margin: 0px -1px 24px 0px;
 		text-align: left;
 		width: 100%;
@@ -1765,7 +1764,7 @@ img.aligncenter {
 
 		tr {
 			display: block;
-
+			
 			td {
 				display: block;
 				text-align: right !important; // Important to overwrite order status inline styling
@@ -1794,7 +1793,7 @@ img.aligncenter {
 
 			&:nth-child(2n) {
 				td {
-					background-color: rgba(0,0,0,0.025);
+// 					background-color: rgba(0,0,0,0.025);
 				}
 			}
 		}
