@@ -63,8 +63,8 @@
 							
 								<div class="cart_signin_wrapper">
 								
-									<span>Cart</span>
-									<span>Sign In</span>
+									<a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf ( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?></a>
+									<a href="">Sign In</a>
 								
 								</div><!-- header_options_inner -->
 								
@@ -105,7 +105,7 @@
 								<div class="cart_signin_wrapper">
 									
 									<img class="search_img" src="<?php bloginfo('template_directory');?>/images/search.png"/>
-									<a href="">Cart</a>
+									<a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf ( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?></a>
 									<a href="">Sign in</a>
 								
 

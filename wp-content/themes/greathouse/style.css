@@ -168,7 +168,11 @@ header .inner_header .header_options .cart_signin_wrapper {
   letter-spacing: 1.2px;
   margin-top: 2px;
 }
-header .inner_header .header_options .cart_signin_wrapper span:first-of-type {
+header .inner_header .header_options .cart_signin_wrapper a {
+  color: #7c786f;
+  text-decoration: none;
+}
+header .inner_header .header_options .cart_signin_wrapper a:first-of-type {
   margin-right: 16px;
 }
 header .inner_header .header_logo_nav_wrapper {
@@ -1390,6 +1394,279 @@ form.variations_form table.variations .reset_variations {
   margin-bottom: 55px;
 }
 
+/* Woocommerce Resonsive Tables from assets/css/smallscreen.scss */
+/**
+ * Tables
+ */
+table.shop_attributes {
+  border: 0;
+  border-top: 1px dotted rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.618em;
+  width: 100%;
+}
+table.shop_attributes th {
+  width: 150px;
+  font-weight: 700;
+  padding: 8px;
+  border-top: 0;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
+  margin: 0;
+  line-height: 1.5;
+}
+table.shop_attributes td {
+  font-style: italic;
+  padding: 0;
+  border-top: 0;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
+  margin: 0;
+  line-height: 1.5;
+}
+table.shop_attributes td p {
+  margin: 0;
+  padding: 8px 0;
+}
+table.shop_attributes .alt td,
+table.shop_attributes .alt th {
+  background: rgba(0, 0, 0, 0.025);
+}
+
+table.shop_table {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0px -1px 24px 0px;
+  text-align: left;
+  width: 100%;
+  border-collapse: separate;
+  border-radius: 5px;
+}
+table.shop_table th {
+  font-weight: 700;
+  padding: 9px 12px;
+}
+table.shop_table td {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 6px 12px;
+  vertical-align: middle;
+}
+table.shop_table td small {
+  font-weight: normal;
+}
+table.shop_table tbody:first-child tr:first-child th,
+table.shop_table tbody:first-child tr:first-child td {
+  border-top: 0;
+}
+table.shop_table tfoot td,
+table.shop_table tfoot th,
+table.shop_table tbody th {
+  font-weight: 700;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+table.my_account_orders {
+  font-size: 0.85em;
+}
+table.my_account_orders th,
+table.my_account_orders td {
+  padding: 4px 8px;
+  vertical-align: middle;
+}
+table.my_account_orders .button {
+  white-space: nowrap;
+}
+table.my_account_orders .order-actions {
+  text-align: right;
+}
+table.my_account_orders .order-actions .button {
+  margin: .125em 0 .125em .25em;
+}
+
+td.product-name dl.variation {
+  margin: .25em 0;
+}
+td.product-name dl.variation dt,
+td.product-name dl.variation dd {
+  display: inline-block;
+  float: left;
+  margin-bottom: 1em;
+}
+td.product-name dl.variation dt {
+  font-weight: 700;
+  padding: 0 0 .25em 0;
+  margin: 0 4px 0 0;
+  clear: left;
+}
+td.product-name dl.variation dd {
+  padding: 0 0 .25em 0;
+}
+td.product-name dl.variation dd p:last-child {
+  margin-bottom: 0;
+}
+td.product-name p.backorder_notification {
+  font-size: 0.83em;
+}
+
+td.product-quantity {
+  min-width: 80px;
+}
+
+/* Woocommerce Resonsive Tables from assets/css/woocommerce.scss */
+.woocommerce,
+.woocommerce-page {
+  /**
+   * Cart
+   */
+  /**
+   * Checkout
+   */
+  /**
+   * Account
+   */
+}
+.woocommerce table.shop_table_responsive thead,
+.woocommerce-page table.shop_table_responsive thead {
+  display: none;
+}
+.woocommerce table.shop_table_responsive tbody tr:first-child td:first-child,
+.woocommerce-page table.shop_table_responsive tbody tr:first-child td:first-child {
+  border-top: 0;
+}
+.woocommerce table.shop_table_responsive tbody th,
+.woocommerce-page table.shop_table_responsive tbody th {
+  display: none;
+}
+.woocommerce table.shop_table_responsive tr,
+.woocommerce-page table.shop_table_responsive tr {
+  display: block;
+}
+.woocommerce table.shop_table_responsive tr td,
+.woocommerce-page table.shop_table_responsive tr td {
+  display: block;
+  text-align: right !important;
+}
+.woocommerce table.shop_table_responsive tr td.order-actions,
+.woocommerce-page table.shop_table_responsive tr td.order-actions {
+  text-align: left !important;
+}
+.woocommerce table.shop_table_responsive tr td:before,
+.woocommerce-page table.shop_table_responsive tr td:before {
+  content: attr(data-title) ": ";
+  font-weight: 700;
+  float: left;
+}
+.woocommerce table.shop_table_responsive tr td.product-remove:before, .woocommerce table.shop_table_responsive tr td.actions:before,
+.woocommerce-page table.shop_table_responsive tr td.product-remove:before,
+.woocommerce-page table.shop_table_responsive tr td.actions:before {
+  display: none;
+}
+.woocommerce table.shop_table_responsive tr:nth-child(2n) td,
+.woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
+  background-color: rgba(0, 0, 0, 0.025);
+}
+.woocommerce table.my_account_orders tr td.order-actions,
+.woocommerce-page table.my_account_orders tr td.order-actions {
+  text-align: left;
+}
+.woocommerce table.my_account_orders tr td.order-actions:before,
+.woocommerce-page table.my_account_orders tr td.order-actions:before {
+  display: none;
+}
+.woocommerce table.my_account_orders tr td.order-actions .button,
+.woocommerce-page table.my_account_orders tr td.order-actions .button {
+  float: none;
+  margin: .125em .25em .125em 0;
+}
+.woocommerce table.cart .product-thumbnail,
+.woocommerce #content table.cart .product-thumbnail,
+.woocommerce-page table.cart .product-thumbnail,
+.woocommerce-page #content table.cart .product-thumbnail {
+  display: none;
+}
+.woocommerce table.cart td.actions,
+.woocommerce #content table.cart td.actions,
+.woocommerce-page table.cart td.actions,
+.woocommerce-page #content table.cart td.actions {
+  text-align: left;
+}
+.woocommerce table.cart td.actions .coupon,
+.woocommerce #content table.cart td.actions .coupon,
+.woocommerce-page table.cart td.actions .coupon,
+.woocommerce-page #content table.cart td.actions .coupon {
+  float: none;
+  padding-bottom: .5em;
+}
+.woocommerce table.cart td.actions .coupon input,
+.woocommerce table.cart td.actions .coupon .button,
+.woocommerce table.cart td.actions .coupon .input-text,
+.woocommerce #content table.cart td.actions .coupon input,
+.woocommerce #content table.cart td.actions .coupon .button,
+.woocommerce #content table.cart td.actions .coupon .input-text,
+.woocommerce-page table.cart td.actions .coupon input,
+.woocommerce-page table.cart td.actions .coupon .button,
+.woocommerce-page table.cart td.actions .coupon .input-text,
+.woocommerce-page #content table.cart td.actions .coupon input,
+.woocommerce-page #content table.cart td.actions .coupon .button,
+.woocommerce-page #content table.cart td.actions .coupon .input-text {
+  width: 48%;
+  box-sizing: border-box;
+}
+.woocommerce table.cart td.actions .coupon .input-text + .button,
+.woocommerce table.cart td.actions .coupon .button.alt,
+.woocommerce #content table.cart td.actions .coupon .input-text + .button,
+.woocommerce #content table.cart td.actions .coupon .button.alt,
+.woocommerce-page table.cart td.actions .coupon .input-text + .button,
+.woocommerce-page table.cart td.actions .coupon .button.alt,
+.woocommerce-page #content table.cart td.actions .coupon .input-text + .button,
+.woocommerce-page #content table.cart td.actions .coupon .button.alt {
+  float: right;
+}
+.woocommerce table.cart td.actions .button,
+.woocommerce #content table.cart td.actions .button,
+.woocommerce-page table.cart td.actions .button,
+.woocommerce-page #content table.cart td.actions .button {
+  display: block;
+  width: 100%;
+}
+.woocommerce .cart-collaterals .cart_totals,
+.woocommerce .cart-collaterals .shipping_calculator,
+.woocommerce .cart-collaterals .cross-sells,
+.woocommerce-page .cart-collaterals .cart_totals,
+.woocommerce-page .cart-collaterals .shipping_calculator,
+.woocommerce-page .cart-collaterals .cross-sells {
+  width: 100%;
+  float: none;
+  text-align: left;
+}
+.woocommerce.woocommerce-checkout form.login .form-row,
+.woocommerce-page.woocommerce-checkout form.login .form-row {
+  width: 100%;
+  float: none;
+}
+.woocommerce #payment .terms,
+.woocommerce-page #payment .terms {
+  text-align: left;
+  padding: 0;
+}
+.woocommerce #payment #place_order,
+.woocommerce-page #payment #place_order {
+  float: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+}
+.woocommerce .lost_reset_password .form-row-first,
+.woocommerce .lost_reset_password .form-row-last,
+.woocommerce-page .lost_reset_password .form-row-first,
+.woocommerce-page .lost_reset_password .form-row-last {
+  width: 100%;
+  float: none;
+  margin-right: 0;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation,
+.woocommerce-account .woocommerce-MyAccount-content {
+  float: none;
+  width: 100%;
+}
+
 @media screen and (min-width: 455px) {
   /* Sidebar Template */
   #sidebar {
@@ -1552,7 +1829,7 @@ form.variations_form table.variations .reset_variations {
     font-size: 14px;
     margin-top: 5px;
   }
-  header .inner_header .header_options .header_options_inner .cart_signin_wrapper span:first-of-type {
+  header .inner_header .header_options .header_options_inner .cart_signin_wrapper a:first-of-type {
     margin: 0 25px;
   }
   header .inner_header .header_logo_nav_wrapper {
@@ -2184,7 +2461,7 @@ form.variations_form table.variations .reset_variations {
   }
   .cart_signin_wrapper img.search_img {
     width: 19px;
-    margin-top: 15px;
+    margin-top: 18px;
     float: left;
     margin-right: 7px;
   }
