@@ -22,6 +22,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 ?>
 
+
+<div class="inner_product_wrapper">
+
 <?php
 	/**
 	 * woocommerce_before_single_product hook.
@@ -38,6 +41,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+	<?php woocommerce_breadcrumb(); ?>
+	
 	<?php
 		/**
 		 * woocommerce_before_single_product_summary hook.
@@ -95,4 +100,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 </div><!-- #product-<?php the_ID(); ?> -->
 
+</div><!-- inner_product_wrapper -->
+
+<div class="member_banner">
+	
+	<div class="inner_banner_content">
+		
+		<span class="sub_header">become a member</span><!-- sub_header -->
+		<span class="large_header">keyholder club</span><!-- large_header -->
+		
+		<a href="" class="transparent_button">Sign Up Today</a>
+		
+	</div><!-- inner_banner_content -->
+	
+</div><!-- member_banner -->
+
 <?php do_action( 'woocommerce_after_single_product' ); ?>
+
+

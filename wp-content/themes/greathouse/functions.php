@@ -692,6 +692,7 @@ return $price;
 // Shows instock on the single product page
 
 
+
 add_filter( 'woocommerce_get_availability', 'custom_get_availability', 1, 2);
  
 function custom_get_availability( $availability, $_product ) {

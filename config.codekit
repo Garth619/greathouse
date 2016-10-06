@@ -26741,6 +26741,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/themes\/greathouse\/images\/member-graphic.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 45914,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/greathouse\/images\/member-graphic.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/greathouse\/images\/member-graphic.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/themes\/greathouse\/images\/personalize_bg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
