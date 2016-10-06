@@ -93,7 +93,9 @@
 							
 							
 							<nav class="desktop_menu_wrapper">
-							
+								
+								
+															
 								<div class="desktop_menu">
 									
 									<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
@@ -101,6 +103,12 @@
 								</div><!-- desktop_menu -->
 								
 								<div class="cart_signin_wrapper">
+									
+									<img class="search_img" src="<?php bloginfo('template_directory');?>/images/search.png"/>
+									<a href="">Cart</a>
+									<a href="">Sign in</a>
+								
+
 									
 								</div><!-- cart_signin_wrapper -->
 							

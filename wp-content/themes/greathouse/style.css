@@ -1355,7 +1355,7 @@ form.variations_form table.variations .reset_variations {
   height: 485px;
   background: #abcdd2 url(images/member-graphic.png) center center no-repeat;
   text-align: center;
-  margin-top: 75px;
+  margin-top: 100px;
 }
 .member_banner .inner_banner_content {
   position: relative;
@@ -1378,11 +1378,16 @@ form.variations_form table.variations .reset_variations {
 }
 
 /* Upsells Banner */
+.up-sells {
+  margin: 160px 0;
+  text-align: center;
+}
 .up-sells h2 {
   color: #79b7c0;
   font-family: "Voltage W00 Light", arial;
   text-transform: lowercase;
   font-size: 40px;
+  margin-bottom: 55px;
 }
 
 @media screen and (min-width: 455px) {
@@ -1454,6 +1459,7 @@ form.variations_form table.variations .reset_variations {
   form.variations_form .single_variation_wrap .single_variation .woocommerce-variation-availability {
     margin-bottom: 0;
     border: none;
+    padding: 0;
   }
   form.variations_form table.variations {
     float: left;
@@ -2039,6 +2045,18 @@ form.variations_form table.variations .reset_variations {
   header .inner_header .header_options {
     display: none;
   }
+  header .inner_header .header_logo_nav_wrapper {
+    background: #f3f3f3;
+  }
+  header .inner_header .header_logo_nav_wrapper .logo_wrapper {
+    background: #000 none repeat scroll 0 0;
+    float: left;
+    padding: 15px 30px 10px;
+    width: 280px;
+  }
+  header .inner_header .header_logo_nav_wrapper .logo_wrapper img.logo {
+    max-width: 90%;
+  }
   header .inner_header .header_logo_nav_wrapper .mobile_menu_wrapper {
     display: none;
   }
@@ -2057,6 +2075,10 @@ form.variations_form table.variations .reset_variations {
   .desktop_menu_wrapper {
     display: block;
     float: right;
+  }
+  .desktop_menu_wrapper .desktop_menu {
+    float: left;
+    margin-right: 20px;
   }
   .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 {
     list-style: none;
@@ -2149,6 +2171,29 @@ form.variations_form table.variations .reset_variations {
   .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li > ul.sub-menu li > ul.sub-menu li a:hover {
     color: #79b7c0;
     background: transparent;
+  }
+
+  .cart_signin_wrapper {
+    float: right;
+    font-size: 14px;
+    font-family: "oswaldregular", arial;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 0.7px;
+    margin-right: 30px;
+  }
+  .cart_signin_wrapper img.search_img {
+    width: 19px;
+    margin-top: 15px;
+    float: left;
+    margin-right: 7px;
+  }
+  .cart_signin_wrapper a {
+    color: #7c786f;
+    text-decoration: none;
+    float: left;
+    margin-top: 23px;
+    padding-right: 7px;
   }
 
   .see_all_products {
@@ -2379,8 +2424,29 @@ form.variations_form table.variations .reset_variations {
   .discount_wrapper {
     padding: 60px;
   }
+
+  .desktop_menu_wrapper .desktop_menu {
+    margin-right: 10px;
+  }
+
+  .cart_signin_wrapper {
+    margin-right: 30px;
+  }
 }
+/* Media Query */
 @media screen and (min-width: 1300px) {
+  /* Header */
+  header .inner_header .header_logo_nav_wrapper .logo_wrapper {
+    width: 374px;
+  }
+  header .inner_header .header_logo_nav_wrapper .logo_wrapper img.logo {
+    max-width: 100%;
+  }
+
+  .desktop_menu_wrapper .desktop_menu {
+    margin-right: 25px;
+  }
+
   /* No Sidebar Template */
   .no_sidebar_wrapper .no_sidebar_inner {
     width: 80%;
@@ -2475,6 +2541,17 @@ form.variations_form table.variations .reset_variations {
 }
 /* Media Query */
 @media screen and (min-width: 1400px) {
+  .desktop_menu_wrapper .desktop_menu {
+    margin-right: 100px;
+  }
+  .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li > a {
+    padding: 23px 15px;
+  }
+
+  .cart_signin_wrapper img.search_img {
+    margin-right: 25px;
+  }
+
   /* Main Banner */
   .main_banner_wrapper {
     height: 950px;
