@@ -1394,7 +1394,21 @@ form.variations_form table.variations .reset_variations {
   margin-bottom: 55px;
 }
 
-/* Woocommerce Resonsive Tables from assets/css/smallscreen.scss */
+/* My table Styels */
+.my_table_wrapper {
+  width: 90%;
+  margin: 45px auto 0;
+}
+.my_table_wrapper .mytable_header {
+  font-family: "Voltage W00 Light", arial;
+  color: #000;
+  text-transform: lowercase;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+/* Woocommerce Resonsive Tables from assets/css/woocommerce.scss */
 /**
  * Tables
  */
@@ -1508,7 +1522,7 @@ td.product-quantity {
   min-width: 80px;
 }
 
-/* Woocommerce Resonsive Tables from assets/css/woocommerce.scss */
+/* Woocommerce Resonsive Tables from assets/css/smallscreen.scss */
 .woocommerce,
 .woocommerce-page {
   /**
@@ -1541,6 +1555,7 @@ td.product-quantity {
 .woocommerce-page table.shop_table_responsive tr td {
   display: block;
   text-align: right !important;
+  padding: 45px 20px;
 }
 .woocommerce table.shop_table_responsive tr td.order-actions,
 .woocommerce-page table.shop_table_responsive tr td.order-actions {
@@ -1551,6 +1566,12 @@ td.product-quantity {
   content: attr(data-title) ": ";
   font-weight: 700;
   float: left;
+}
+.woocommerce table.shop_table_responsive tr td.product-remove,
+.woocommerce-page table.shop_table_responsive tr td.product-remove {
+  padding: 20px;
+  text-align: left !important;
+  border-bottom: 4px #000 solid;
 }
 .woocommerce table.shop_table_responsive tr td.product-remove:before, .woocommerce table.shop_table_responsive tr td.actions:before,
 .woocommerce-page table.shop_table_responsive tr td.product-remove:before,
@@ -1573,6 +1594,15 @@ td.product-quantity {
 .woocommerce-page table.my_account_orders tr td.order-actions .button {
   float: none;
   margin: .125em .25em .125em 0;
+}
+.woocommerce table.cart,
+.woocommerce #content table.cart,
+.woocommerce-page table.cart,
+.woocommerce-page #content table.cart {
+  /*
+  		width:90%;
+  		margin:0 auto;
+  */
 }
 .woocommerce table.cart .product-thumbnail,
 .woocommerce #content table.cart .product-thumbnail,

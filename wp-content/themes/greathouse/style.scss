@@ -1577,7 +1577,26 @@ img.aligncenter {
 	}
 	
 	
-	/* Woocommerce Resonsive Tables from assets/css/smallscreen.scss */
+	
+	/* My table Styels */
+	
+	
+	.my_table_wrapper {
+		width:90%;
+		margin:45px auto 0;
+		.mytable_header {
+			font-family:$voltagelight;
+			color:#000;
+			text-transform: lowercase;
+			font-size:40px;
+			text-align: center;
+			margin-bottom:35px;
+		}
+	}
+	
+	
+	
+	/* Woocommerce Resonsive Tables from assets/css/woocommerce.scss */
 	
 	
 	/**
@@ -1720,7 +1739,7 @@ img.aligncenter {
 
 	
 	
-	/* Woocommerce Resonsive Tables from assets/css/woocommerce.scss */
+	/* Woocommerce Resonsive Tables from assets/css/smallscreen.scss */
 	
 	
 	
@@ -1750,7 +1769,7 @@ img.aligncenter {
 			td {
 				display: block;
 				text-align: right !important; // Important to overwrite order status inline styling
-
+				padding:45px 20px;
 				&.order-actions {
 					text-align: left !important;
 				}
@@ -1760,7 +1779,11 @@ img.aligncenter {
 					font-weight: 700;
 					float: left;
 				}
-
+				&.product-remove {
+					padding:20px;
+					text-align: left !important;
+					border-bottom:4px #000 solid;
+				}
 				&.product-remove,
 				&.actions {
 					&:before {
@@ -1804,6 +1827,10 @@ img.aligncenter {
 	 */
 	table.cart,
 	#content table.cart {
+/*
+		width:90%;
+		margin:0 auto;
+*/
 		.product-thumbnail {
 			display: none;
 		}

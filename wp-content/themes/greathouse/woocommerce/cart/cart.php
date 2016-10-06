@@ -24,6 +24,11 @@ wc_print_notices();
 
 do_action( 'woocommerce_before_cart' ); ?>
 
+
+<div class="my_table_wrapper">
+
+<h2 class="mytable_header">Shopping Cart</h2>
+
 <form action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 
 <?php do_action( 'woocommerce_before_cart_table' ); ?>
@@ -55,7 +60,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 					<td class="product-remove">
 						<?php
 							echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf(
-								'<a href="%s" class="remove" title="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
+								'<a href="%s" class="remove" title="%s" data-product_id="%s" data-product_sku="%s"><img src="' . get_bloginfo('template_directory') . '/images/checkout_trashcan.png"/></a>',
 								esc_url( WC()->cart->get_remove_url( $cart_item_key ) ),
 								__( 'Remove this item', 'woocommerce' ),
 								esc_attr( $product_id ),
@@ -164,3 +169,6 @@ do_action( 'woocommerce_before_cart' ); ?>
 </div>
 
 <?php do_action( 'woocommerce_after_cart' ); ?>
+
+
+</div><!-- my_table_wrapper -->
