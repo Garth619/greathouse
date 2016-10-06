@@ -1302,11 +1302,14 @@ img.aligncenter {
 		letter-spacing:0.7px;
 		.inner_product_wrapper {
 			max-width:540px;
-			margin:0px auto 65px;
+			margin:25px auto 0;
 		}
 		.woocommerce-breadcrumb {
 			color:#000;
 			margin-bottom: 20px;
+			padding:0 20px;
+			text-align: center;
+			line-height:1.4;
 			a {
 				text-decoration: none;
 				color:#000;
@@ -1417,6 +1420,7 @@ img.aligncenter {
 			font-size:14px;
 			padding:8px 20px;
 			font-family: $oswaldreg;
+			cursor: pointer;
 		}
 	}
 	
@@ -1529,6 +1533,7 @@ img.aligncenter {
 		height:485px;
 		background: #abcdd2 url(images/member-graphic.png) center center no-repeat;
 		text-align: center;
+		margin-top:75px;
 		.inner_banner_content {
 			position: relative;
 			top: 50%;
@@ -1548,6 +1553,18 @@ img.aligncenter {
 				font-size:16px;
 				
 			}
+		}
+	}
+	
+	/* Upsells Banner */
+	
+	
+	.up-sells {
+		h2 {
+			color:$bluedark;
+			font-family:$voltagelight;
+			text-transform: lowercase;
+			font-size:40px;
 		}
 	}
 
@@ -1627,7 +1644,7 @@ img.aligncenter {
 	
 	
 	.product_wrapper {
-		margin:50px auto;
+		margin:50px auto 0;
 		.images {
 			img.attachment-shop_single  {
 				
@@ -3038,11 +3055,15 @@ footer {
 	
 	
 	.product_wrapper {
+		.woocommerce-breadcrumb {
+			text-align: left;
+			padding-left:0;
+		}
 		.inner_product_wrapper {
 			max-width:1350px;
 			overflow: hidden;
 			padding:0 45px;
-			margin:100px auto;
+			margin:100px auto 0px;
 		}
 		.images {
 			width:40%;

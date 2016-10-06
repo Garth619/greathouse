@@ -47,6 +47,33 @@ jQuery( "<a class='see_all_products' href='/shop'>See All Products</a>" ).insert
   
   
   
+  // Related Products 
+  
+  jQuery('.up-sells ul.products').slick({
+    //prevArrow: ".prev",
+    //nextArrow: ".next",
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    responsive: [
+    {
+      breakpoint: 1400,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 750,
+      settings: {
+        slidesToShow: 1
+        
+      }
+    }
+  ]
+  });
+  
+  
+  
   
   // Cookie that displays a special offer to first time users 
   

@@ -712,13 +712,6 @@ remove_action('woocommerce_single_product_summary', 'woocommerce_template_single
 
 
 
-// Moves add to cart after the form hook
-
-//remove_action('woocommerce_single_variation', 'woocommerce_single_variation_add_to_cart_button', 20 );
-//add_action('woocommerce_after_add_to_cart_form', 'woocommerce_single_variation_add_to_cart_button', 20 );
-
-
-
 // Remove the meta information
 
 
@@ -777,7 +770,6 @@ function woo_new_product_tab_content() {
 
 
 
-
 add_filter( 'woocommerce_product_tabs', 'woo_new_product_tab_two' );
 function woo_new_product_tab_two( $tabs ) {
 	
@@ -802,25 +794,14 @@ function woo_new_product_tab_content_two() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Related Products 
-
 
 remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
+// Moved Upsell
+
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 );
+add_action( 'woocommerce_after_single_product', 'woocommerce_upsell_display', 5 );
 
 
 
