@@ -177,6 +177,13 @@ body {
 	display:inline-block;
 }
 
+a.post-edit-link {
+	color:$bluedark;
+	text-decoration: none;
+	margin-top:25px;
+	display: block;
+}
+
 
 
 /* Header */
@@ -604,7 +611,7 @@ br.tablet_break {
 footer {
 	background: url(images/footer_pattern.jpg) top left repeat;
 	width:100%;
-	padding:55px;
+	padding: 55px 30px;
 	.inner_footer {
 		span.large_header {
 			font-family: $voltagereg;
@@ -1213,7 +1220,7 @@ img.aligncenter {
 	left:0;
 	background:rgba(0, 0, 0, 0.8);
 	text-align: center;
-	z-index:100;
+	z-index:2000;
 	overflow-y:scroll;
 	display: none;
 	.overlay_inner {
@@ -1297,6 +1304,21 @@ img.aligncenter {
 	
 	
 	/* Single Product Pages */
+	
+	
+	
+	.woocommerce-page {
+		.entry-content {
+			padding:15px 30px 45px;
+			p {
+				margin-bottom:20px;
+				a {
+					color:$bluedark;
+					text-decoration: none;
+				}
+			}
+		}
+	}
 	
 	
 	.product_wrapper {
@@ -1583,7 +1605,7 @@ img.aligncenter {
 	
 	.my_table_wrapper {
 		width:90%;
-		margin:45px auto 0;
+		margin:45px auto 45px;
 		.mytable_header {
 			font-family:$voltagelight;
 			color:#000;
@@ -1592,7 +1614,26 @@ img.aligncenter {
 			text-align: center;
 			margin-bottom:35px;
 		}
+		a {
+			color:$bluedark;
+			text-decoration: none;
+		}
+		.button {
+			background: $bluedark;
+			color:#fff;
+			border:none;
+			width:100%;
+			font-size:14px;
+			font-family: $oswaldreg;
+			text-transform: uppercase;
+			padding:15px;
+			-webkit-appearance: none;
+			border-radius: 0;
+		}
+		
 	}
+	
+	
 	
 	
 	
@@ -1761,16 +1802,19 @@ img.aligncenter {
 				display: none;
 			}
 		}
-
+		tr.cart-subtotal, tr.order-total {
+			margin-bottom:0;
+		}
 		tr {
 			display: block;
-			
+			margin-bottom:60px;
 			td {
 				display: block;
 				text-align: right !important; // Important to overwrite order status inline styling
 				padding:45px 20px;
 				&.order-actions {
 					text-align: left !important;
+					
 				}
 
 				&:before {
@@ -1783,8 +1827,13 @@ img.aligncenter {
 					text-align: left !important;
 					border-bottom:4px #000 solid;
 				}
+				&.actions {
+					border-top:none;
+					padding:0;
+				}
 				&.product-remove,
 				&.actions {
+					
 					&:before {
 						display: none;
 					}
@@ -1818,6 +1867,10 @@ img.aligncenter {
 		}
 	}
 
+	.input {
+		-webkit-appearance: none;
+	}
+	
 	
 
 
@@ -1826,10 +1879,7 @@ img.aligncenter {
 	 */
 	table.cart,
 	#content table.cart {
-/*
-		width:90%;
-		margin:0 auto;
-*/
+
 		.product-thumbnail {
 			display: none;
 		}
@@ -1839,26 +1889,62 @@ img.aligncenter {
 
 			.coupon {
 				float: none;
-			
-				padding-bottom: .5em;
-
+				background:$greylight;
+				padding:30px;
+				text-align: left;
+				.button {
+					display: block;
+					width: 100%;
+					background:$black;
+					color:#fff;
+					border:none;
+				}
+				label {
+					color:$bluedark;
+					font-size:14px;
+					margin-bottom:0px;
+					display: block;
+					letter-spacing: 1.2px;
+				}
+				input {
+					font-family: $oswaldreg;
+					font-size:14px;
+					letter-spacing: 1.2px;
+					color:$black;
+					text-transform: uppercase;
+				}
 				input,
 				.button,
 				.input-text {
-					width: 48%;
-					box-sizing: border-box;
+// 					width: 50%;
+					padding:16px;
+					
 				}
-
+				
+				
+				input#coupon_code {
+					width:70%;
+					border:none;
+					font-size:14px;
+					line-height:1;
+					height:50px;
+					border-radius: 0;
+				}
+				input#mycoupon_button {
+					width:30%;
+					font-size:14px;
+					line-height:1;
+					-webkit-appearance: none !important;
+					height:50px;
+					border-radius: 0;
+				}
 				.input-text + .button,
 				.button.alt {
 					float: right;
 				}
 			}
 
-			.button {
-				display: block;
-				width: 100%;
-			}
+			
 		}
 	}
 
@@ -1870,7 +1956,42 @@ img.aligncenter {
 			float: none;
 			text-align: left;
 		}
+		.cart_totals {
+			h2 {
+				color:$bluedark;
+				font-family: $voltagelight;
+				font-size:26px;
+				text-transform: lowercase;
+				text-align: center;
+			}
+		}
 	}
+	
+	
+	
+	
+	
+	.checkout-button {
+		width:100%;
+		display:block;
+		text-align: center;
+	}
+	
+	
+	
+	
+	.input-text.qty {
+		font-family: $oswaldreg;
+		padding: 0px 10px;
+		font-size:18px;
+		width:100px;
+		text-align: center;
+		border: none;
+		position:relative;
+		top:-6px;
+	}
+	
+	
 
 	/**
 	 * Checkout
