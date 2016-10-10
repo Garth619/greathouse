@@ -1557,14 +1557,6 @@ td.product-quantity {
   /**
    * Cart
    */
-  /*
-  			.wc-proceed-to-checkout {
-  				margin-top:38px;
-  				a {
-  					padding:20px 0;
-  				}
-  			}
-  */
   /**
    * Checkout
    */
@@ -1750,6 +1742,10 @@ td.product-quantity {
   float: none;
   text-align: left;
 }
+.woocommerce .cart-collaterals tr,
+.woocommerce-page .cart-collaterals tr {
+  border-bottom: none !important;
+}
 .woocommerce .cart-collaterals tr td,
 .woocommerce-page .cart-collaterals tr td {
   color: #79b7c0;
@@ -1772,6 +1768,7 @@ td.product-quantity {
 .woocommerce-page .cart-collaterals tr td span.my_total_price {
   color: #000;
   float: right;
+  font-size: 25px;
 }
 .woocommerce .cart-collaterals tr td:before,
 .woocommerce-page .cart-collaterals tr td:before {
@@ -1781,6 +1778,10 @@ td.product-quantity {
 .woocommerce th.mysub_totals,
 .woocommerce-page th.mysub_totals {
   color: #000 !important;
+}
+.woocommerce .wc-proceed-to-checkout a,
+.woocommerce-page .wc-proceed-to-checkout a {
+  padding: 20px 0;
 }
 .woocommerce .checkout-button,
 .woocommerce-page .checkout-button {
@@ -2866,6 +2867,7 @@ td.product-quantity {
   .my_table_wrapper .mytable_header {
     text-align: left;
     font-size: 120px;
+    margin-bottom: 70px;
   }
 
   /* Woocommerce Resonsive Tables from assets/css/woocommerce.scss */
@@ -2892,22 +2894,47 @@ td.product-quantity {
     background: #f3f3f3;
     border-bottom: 4px solid #000;
     margin-bottom: 20px;
+    font-family: "oswaldlight", arial;
+    letter-spacing: 0.7px;
   }
   .woocommerce table.shop_table_responsive thead tr.tr_head,
   .woocommerce-page table.shop_table_responsive thead tr.tr_head {
     margin-bottom: 0;
+    padding: 23px 0 14px;
+    font-size: 14px;
   }
   .woocommerce table.shop_table_responsive thead tr,
   .woocommerce-page table.shop_table_responsive thead tr {
     margin-bottom: 0;
   }
-  .woocommerce table.shop_table_responsive thead tr th.product-name,
-  .woocommerce-page table.shop_table_responsive thead tr th.product-name {
-    width: 20%;
+  .woocommerce table.shop_table_responsive thead tr th,
+  .woocommerce-page table.shop_table_responsive thead tr th {
+    float: left;
+    padding: 0;
   }
   .woocommerce table.shop_table_responsive thead tr th.product-thumbnail,
   .woocommerce-page table.shop_table_responsive thead tr th.product-thumbnail {
+    width: 16%;
+  }
+  .woocommerce table.shop_table_responsive thead tr th.product-name,
+  .woocommerce-page table.shop_table_responsive thead tr th.product-name {
+    width: 34%;
+    padding-left: 35px;
+  }
+  .woocommerce table.shop_table_responsive thead tr th.product-price,
+  .woocommerce-page table.shop_table_responsive thead tr th.product-price {
+    text-align: center;
     width: 10%;
+  }
+  .woocommerce table.shop_table_responsive thead tr th.product-quantity,
+  .woocommerce-page table.shop_table_responsive thead tr th.product-quantity {
+    width: 23%;
+    text-align: center;
+  }
+  .woocommerce table.shop_table_responsive thead tr th.product-subtotal,
+  .woocommerce-page table.shop_table_responsive thead tr th.product-subtotal {
+    width: 14%;
+    text-align: center;
   }
   .woocommerce table.shop_table_responsive tr.actions_row,
   .woocommerce-page table.shop_table_responsive tr.actions_row {
@@ -2917,7 +2944,7 @@ td.product-quantity {
   .woocommerce table.shop_table_responsive tr,
   .woocommerce-page table.shop_table_responsive tr {
     overflow: hidden;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #a6a6a6;
     margin-bottom: 0;
     padding: 40px 0;
   }
@@ -3019,7 +3046,7 @@ td.product-quantity {
   }
   .woocommerce .cart-collaterals tr,
   .woocommerce-page .cart-collaterals tr {
-    padding: 27px 0 !important;
+    padding: 19px 0 !important;
   }
   .woocommerce .cart-collaterals tr td,
   .woocommerce-page .cart-collaterals tr td {
@@ -3037,12 +3064,15 @@ td.product-quantity {
     margin-left: 10px;
     font-size: 26px;
     text-align: left;
+    position: relative;
+    top: 18px;
   }
   .woocommerce .cart-collaterals tr td span.mysub_total_price, .woocommerce .cart-collaterals tr td span.my_total_price,
   .woocommerce-page .cart-collaterals tr td span.mysub_total_price,
   .woocommerce-page .cart-collaterals tr td span.my_total_price {
     color: #000;
     float: right;
+    font-size: 40px;
   }
   .woocommerce .cart-collaterals tr td:before,
   .woocommerce-page .cart-collaterals tr td:before {
@@ -3055,11 +3085,7 @@ td.product-quantity {
   }
   .woocommerce .wc-proceed-to-checkout,
   .woocommerce-page .wc-proceed-to-checkout {
-    margin-top: 38px;
-  }
-  .woocommerce .wc-proceed-to-checkout a,
-  .woocommerce-page .wc-proceed-to-checkout a {
-    padding: 20px 0;
+    margin-top: 41px;
   }
 }
 /* Media Query */

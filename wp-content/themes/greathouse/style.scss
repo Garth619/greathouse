@@ -1965,7 +1965,7 @@ img.aligncenter {
 	.cart-collaterals {
 		
 		tr {
-			
+			border-bottom: none !important;
 			
 			td {
 				color:$bluedark;
@@ -1984,7 +1984,7 @@ img.aligncenter {
 				span.mysub_total_price, span.my_total_price {
 					color:$black;
 					float:right;
-				
+					font-size:25px;
 				}
 			}
 			td:before {
@@ -2000,14 +2000,14 @@ img.aligncenter {
 			}
 			
 			
-/*
+
 			.wc-proceed-to-checkout {
-				margin-top:38px;
+				
 				a {
 					padding:20px 0;
 				}
 			}
-*/
+
 	
 
 	
@@ -3759,6 +3759,7 @@ footer {
 		.mytable_header {
 			text-align: left;
 			font-size:120px;
+			margin-bottom:70px;
 		}
 		a {
 			
@@ -3899,21 +3900,42 @@ footer {
 			background:$greylight;
 			border-bottom:4px solid $black;
 			margin-bottom:20px;
+			font-family: $oswaldlight;
+			letter-spacing: 0.7px;
 			tr.tr_head {
 				margin-bottom: 0;
+				padding: 23px 0 14px;
+				font-size:14px
 			}
 			tr {
 				margin-bottom:0;
 				th {
-// 					width:18%;
+					float:left;
+					padding:0;
  
 				}
-				th.product-name {
-					width:20%;
-				}
 				th.product-thumbnail {
+					width:16%;
+				}
+
+				th.product-name {
+					width:34%;
+					padding-left:35px;
+				}
+				th.product-price {
+					text-align: center;
 					width:10%;
 				}
+				th.product-quantity {
+					width:23%;
+					text-align: center;
+				}
+				th.product-subtotal {
+					width:14%;
+					text-align: center;
+				}
+			
+
 			}
 		}
 
@@ -3935,7 +3957,7 @@ footer {
 		}
 		tr {
 			overflow: hidden;
-			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			border-bottom: 1px solid #a6a6a6;
 			margin-bottom:0;
 			
 			padding:40px 0;
@@ -4137,7 +4159,7 @@ footer {
 		float:right;
 		margin-top: -318px;
 		tr {
-			padding:27px 0 !important;
+			padding:19px 0 !important;
 			
 			td {
 				color:$bluedark;
@@ -4151,12 +4173,14 @@ footer {
 					margin-left:10px;
 					font-size:26px;
 					text-align: left;
+					position: relative;
+					top:18px;
 					
 				}
 				span.mysub_total_price, span.my_total_price {
 					color:$black;
 					float:right;
-				
+					font-size:40px;
 				}
 			}
 			td:before {
@@ -4173,10 +4197,8 @@ footer {
 			
 			
 			.wc-proceed-to-checkout {
-				margin-top:38px;
-				a {
-					padding:20px 0;
-				}
+				margin-top:41px;
+				
 			}
 	
 	
