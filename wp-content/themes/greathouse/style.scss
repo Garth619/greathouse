@@ -1988,7 +1988,7 @@ img.aligncenter {
 		text-align: center;
 		border: none;
 		position:relative;
-		top:-6px;
+		top:-8px;
 	}
 	
 	
@@ -2117,6 +2117,7 @@ img.aligncenter {
 	
 	.product_wrapper {
 		margin:50px auto 0;
+		min-height: 300px;
 		.images {
 			img.attachment-shop_single  {
 				
@@ -3696,6 +3697,387 @@ footer {
 
 
 
+
+
+
+/* Tables */
+
+
+
+
+
+
+/* My Table Styles */
+	
+	
+	.my_table_wrapper {
+		
+		.mytable_header {
+			
+		}
+		a {
+			
+		}
+		.button {
+			
+		}
+		
+	}
+	
+	
+	
+	
+	
+	/* Woocommerce Resonsive Tables from assets/css/woocommerce.scss */
+	
+	
+	/**
+	 * Tables
+	 */
+	table.shop_attributes {
+		
+
+		th {
+			
+		}
+
+		td {
+			
+
+			p {
+				
+			}
+		}
+
+		.alt td,
+		.alt th {
+
+		}
+	}
+
+	table.shop_table {
+		
+
+		th {
+			
+		}
+
+		td {
+			
+
+			small {
+				
+			}
+		}
+
+		tbody:first-child {
+			tr:first-child {
+				th,
+				td {
+					
+				}
+			}
+		}
+
+		tfoot td,
+		tfoot th,
+		tbody th {
+			
+		}
+	}
+
+	table.my_account_orders {
+		
+
+		th,
+		td {
+			
+		}
+
+		.button {
+			
+		}
+
+		.order-actions {
+			
+
+			.button {
+				
+			}
+		}
+	}
+
+	td.product-name {
+		dl.variation {
+			
+		
+
+			dt,
+			dd {
+				
+			}
+
+			dt {
+				
+			}
+
+			dd {
+				
+
+				p:last-child {
+					
+				}
+			}
+		}
+
+		p.backorder_notification {
+					}
+	}
+
+	td.product-quantity {
+		
+	}
+
+	
+	
+	/* Woocommerce Resonsive Tables from assets/css/smallscreen.scss */
+	
+	
+	
+	.woocommerce,
+.woocommerce-page {
+
+	table.shop_table_responsive {
+		thead {
+			display:inline-block;
+			width:100%;
+			background:$greylight;
+			border-bottom:4px solid $black;
+			tr.tr_head {
+				margin-bottom: 0;
+			}
+			tr {
+				margin-bottom:0;
+				th {
+// 					width:18%;
+ 
+				}
+				th.product-name {
+					width:20%;
+				}
+				th.product-thumbnail {
+					width:10%;
+				}
+			}
+		}
+
+		tbody {
+			tr:first-child {
+				td:first-child {
+					
+				}
+			}
+
+			th {
+				
+			}
+		}
+		tr.cart-subtotal, tr.order-total {
+			
+		}
+		tr {
+			overflow: hidden;
+			
+
+			td.product-thumbnail {
+				width:20%;
+				padding-left:0;
+				padding-right:0;
+			}
+			td.product-name {
+				width:35%;
+			}
+
+			td {
+				text-align: left !important;
+
+				float:left; 
+				&.order-actions {
+					
+					
+				}
+
+				&:before {
+					display: none;
+				}
+				&.product-remove {
+					
+				}
+				&.actions {
+					
+				}
+				&.product-remove,
+				&.actions {
+					
+					&:before {
+						
+					}
+				}
+			}
+
+			&:nth-child(2n) {
+				td {
+
+				}
+			}
+		}
+	}
+
+	table.my_account_orders {
+		tr {
+			td {
+				&.order-actions {
+					
+
+					&:before {
+						
+					}
+
+					.button {
+						
+					}
+				}
+			}
+		}
+	}
+
+	.input {
+		
+	}
+	
+	
+
+
+	/**
+	 * Cart
+	 */
+	table.cart,
+	#content table.cart {
+
+		.product-thumbnail {
+			display: block;
+			img {
+				max-width:100% !important;
+				height:auto !important;
+			}
+		}
+
+		td.actions {
+			
+
+			.coupon {
+				
+				.button {
+					
+				}
+				label {
+					
+				}
+				input {
+					
+				}
+				input,
+				.button,
+				.input-text {
+
+					
+				}
+				
+				
+				input#coupon_code {
+					
+				}
+				input#mycoupon_button {
+					
+				}
+				.input-text + .button,
+				.button.alt {
+					
+				}
+			}
+
+			
+		}
+	}
+
+	.cart-collaterals {
+		.cart_totals,
+		.shipping_calculator,
+		.cross-sells {
+			
+		}
+		.cart_totals {
+			h2 {
+				
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	.checkout-button {
+		
+	}
+	
+	
+	
+	
+	.input-text.qty {
+		
+	}
+	
+	
+
+	/**
+	 * Checkout
+	 */
+	&.woocommerce-checkout {
+		form.login {
+			.form-row {
+				
+			}
+		}
+	}
+
+	#payment {
+		.terms {
+			
+		}
+
+		#place_order {
+			
+		}
+	}
+
+	/**
+	 * Account
+	 */
+	.lost_reset_password {
+		.form-row-first,
+		.form-row-last {
+			
+		}
+	}
+}
+
+.woocommerce-account {
+	.woocommerce-MyAccount-navigation,
+	.woocommerce-MyAccount-content {
+		
+	}
+}
 
 
 
