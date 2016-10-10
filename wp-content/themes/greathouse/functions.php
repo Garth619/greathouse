@@ -655,7 +655,7 @@ function woocommerce_support() {
 
 // Disable Woo Commerce Style
 
-add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
+ add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 
 // Ajax Cart
 
@@ -815,6 +815,23 @@ remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_re
 
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 );
 add_action( 'woocommerce_after_single_product', 'woocommerce_upsell_display', 5 );
+
+
+// Checkout Pages 
+
+
+add_filter( 'default_checkout_country', 'change_default_checkout_country' );
+add_filter( 'default_checkout_state', 'change_default_checkout_state' );
+
+function change_default_checkout_country() {
+  return 'US'; // country code
+}
+
+function change_default_checkout_state() {
+  return 'CA'; // state code
+}
+
+
 
 
 
