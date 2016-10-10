@@ -1956,16 +1956,60 @@ img.aligncenter {
 			float: none;
 			text-align: left;
 		}
-		.cart_totals {
-			h2 {
+		
+	}
+	
+	
+	
+	
+	.cart-collaterals {
+		
+		tr {
+			
+			
+			td {
 				color:$bluedark;
-				font-family: $voltagelight;
-				font-size:26px;
-				text-transform: lowercase;
-				text-align: center;
+				width:100%;
+				overflow: hidden;
+				span.mysub_total, span.my_total {
+					color:$bluedark;
+					font-family: $voltagelight;
+					text-transform: lowercase;
+					float:left;
+					margin-left:10px;
+					font-size:26px;
+					text-align: left;
+					
+				}
+				span.mysub_total_price, span.my_total_price {
+					color:$black;
+					float:right;
+				
+				}
 			}
+			td:before {
+				display: block !important;
+				content: attr(data-title) " " !important;
+			}
+			
 		}
 	}
+	
+	th.mysub_totals {
+				color:#000 !important;
+			}
+			
+			
+/*
+			.wc-proceed-to-checkout {
+				margin-top:38px;
+				a {
+					padding:20px 0;
+				}
+			}
+*/
+	
+
 	
 	
 	
@@ -3713,7 +3757,8 @@ footer {
 	.my_table_wrapper {
 		
 		.mytable_header {
-			
+			text-align: left;
+			font-size:120px;
 		}
 		a {
 			
@@ -3853,6 +3898,7 @@ footer {
 			width:100%;
 			background:$greylight;
 			border-bottom:4px solid $black;
+			margin-bottom:20px;
 			tr.tr_head {
 				margin-bottom: 0;
 			}
@@ -3882,26 +3928,67 @@ footer {
 				
 			}
 		}
-		tr.cart-subtotal, tr.order-total {
-			
+		
+		tr.actions_row {
+			width:40%;
+			border-bottom: none;
 		}
 		tr {
 			overflow: hidden;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			margin-bottom:0;
 			
-
+			padding:40px 0;
 			td.product-thumbnail {
-				width:20%;
-				padding-left:0;
-				padding-right:0;
+				width:16%;
+			
 			}
 			td.product-name {
-				width:35%;
+				width:34%;
+				padding-left:10px;
+				vertical-align: middle;
+				line-height:1.2;
+				text-align: left !important;
+				padding-left:25px;
+				padding-top:25px;
+				a {
+					
+					color:$black;
+					display: block;
+					margin-bottom:16px;
+				}
+				.variation {
+					color:$bluedark;
+					font-size:14px;
+				}
+			}
+			td.product-price {
+				width:10%;
+				text-align: center;
+				padding-top:25px;
+			}
+			td.product-quantity {
+				width:23%;
+				padding-top:24px;
+			}
+			td.product-subtotal {
+				width:14%;
+				padding-top:25px;
+			}
+			td.product-remove {
+				width:3%;
+				padding:25px 0 0;
+				border-bottom: none;
+				
 			}
 
 			td {
-				text-align: left !important;
-
+				text-align: center !important;
+				
 				float:left; 
+				border-top:none;
+				font-size:25px;
+				padding:0;
 				&.order-actions {
 					
 					
@@ -3914,7 +4001,7 @@ footer {
 					
 				}
 				&.actions {
-					
+					width:100%;
 				}
 				&.product-remove,
 				&.actions {
@@ -3950,9 +4037,10 @@ footer {
 			}
 		}
 	}
-
-	.input {
-		
+	
+	
+	.woocommerce-Price-amount {
+		text-align: right !important;
 	}
 	
 	
@@ -3976,7 +4064,7 @@ footer {
 			
 
 			.coupon {
-				
+				margin-bottom:40px;
 				.button {
 					
 				}
@@ -4024,6 +4112,11 @@ footer {
 	}
 	
 	
+
+	.cart-subtotal {
+		
+	}
+
 	
 	
 	
@@ -4035,8 +4128,56 @@ footer {
 	
 	
 	.input-text.qty {
-		
+		font-size:25px;
 	}
+	
+	
+	.cart-collaterals {
+		width:40%;
+		float:right;
+		margin-top: -318px;
+		tr {
+			padding:27px 0 !important;
+			
+			td {
+				color:$bluedark;
+				width:100%;
+				overflow: hidden;
+				span.mysub_total, span.my_total {
+					color:$bluedark;
+					font-family: $voltagelight;
+					text-transform: lowercase;
+					float:left;
+					margin-left:10px;
+					font-size:26px;
+					text-align: left;
+					
+				}
+				span.mysub_total_price, span.my_total_price {
+					color:$black;
+					float:right;
+				
+				}
+			}
+			td:before {
+				display: block !important;
+				content: attr(data-title) " " !important;
+			}
+			
+		}
+	}
+	
+	th.mysub_totals {
+				color:#000 !important;
+			}
+			
+			
+			.wc-proceed-to-checkout {
+				margin-top:38px;
+				a {
+					padding:20px 0;
+				}
+			}
 	
 	
 
