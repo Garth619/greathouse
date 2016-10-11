@@ -19,3 +19,4 @@ if ( wc_get_page_id( 'terms' ) > 0 && apply_filters( 'woocommerce_checkout_show_
 	</p>
 	<?php do_action( 'woocommerce_checkout_after_terms_and_conditions' ); ?>
 <?php endif; ?>
+

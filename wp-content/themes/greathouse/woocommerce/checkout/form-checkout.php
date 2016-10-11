@@ -52,11 +52,13 @@ if ( ! $checkout->enable_signup && ! $checkout->enable_guest_checkout && ! is_us
 
 	<?php endif; ?>
 
-	<h3 id="order_review_heading"><?php _e( 'Your order', 'woocommerce' ); ?></h3>
+	
 
 	<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 
 	<div id="order_review" class="woocommerce-checkout-review-order">
+		
+		<h3 id="order_review_heading"><?php _e( 'Your order', 'woocommerce' ); ?></h3>
 		<?php do_action( 'woocommerce_checkout_order_review' ); ?>
 	</div>
 
