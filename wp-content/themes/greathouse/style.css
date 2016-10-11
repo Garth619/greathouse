@@ -2686,14 +2686,17 @@ ul.woocommerce-error li strong {
   header .inner_header .header_logo_nav_wrapper .logo_wrapper {
     background: #000 none repeat scroll 0 0;
     float: left;
-    padding: 15px 30px 10px;
-    width: 280px;
+    padding: 17px 15px 10px;
+    width: 230px;
   }
   header .inner_header .header_logo_nav_wrapper .logo_wrapper img.logo {
     max-width: 90%;
   }
   header .inner_header .header_logo_nav_wrapper .logo_wrapper:after {
-    margin-top: 0;
+    margin: 0px -190px 0 0;
+    position: relative;
+    top: -3px;
+    left: 0;
   }
   header .inner_header .header_logo_nav_wrapper .mobile_menu_wrapper {
     display: none;
@@ -2822,7 +2825,7 @@ ul.woocommerce-error li strong {
   }
   .cart_signin_wrapper img.search_img {
     width: 19px;
-    margin-top: 14px;
+    margin-top: 12px;
     float: left;
     margin-right: 7px;
   }
@@ -2830,7 +2833,7 @@ ul.woocommerce-error li strong {
     color: #7c786f;
     text-decoration: none;
     float: left;
-    margin-top: 19px;
+    margin-top: 17px;
     padding-right: 7px;
   }
 
@@ -3325,15 +3328,31 @@ ul.woocommerce-error li strong {
 /* Media Query */
 @media screen and (min-width: 1300px) {
   /* Header */
+  header .inner_header .header_logo_nav_wrapper {
+    height: 62px;
+  }
   header .inner_header .header_logo_nav_wrapper .logo_wrapper {
     width: 374px;
   }
   header .inner_header .header_logo_nav_wrapper .logo_wrapper img.logo {
     max-width: 100%;
   }
+  header .inner_header .header_logo_nav_wrapper .logo_wrapper:after {
+    top: 4px;
+  }
 
   .desktop_menu_wrapper .desktop_menu {
     margin-right: 25px;
+  }
+  .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li > a {
+    padding: 25px 10px;
+  }
+
+  .cart_signin_wrapper img.search_img {
+    margin-top: 19px;
+  }
+  .cart_signin_wrapper a {
+    margin-top: 25px;
   }
 
   /* No Sidebar Template */
@@ -3431,10 +3450,10 @@ ul.woocommerce-error li strong {
 /* Media Query */
 @media screen and (min-width: 1400px) {
   .desktop_menu_wrapper .desktop_menu {
-    margin-right: 100px;
+    margin-right: 40px;
   }
   .desktop_menu_wrapper .desktop_menu ul#menu-menu-1 > li > a {
-    padding: 23px 15px;
+    padding: 25px 15px 22px;
   }
 
   .cart_signin_wrapper img.search_img {

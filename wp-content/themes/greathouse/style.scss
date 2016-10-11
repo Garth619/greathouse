@@ -3305,13 +3305,18 @@ header {
 			.logo_wrapper {
 				background: #000 none repeat scroll 0 0;
 				float: left;
-				padding: 15px 30px 10px;
-				width: 280px;
+				padding: 17px 15px 10px;
+				width: 230px;
+				
+				
 				img.logo {
 					max-width:90%;
 				}
 				&:after {
-					margin-top:0;
+					margin: 0px -190px 0 0;
+					position: relative;
+					top:-3px;
+					left:0;
 				}
 			}
 			.mobile_menu_wrapper {
@@ -3524,7 +3529,7 @@ header {
 	margin-right:30px;
 	img.search_img {
 		width:19px;
-		margin-top:14px;
+		margin-top:12px;
 		float:left;
 		margin-right:7px;
 	}
@@ -3532,7 +3537,7 @@ header {
 		color:$greyfont;
 		text-decoration: none;
 		float:left;
-		margin-top:19px;
+		margin-top: 17px;
 		padding-right:7px;
 	}
 }
@@ -4646,12 +4651,16 @@ header {
 			
 		}
 		.header_logo_nav_wrapper {
+			height:62px;
 			.logo_wrapper {
 				
 				width: 374px;
 				img.logo {
 					max-width:100%;
 				}
+			}
+			.logo_wrapper:after {
+				top:4px;
 			}
 			.mobile_menu_wrapper {
 				
@@ -4685,7 +4694,7 @@ header {
 			> li {
 				
 				 > a {
-
+				 	padding:25px 10px;
 					&:hover {
 						
 					}
@@ -4734,10 +4743,10 @@ header {
 .cart_signin_wrapper {
 	
 	img.search_img {
-		
+		margin-top:19px
 	}
 	a {
-		
+		margin-top:25px;
 	}
 }
 
@@ -4877,7 +4886,7 @@ header {
 .desktop_menu_wrapper {
 	
 	.desktop_menu {
-		margin-right:100px;
+		margin-right:40px;
 		ul#menu-menu-1 {
 			
 			> li.current_page_item {
@@ -4895,7 +4904,7 @@ header {
 			> li {
 				
 				 > a {
-				 padding:23px 15px;
+				 padding: 25px 15px 22px;
 					&:hover {
 						
 					}
