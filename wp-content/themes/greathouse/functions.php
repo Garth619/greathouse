@@ -712,7 +712,7 @@ function custom_get_availability( $availability, $_product ) {
   global $product;
   $stock = $product->get_total_stock();
  
-  if ( $_product->is_in_stock() ) $availability['availability'] = __('Availability: <span class="myin_stock">In Stock</span> ', 'woocommerce');
+  if ( $_product->is_in_stock() ) $availability['availability'] = __('Availability: In Stock', 'woocommerce');
   if ( !$_product->is_in_stock() ) $availability['availability'] = __('Sold Out', 'woocommerce');
  
   return $availability;

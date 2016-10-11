@@ -1374,9 +1374,49 @@ img.aligncenter {
 				display:block;
 				font-size:18px;
 			}
+			.price {
+				
+				font-style: none;
+				font-weight: 300;
+				margin: 0px 0 15px;
+				font-size:35px;
+			}
+
 		}
 		
 	}
+	
+	
+	
+	.share_quantity_wrapper {
+		border-top:4px solid #000;
+		
+		margin:25px 0;
+		overflow: hidden;
+		
+		.mysingle_cart {
+			padding:25px;
+			background:$greylight;
+		}
+		.myquantity {
+			display:block;
+			margin-bottom:20px;
+		}
+		.input-text.qty {
+			top:0 !important;
+			padding: 17px 0 15px !important;
+			margin-bottom: 20px !important;
+		}
+		.single_add_to_cart_button {
+			border: 1px solid #000;
+			cursor: pointer;
+			font-family:$oswaldreg;
+			font-size: 14px;
+			padding: 8px 20px;
+		}
+	}
+	
+	
 	
 	form.variations_form {
 		.single_variation_wrap {
@@ -1402,7 +1442,7 @@ img.aligncenter {
 					text-transform: none;
 					font-size:18px;
 					line-height: 1.2;
-					margin-bottom:25px;
+// 					margin-bottom:25px;
 					p {
 						margin-bottom:30px;
 					}
@@ -2400,7 +2440,7 @@ img.aligncenter {
 		}
 		.entry-summary {
 			padding:0;
-			border-bottom:4px solid #000;
+// 			border-bottom:4px solid #000;
 			h1 {
 				
 			}
@@ -3445,7 +3485,7 @@ header {
 					color:#000;
 					text-decoration: none;
 					display: block;
-					padding:17px 10px;
+					padding:17px 10px 18px;
 					transition:all .2s ease-in-out;
 					cursor: pointer;
 					&:hover {
@@ -3457,7 +3497,7 @@ header {
 					position:absolute;
 					opacity:0;
 					visibility: hidden; /* */
-					top:116px;
+					top:106px;
 					left:0;
 					background:rgba(47, 47, 47, 0.98);
 					z-index: 1000;
@@ -3475,6 +3515,7 @@ header {
 						font-size:12px;
 						width:100%;
 						margin:0%;
+						line-height:1.2;
 						a {
 							color:$bluedark;
 							border-bottom:1px solid $greymenuborder;
@@ -3881,7 +3922,11 @@ footer {
 			padding-left:60px;
 		}
 		.entry-summary {
-			
+			.price {
+				position:absolute;
+				top:0;
+				right:0;
+			}
 			h1 {
 				margin-top:0;
 			}
@@ -3891,6 +3936,38 @@ footer {
 		}
 		
 	}
+	
+	
+	
+	
+	.share_quantity_wrapper {
+		.mysingle_cart {
+			width:50%;
+			float:right;
+		}
+		.myquantity {
+			
+		}
+		.input-text.qty {
+		
+		}
+		.single_add_to_cart_button {
+			
+		}
+	}
+	
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
 	
 	form.variations_form {
 		.single_variation_wrap {
@@ -4694,13 +4771,13 @@ header {
 			> li {
 				
 				 > a {
-				 	padding:25px 10px;
+				 	padding: 25px 15px 23px;
 					&:hover {
 						
 					}
 				}
 				> ul.sub-menu {
-					
+					top:119px;
 					.inner_drown_wrapper {
 						
 					}
@@ -4904,7 +4981,7 @@ header {
 			> li {
 				
 				 > a {
-				 padding: 25px 15px 22px;
+// 				 padding: 25px 15px 22px;
 					&:hover {
 						
 					}
@@ -5206,6 +5283,72 @@ footer {
 
 
 @media screen and (min-width: 1670px) {
+
+
+
+.desktop_menu_wrapper {
+	
+	.desktop_menu {
+		margin-right:80px;
+		ul#menu-menu-1 {
+			
+			> li.current_page_item {
+				
+				a {
+					
+				}
+			}
+			> li:hover > ul.sub-menu {
+				 
+			}
+			> li:hover > a {
+				
+			}
+			> li {
+				
+				 > a {
+// 				 padding: 25px 19px 22px;
+					&:hover {
+						
+					}
+				}
+				> ul.sub-menu {
+					
+					.inner_drown_wrapper {
+						
+					}
+					 li {
+						
+						a {
+							
+							
+							&:hover {
+								
+							}
+						}
+						> ul.sub-menu {
+								
+							li.current_page_item {
+								a {
+									
+								}
+							}
+							li {
+								
+								a {
+									
+									&:hover {
+										
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 
 

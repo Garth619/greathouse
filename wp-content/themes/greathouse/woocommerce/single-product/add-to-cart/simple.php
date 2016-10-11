@@ -40,9 +40,15 @@ if ( ! $product->is_purchasable() ) {
 
 	<?php do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
-	<form class="cart" method="post" enctype='multipart/form-data'>
+	<div class="share_quantity_wrapper">
+	
+	
+	<form class="cart mysingle_cart" method="post" enctype='multipart/form-data'>
 	 	<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
-
+	 	
+	 	
+	 	<span class="myquantity">Quantity</span>
+	 	
 	 	<?php
 	 		if ( ! $product->is_sold_individually() ) {
 	 			woocommerce_quantity_input( array(
@@ -59,6 +65,8 @@ if ( ! $product->is_purchasable() ) {
 
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 	</form>
+	
+	</div><!-- share_quantitiy_wrapper -->
 
 	<?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>
 
