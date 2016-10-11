@@ -1998,10 +1998,6 @@ ul.woocommerce-error li strong {
   color: green;
 }
 
-.payment_method_cheque {
-  display: none;
-}
-
 #createaccount, #terms {
   margin-bottom: 15px;
 }
