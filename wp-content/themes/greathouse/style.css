@@ -249,6 +249,87 @@ header .inner_header .header_logo_nav_wrapper .mobile_menu_wrapper.open .menu_ba
   left: 0;
 }
 
+.mysearch_wrapper {
+  position: absolute;
+  right: 256px;
+  top: 14px;
+  display: none;
+}
+.mysearch_wrapper label {
+  display: none;
+}
+.mysearch_wrapper input[type="search"] {
+  width: 540px;
+  border: none;
+  font-family: "oswaldregular", arial;
+  text-transform: uppercase;
+  padding: 7px 11px;
+  letter-spacing: 0.8px;
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-bottom: 12px;
+}
+.mysearch_wrapper .autocomplete-suggestions {
+  border: none;
+  padding-bottom: 0px;
+  border-radius: 0px !important;
+  position: relative !important;
+  top: 0 !important;
+}
+.mysearch_wrapper .autocomplete-suggestions img {
+  width: 75px;
+  height: 75px;
+}
+.mysearch_wrapper .yith_wcas_result_content {
+  font-family: "oswaldregular", arial;
+  text-transform: uppercase;
+  font-size: 14px !important;
+  letter-spacing: 1.1px;
+  margin-right: 52px !important;
+}
+.mysearch_wrapper .yith_wcas_result_content del {
+  color: red !important;
+}
+.mysearch_wrapper .yith_wcas_result_content .title {
+  color: #000 !important;
+  line-height: 1.1 !important;
+}
+.mysearch_wrapper .yith_wcas_result_content strong {
+  color: #79b7c0;
+}
+.mysearch_wrapper .link-result {
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+.mysearch_wrapper .link-result a {
+  color: #fff;
+  display: block;
+  font-family: "oswaldregular", arial;
+  text-transform: uppercase;
+  padding: 13px 0;
+  letter-spacing: .7px;
+}
+
+.autocomplete-suggestion {
+  height: 95px !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+.autocomplete-suggestion div.badges {
+  top: 6px !important;
+}
+
+#yith-searchsubmit {
+  background: #000;
+  color: #fff;
+  border: none;
+  font-family: "oswaldregular", arial;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 6px 15px;
+}
+
 /* Fixed Mobile Menu and Dropdown */
 .mobile_dropdown_wrapper {
   width: 100%;
@@ -2894,84 +2975,6 @@ ul.woocommerce-error li strong {
     float: left;
     margin-top: 17px;
     padding-right: 7px;
-  }
-
-  .mysearch_wrapper {
-    position: absolute;
-    right: 256px;
-    top: 14px;
-  }
-  .mysearch_wrapper label {
-    display: none;
-  }
-  .mysearch_wrapper input[type="search"] {
-    width: 540px;
-    border: none;
-    font-family: "oswaldregular", arial;
-    text-transform: uppercase;
-    padding: 7px 11px;
-    letter-spacing: 0.8px;
-    font-size: 14px;
-    margin-bottom: 5px;
-    margin-bottom: 12px;
-  }
-  .mysearch_wrapper .autocomplete-suggestions {
-    border: none;
-    padding-bottom: 0px;
-    border-radius: 0px !important;
-  }
-  .mysearch_wrapper .autocomplete-suggestions img {
-    width: 75px;
-    height: 75px;
-  }
-  .mysearch_wrapper .yith_wcas_result_content {
-    font-family: "oswaldregular", arial;
-    text-transform: uppercase;
-    font-size: 14px !important;
-    letter-spacing: 1.1px;
-    margin-right: 52px !important;
-  }
-  .mysearch_wrapper .yith_wcas_result_content del {
-    color: red !important;
-  }
-  .mysearch_wrapper .yith_wcas_result_content .title {
-    color: #000 !important;
-    line-height: 1.1 !important;
-  }
-  .mysearch_wrapper .yith_wcas_result_content strong {
-    color: #79b7c0;
-  }
-  .mysearch_wrapper .link-result {
-    background: #000;
-    color: #fff;
-    text-align: center;
-  }
-  .mysearch_wrapper .link-result a {
-    color: #fff;
-    display: block;
-    font-family: "oswaldregular", arial;
-    text-transform: uppercase;
-    padding: 13px 0;
-    letter-spacing: .7px;
-  }
-
-  .autocomplete-suggestion {
-    height: 95px !important;
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
-  }
-  .autocomplete-suggestion div.badges {
-    top: 6px !important;
-  }
-
-  #yith-searchsubmit {
-    background: #000;
-    color: #fff;
-    border: none;
-    font-family: "oswaldregular", arial;
-    text-transform: uppercase;
-    font-size: 14px;
-    padding: 6px 15px;
   }
 
   .see_all_products {
