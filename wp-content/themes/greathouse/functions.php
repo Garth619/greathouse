@@ -817,6 +817,10 @@ remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_d
 add_action( 'woocommerce_after_single_product', 'woocommerce_upsell_display', 5 );
 
 
+// Remove cross-sells at cart
+ 
+remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display' );
+
 // Checkout Pages 
 
 
@@ -830,6 +834,8 @@ function change_default_checkout_country() {
 function change_default_checkout_state() {
   return 'CA'; // state code
 }
+
+
 
 
 
