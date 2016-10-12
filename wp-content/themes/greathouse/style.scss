@@ -250,6 +250,7 @@ header {
 		.header_logo_nav_wrapper {
 			background:#000;
 			height: 52px;
+			position:relative;
 			.logo_wrapper {
 				float:left;
 				background:#000;
@@ -3596,6 +3597,7 @@ header {
 	display: inline-block;
 	letter-spacing: 0.7px;
 	margin-right:30px;
+	position:relative;
 	img.search_img {
 		width:19px;
 		margin-top:12px;
@@ -3611,7 +3613,84 @@ header {
 	}
 }
 
+.mysearch_wrapper {
+	position:absolute;
+	right: 256px;
+  top: 14px;
+	label {
+		display: none;
+	}
+	input[type="search"] {
+		width:540px;
+		border:none;
+		font-family: $oswaldreg;
+		text-transform: uppercase;
+		padding:7px 11px;
+		letter-spacing: 0.8px;
+		font-size:14px;
+		margin-bottom:5px;
+		margin-bottom: 12px;
+	}
+	.autocomplete-suggestions {
+		border:none;
+		padding-bottom:0px ;
+		border-radius: 0px !important;
+		img {
+			width:75px;
+			height:75px;
+		}
+	}
+	.yith_wcas_result_content {
+		font-family: $oswaldreg;
+		text-transform: uppercase;
+		font-size:14px !important;
+		letter-spacing: 1.1px;
+		margin-right: 52px !important;
+		del {
+			color:red !important;
+		}
+		.title {
+			color:#000 !important;
+			line-height:1.1 !important;
+		}
+		strong {
+			color:$bluedark;
+		}
+	}
+	.link-result {
+		background: #000;
+		color:#fff;
+		text-align: center;
+		a {
+			color:#fff;
+			display: block;
+			font-family: $oswaldreg;
+			text-transform: uppercase;
+			padding:13px 0;
+			letter-spacing:.7px;
+		}
+	}
+}
 
+.autocomplete-suggestion {
+	height:95px !important;
+	padding-top:5px !important;
+	padding-bottom:5px !important;
+	
+	div.badges {
+   	top: 6px !important;
+   }
+}
+
+#yith-searchsubmit {
+	background:$black;
+	color:#fff;
+	border:none;
+	font-family: $oswaldreg;
+	text-transform: uppercase;
+	font-size:14px;
+	padding:6px 15px;
+}
 
 .see_all_products {
 	color:#fff;
@@ -4820,7 +4899,7 @@ header {
 					}
 				}
 				> ul.sub-menu {
-					top:119px;
+					top:62px;
 					.inner_drown_wrapper {
 						
 					}

@@ -19,6 +19,8 @@ get_header(); ?>
 			<span class="sub_header">by Elite Leather Company</span>
 		
 			<a class="white_button" href="">Shop Now</a><!-- grey_button -->
+			
+			 
 		
 		</div><!-- vertical_align -->
 		

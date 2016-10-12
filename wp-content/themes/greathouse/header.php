@@ -60,6 +60,8 @@
 							<div class="header_options_inner">
 							
 								<img class="search_img" src="<?php bloginfo('template_directory');?>/images/search.png"/>
+								
+								
 							
 								<div class="cart_signin_wrapper">
 								
@@ -69,6 +71,13 @@
 								</div><!-- header_options_inner -->
 								
 							</div><!-- cart_signin_wrapper -->
+							
+							<div class="mysearch_wrapper">
+									
+										<?php  echo do_shortcode('[yith_woocommerce_ajax_search]'); ?>
+									
+									</div><!-- mysearch_wrapper -->
+							
 							
 						</div><!-- header_options -->
 						
@@ -105,12 +114,25 @@
 								<div class="cart_signin_wrapper">
 									
 									<img class="search_img" src="<?php bloginfo('template_directory');?>/images/search.png"/>
+									
+									
+									
+									
 									<a class="cart-contents" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf ( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?></a>
 									<a href="">Sign in</a>
 								
 
 									
 								</div><!-- cart_signin_wrapper -->
+								
+								
+								
+								<div class="mysearch_wrapper">
+									
+										<?php  echo do_shortcode('[yith_woocommerce_ajax_search]'); ?>
+									
+									</div><!-- mysearch_wrapper -->
+								
 							
 							</nav><!-- desktop_menu_wrapper -->
 							
