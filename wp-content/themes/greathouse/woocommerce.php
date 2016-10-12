@@ -13,22 +13,32 @@ get_header(); ?>
 	
 	
 	
-	<div class="myfilter_wrapper">
 	
-	<?php if ( is_active_sidebar('my-product-search-filter')):?>
+	
+		<div class="myfilter_wrapper">
+	
+			<?php if ( is_active_sidebar('my-product-search-filter')):?>
+	
+				<h2 class="my_filter_title">Filter By</h2>
 
-		<?php dynamic_sidebar('my-product-search-filter');?>
-			
-		<?php endif; ?>
+					<ul>
+					
+						<?php dynamic_sidebar('my-product-search-filter');?>
+					
+					</ul>
+				<?php endif; ?>
 	
 	
-	</div><!-- myfilter_wrapper -->
+		</div><!-- myfilter_wrapper -->
+		
+	
+	
+		<?php woocommerce_content(); ?>
 	
 	
 	
 	
 	
-	<?php woocommerce_content(); ?>
 			
 	</div><!-- product_wrapper -->
 

@@ -1542,7 +1542,7 @@ img.aligncenter {
 					text-transform: none;
 					font-size:18px;
 					line-height: 1.2;
-					margin:0px 0 0px;
+					margin:0px 0 30px;
 					p {
 						margin-bottom:30px;
 					}
@@ -1749,6 +1749,35 @@ img.aligncenter {
 			margin-bottom:55px;
 		}
 	}
+	
+	
+	
+	
+	/* Shop Page */
+
+
+.myfilter_wrapper {
+	background:$greylight;
+	padding:20px;
+	h2.my_filter_title {
+		font-size:25px;
+		font-family: $voltagereg;
+		text-transform: lowercase;
+		color:$bluedark;
+		display: inline;
+		float:left;
+		width:100%;
+		&:after {
+			content:"+";
+			float:right;
+		}
+	}
+}
+
+.myproduct_archive_wrapper {
+	padding:0 30px;
+}
+	
 	
 	
 	
@@ -4088,9 +4117,13 @@ footer {
 
 
 
-
+/*
+.woocommerce-variation-description {
+	margin-bottom:30px;
+}
 	
 	
+*/
 	
 	
 	
