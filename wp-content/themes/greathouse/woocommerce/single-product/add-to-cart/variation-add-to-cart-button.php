@@ -15,7 +15,7 @@ global $product;
 ?>
 <div class="woocommerce-variation-add-to-cart variations_button">
 	
-	<?php echo do_shortcode('[yith_wcwl_add_to_wishlist]'); ?>
+	
 	
 	<span class="quantity">Quantity</span>
 	<?php if ( ! $product->is_sold_individually() ) : ?>
@@ -25,4 +25,11 @@ global $product;
 	<input type="hidden" name="add-to-cart" value="<?php echo absint( $product->id ); ?>" />
 	<input type="hidden" name="product_id" value="<?php echo absint( $product->id ); ?>" />
 	<input type="hidden" name="variation_id" class="variation_id" value="0" />
+	
+	<div class="simple_wishlist_wrapper">
+		
+		<?php echo do_shortcode('[yith_wcwl_add_to_wishlist]'); ?>
+		
+		</div><!-- simple_wishlist_wrapper -->
+	
 </div>
