@@ -29,3 +29,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 </p>
 
 <?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
+

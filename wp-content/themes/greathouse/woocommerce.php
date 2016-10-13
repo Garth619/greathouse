@@ -9,7 +9,7 @@ get_header(); ?>
 
 		
 		
-<!-- <div class="product_wrapper"> -->
+<div class="product_wrapper"> 
 	
 	
 	
@@ -44,7 +44,7 @@ get_header(); ?>
 	
 	
 			
-<!-- 	</div> --><!-- product_wrapper -->
+</div><!-- product_wrapper -->
 
 
 <?php get_footer(); ?>
