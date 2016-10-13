@@ -25,3 +25,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <?php do_action( 'woocommerce_share' ); // Sharing plugins can hook into here ?>
+
+
+<span style="clear:left;display:block;">Share Under Dev</span>
