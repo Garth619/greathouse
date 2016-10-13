@@ -65,7 +65,11 @@ if ( ! $product->is_purchasable() ) {
 
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 		
+		<div class="simple_wishlist_wrapper">
+		
 		<?php echo do_shortcode('[yith_wcwl_add_to_wishlist]'); ?>
+		
+		</div><!-- simple_wishlist_wrapper -->
 		
 		
 	</form>

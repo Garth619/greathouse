@@ -1478,21 +1478,27 @@ img.aligncenter {
 	}
 	
 	
-	.yith-wcwl-add-to-wishlist {
-		overflow: hidden;
-		clear:both;
-		.yith-wcwl-add-button {
+	.simple_wishlist_wrapper {
+		margin-top:15px;
+		clear: left;
+		.yith-wcwl-add-to-wishlist {
+		
+		
+			.yith-wcwl-add-button {
 			
-			a {
-				color:#fff;
-				display: block;
-				text-align: center;
-				background:$bluedark;
-				padding:14px 20px; 
-				border-radius: 0px !important;
-				font-size:14px;
+				a {
+					color:#fff;
+					display: block;
+					text-align: center;
+					background:$bluedark;
+					padding:14px 10px; 
+					border-radius: 0px !important;
+					font-size:14px;
+					width: 152px;
+				}
 			}
 		}
+	
 	}
 	
 	
@@ -2546,10 +2552,34 @@ ul.woocommerce-error {
 }
 
 
+
+
+.share_quantity_wrapper {
+		
+		
+		.mysingle_cart {
+			overflow: hidden;
+		}
+		.myquantity {
+			
+		}
+		.input-text.qty {
+			
+		}
+		.single_add_to_cart_button {
+			float:left;
+		}
+	}
+
+
+
+.simple_wishlist_wrapper {
+	float:left;
+	clear:none;
+	margin-top:0;
+	margin-left:10px;
 .yith-wcwl-add-to-wishlist {
-		position:absolute;
-		left: 194px;
-    top: 411px;
+		margin-top:0;
 		.yith-wcwl-add-button {
 			
 			a {
@@ -2558,7 +2588,7 @@ ul.woocommerce-error {
 		}
 	}
 
-	
+}
 	
 	
 } /* Media Query */
@@ -2680,12 +2710,10 @@ img.aligncenter {
 		}
 	}
 	
-	
+	.simple_wishlist_wrapper {
 	
 	.yith-wcwl-add-to-wishlist {
-		left: 377px;
-		top: 360px;
-		.yith-wcwl-add-button {
+				.yith-wcwl-add-button {
 			
 			a {
 				
@@ -2693,7 +2721,7 @@ img.aligncenter {
 		}
 	}
 
-	
+}	
 	
 	
 	
@@ -4159,7 +4187,7 @@ footer {
 	
 	.share_quantity_wrapper {
 		.mysingle_cart {
-			width:50%;
+			width:60%;
 			float:right;
 		}
 		.myquantity {
@@ -4175,20 +4203,6 @@ footer {
 	
 
 
-
-
-
-/*
-.woocommerce-variation-description {
-	margin-bottom:30px;
-}
-	
-	
-*/
-	
-	
-	
-	
 	
 	
 	form.variations_form {
@@ -4207,7 +4221,7 @@ footer {
 			}
 		}
 		table.variations {
-			width:50%;
+			width:40%;
 			
 			label {
 				
@@ -5490,14 +5504,61 @@ footer {
 
 
 .banner {
-	padding:145px 0;
+	
 	span {
 		
-		font-size:120px;
+		
 	}
 }
 
 
+
+	.share_quantity_wrapper {
+		.mysingle_cart {
+			width:50%;
+			
+		}
+		.myquantity {
+			
+		}
+		.input-text.qty {
+		
+		}
+		.single_add_to_cart_button {
+			
+		}
+	}
+	
+
+
+	
+	
+	form.variations_form {
+		.single_variation_wrap {
+			.single_variation {
+				.woocommerce-variation-price {
+				
+				}
+				.woocommerce-variation-availability {
+			
+				
+					span.myin_stock {
+						
+					}
+				}
+			}
+		}
+		table.variations {
+			width:50%;
+			
+			label {
+				
+			}
+			.reset_variations {
+				
+			}
+		}
+	}
 
 
 
