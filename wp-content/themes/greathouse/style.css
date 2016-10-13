@@ -379,9 +379,15 @@ form.variations_form table.variations .reset_variations { color: #79b7c0; text-d
 .up-sells h2 { color: #79b7c0; font-family: "Voltage W00 Light", arial; text-transform: lowercase; font-size: 40px; margin-bottom: 55px; }
 
 /* Shop Page */
-.myfilter_wrapper { background: #f3f3f3; padding: 20px; }
-.myfilter_wrapper h2.my_filter_title { font-size: 25px; font-family: "Voltage W00 Regular", arial; text-transform: lowercase; color: #79b7c0; display: inline; float: left; width: 100%; }
-.myfilter_wrapper h2.my_filter_title:after { content: "+"; float: right; }
+/*
+.myfilter_wrapper {
+	display: none;
+}
+*/
+body.post-type-archive-product .myfilter_wrapper, body.tax-product_cat .myfilter_wrapper { display: block; }
+body.post-type-archive-product .myfilter_wrapper .filter_header_wrapper, body.tax-product_cat .myfilter_wrapper .filter_header_wrapper { border-bottom: 4px solid #000; padding: 15px; background: #f3f3f3; }
+body.post-type-archive-product .myfilter_wrapper .filter_header_wrapper h2.my_filter_title, body.tax-product_cat .myfilter_wrapper .filter_header_wrapper h2.my_filter_title { font-size: 25px; font-family: "Voltage W00 Regular", arial; text-transform: lowercase; color: #79b7c0; width: 100%; }
+body.post-type-archive-product .myfilter_wrapper .filter_header_wrapper h2.my_filter_title:after, body.tax-product_cat .myfilter_wrapper .filter_header_wrapper h2.my_filter_title:after { content: "+"; float: right; }
 
 .myproduct_archive_wrapper { padding: 0 30px; }
 

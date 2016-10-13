@@ -9,7 +9,7 @@ get_header(); ?>
 
 		
 		
-<div class="product_wrapper">
+<!-- <div class="product_wrapper"> -->
 	
 	
 	
@@ -19,7 +19,11 @@ get_header(); ?>
 	
 			<?php if ( is_active_sidebar('my-product-search-filter')):?>
 	
-				<h2 class="my_filter_title">Filter By</h2>
+				<div class="filter_header_wrapper">
+				
+					<h2 class="my_filter_title">Filter By</h2>
+				
+				</div><!-- filter_header_wrapper -->
 
 					<ul>
 					
@@ -40,7 +44,7 @@ get_header(); ?>
 	
 	
 			
-	</div><!-- product_wrapper -->
+<!-- 	</div> --><!-- product_wrapper -->
 
 
 <?php get_footer(); ?>

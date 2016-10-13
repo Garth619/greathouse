@@ -1756,20 +1756,31 @@ img.aligncenter {
 	/* Shop Page */
 
 
+/*
 .myfilter_wrapper {
-	background:$greylight;
-	padding:20px;
-	h2.my_filter_title {
-		font-size:25px;
-		font-family: $voltagereg;
-		text-transform: lowercase;
-		color:$bluedark;
-		display: inline;
-		float:left;
-		width:100%;
-		&:after {
-			content:"+";
-			float:right;
+	display: none;
+}
+*/
+
+
+body.post-type-archive-product .myfilter_wrapper, body.tax-product_cat .myfilter_wrapper {
+	
+	display: block;
+// 	padding:0 20px;
+	.filter_header_wrapper {
+		border-bottom: 4px solid #000;
+		padding:15px;
+		background:$greylight;
+		h2.my_filter_title {
+			font-size:25px;
+			font-family: $voltagereg;
+			text-transform: lowercase;
+			color:$bluedark;
+			width:100%;
+			&:after {
+				content:"+";
+				float:right;
+			}
 		}
 	}
 }
